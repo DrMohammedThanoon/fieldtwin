@@ -91,3 +91,40 @@ Earth and Mars products have been downloaded,
 opened, inspected, and documented.
 
 No scientific results are currently claimed.
+
+## Phase 3 — Verified Dataset Inventory
+
+Inventory recorded from actual downloaded files.
+Data accessed: 2026-11-14.
+Raw datasets remain excluded from Git.
+
+### NASA MOLA — Mars regional context
+- Collection: NASA PDS, MGS MOLA MEGDR, MEG016
+- Identifier: `urn:nasa:pds:mgs_mola_topography_derived:data_meg016:megt90n000eb`
+- Source: https://pds-geosciences.wustl.edu/missions/mgs/megdr.html
+- Local file: `data/raw/mars/mola/megt90n000eb.img`
+- SHA-256: `d18d9b9ab8c5516d02e157dd2cde0f1d0d160c21940e953ba22391269a545e7b`
+- Limitation: 3.704 km posting; global context only
+
+### USGS CTX — Mars detailed terrain candidate
+- Collection: MRO CTX stereo DTM, USGS controlled collection
+- Identifier: `T01_000893_1847_XN_04N191W__N09_065929_1853_XN_05N191W`
+- Source: https://doi.org/10.5066/P9JKVWR3
+- Local file: `data/raw/mars/ctx/T01_000893_1847_XN_04N191W__N09_065929_1853_XN_05N191W-DEM-geoid-adj.tif`
+- SHA-256: `4888a180ba6e868cb4fc0f33478723587499cf40e780af15983b615ce62f3c51`
+- Limitation: 20 m posting; 80% valid coverage; visual artifact review pending
+
+### NASADEM — Earth elevation pilot
+- Collection: NASADEM_HGT.001; NASA LP DAAC
+- Identifier: `G2816781179-LPCLOUD / NASADEM_HGT_s25w070`
+- Source: https://doi.org/10.5067/MEASURES/NASADEM/NASADEM_HGT.001
+- Local file: `data/raw/earth/nasadem/NASADEM_HGT_s25w070.zip`
+- SHA-256: `a8522f8985642512814f4cfbff3eb38a56bc30a9b7c4eda2f69ff29310f88906`
+- Limitation: 1 arc-second; Atacama pilot only; not yet a validated analog
+
+### Pending scientific requirements
+- Confirm vertical datums and effective terrain resolution.
+- Inspect CTX artifacts and unavailable orthoimage.
+- Define bounded Earth search, known analog and negative control.
+- Compute Earth–Mars features at matched physical scales.
+- Record uncertainty and non-transferable conditions.

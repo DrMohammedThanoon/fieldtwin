@@ -128,3 +128,23 @@ Raw datasets remain excluded from Git.
 - Define bounded Earth search, known analog and negative control.
 - Compute Earth–Mars features at matched physical scales.
 - Record uncertainty and non-transferable conditions.
+
+## Additional Phase 4 reference datasets
+
+### ARADS Playa historical field-test reference
+- NASADEM granule: `NASADEM_HGT_s25w071`
+- CMR ID: `G2816781177-LPCLOUD`
+- Official ZIP: https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s25w071/NASADEM_HGT_s25w071.zip
+- Local archive: `data/raw/earth/nasadem/NASADEM_HGT_s25w071.zip`
+- SHA-256: `7d1f6ec1b2ea795b5ece4acd7a95e321ecf39c8016b962d447eacbf11717174e`
+- Extracted layers: `s25w071.hgt`, `s25w071.num`, `s25w071.swb`
+- Status: acquired and technically validated; scientific suitability is not established.
+
+### Láscar volcanic negative control
+- NASADEM granule: `NASADEM_HGT_s24w068`
+- CMR ID: `G2816780543-LPCLOUD`
+- Official ZIP: https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/NASADEM_HGT.001/NASADEM_HGT_s24w068/NASADEM_HGT_s24w068.zip
+- Local archive: `data/raw/earth/nasadem/NASADEM_HGT_s24w068.zip`
+- SHA-256: `26a80a08f2ef8734454d8331b7ecb4bc0a4c51aef65105845363dde11bddff7a`
+- Extracted layers: `s24w068.hgt`, `s24w068.num`, `s24w068.swb`
+- Status: acquired and technically validated; scientific suitability is not established.

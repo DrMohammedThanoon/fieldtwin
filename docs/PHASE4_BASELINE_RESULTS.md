@@ -82,3 +82,94 @@ FIELDTWIN_BASELINE_PARETO_OK
 
 See `data/SOURCES.md` and
 `docs/BENCHMARK_PROTOCOL.md`.
+
+## CTX Visual Quality Review
+
+Status: PROVISIONAL — 2026-11-14
+
+- Source: USGS MRO CTX stereo-derived DEM.
+- Reviewed the full hillshade and central 2 km DEM,
+  detrended elevation residual, and hillshade.
+- Central valid raster coverage: 99.99%.
+- Central detrended elevation RMS: 3.218 m.
+- No obvious major discontinuity in the selected window.
+- Directional fine-scale texture is visible.
+- A localized bright feature / possible isolated gap
+  appears near the upper-right portion of the window.
+- Fine-scale textures may be actual terrain,
+  stereo-processing artifacts, or both.
+- Residual RMS is NOT an elevation-accuracy estimate.
+- CTX-to-MOLA alignment is not independent validation.
+- Corresponding orthorectified imagery has not yet
+  been independently inspected.
+
+Decision:
+- Retain the CTX window for exploratory development.
+- Do not claim final analog suitability from this DEM.
+- Treat fine-scale slopes and roughness cautiously.
+- Require uncertainty assessment and independent imagery
+  review before final scientific acceptance.
+
+Reference:
+https://stac.astrogeology.usgs.gov/docs/data/mars/ctxdtms/
+
+## Elevation Perturbation Sensitivity
+
+Status: EXPLORATORY — 2026-11-14
+
+### Experimental setup
+- Mars reference: USGS CTX DEM.
+- Analysis window: 1000 m square.
+- Processing grid: 100 m.
+- Trials: 100 per scenario.
+- Random seed: 20261114.
+- Simulated independent Gaussian Mars elevation errors.
+- Perturbation standard deviations: 1 m, 3 m, 5 m.
+- Earth terrain features held fixed.
+- These perturbations are not calibrated CTX errors.
+
+### Pareto Front 1 membership
+
+| Site | 1 m | 3 m | 5 m |
+|---|---:|---:|---:|
+| Pilot A | 100/100 | 100/100 | 30/100 |
+| Pilot B | 100/100 | 100/100 | 60/100 |
+| Pilot C | 21/100 | 27/100 | 72/100 |
+| Pilot D | 100/100 | 100/100 | 100/100 |
+| ARADS Playa | 0/100 | 0/100 | 0/100 |
+| Láscar control | 0/100 | 0/100 | 0/100 |
+
+Identical full Pareto ordering:
+- 1 m: 21/100
+- 3 m: 27/100
+- 5 m: 30/100
+
+### Interpretation
+- Candidate membership is sensitive to perturbations.
+- Pilot D retained Front 1 membership in every trial.
+- ARADS and Láscar never reached Front 1.
+- Front 1 membership is not a suitability score.
+- Perturbation frequencies are not calibrated
+  probabilities of analog suitability.
+- Full-front stability is not monotonic with
+  perturbation size in this finite experiment.
+- Actual DEM uncertainty remains unquantified.
+
+### Scientific restrictions
+- No validated analog winner.
+- No confidence scores derived from these frequencies.
+- Do not infer centimeter-level accuracy from
+  small terrain-feature differences.
+- Real stereo errors may be spatially correlated.
+- Earth DEM uncertainty was not simulated.
+- Robustness under alternative error models remains open.
+
+### Next stage
+Develop the Analog Transfer Matrix to distinguish:
+1. Supported DEM-based terrain characteristics.
+2. Features requiring additional observations.
+3. Environmental and engineering properties that
+   cannot be transferred from DEM similarity alone.
+
+Reference:
+https://stac.astrogeology.usgs.gov/docs/data/mars/ctxdtms/

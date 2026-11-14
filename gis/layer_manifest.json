@@ -1,0 +1,17 @@
+
+{
+  "project": "FieldTwin",
+  "version": "1.0",
+  "description": "Registry of external GIS layers and services used by FieldTwin.",
+  "status": "No external GIS services configured",
+  "earth_layers": [],
+  "mars_layers": [],
+  "optional_esri_layers": [],
+  "notes": [
+    "The default scientific workflow does not depend on Esri.",
+    "Record actual layer IDs, source URLs, attribution, licensing and access permissions before using external services.",
+    "Do not store API tokens or private credentials in this file.",
+    "Mars coordinates must never be displayed as Earth GPS locations.",
+    "Only verified scientific layers may be presented as measured evidence."
+  ]
+}

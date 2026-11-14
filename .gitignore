@@ -1,0 +1,45 @@
+# ==========================================
+# FieldTwin - Git Ignore Rules
+# ==========================================
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# NASA datasets - keep large files local
+/data/raw/*
+!/data/raw/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+
+# Large scientific raster files
+*.tif
+*.tiff
+*.img
+*.vrt
+*.hdf
+*.h5
+*.nc
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+.ipynb_checkpoints/
+
+# Node.js / React
+node_modules/
+dist/
+coverage/
+
+# Local logs
+*.log
+
+# macOS
+.DS_Store

@@ -254,3 +254,87 @@ FIELDTWIN_MULTI_ROUTE_BENCHMARK_OK
 
 Reference:
 https://robotics.jpl.nasa.gov/what-we-do/flight-projects/mars-science-laboratory/surface-system-software-and-rover-navigation/
+
+## Route-Feasibility Elevation Stress Test
+
+Status: Exploratory — 2026-11-14.
+
+### Design
+- Four locations; five endpoint pairs.
+- Experimental slope constraints: 3 and 10 degrees.
+- Independent and spatially correlated Gaussian perturbations.
+- Correlated noise smoothed with Gaussian sigma=2 grid cells.
+- Simulated elevation SD: 1 and 3 m.
+- 30 trials per model and magnitude.
+- Reproducible random seed: 20261114.
+- Original searches: 40; simulated searches: 4800.
+- These are assumed perturbations, not measured DEM errors.
+
+### Reproducible output
+
+Command: `python -m science.route_uncertainty`
+
+```text
+FIELDTWIN ROUTE UNCERTAINTY EXPERIMENT
+Window: 1000 m | Grid: 100 m
+Seed: 20261114 | Trials per scenario: 30
+Assumed SD: 1 m and 3 m (not calibrated errors)
+
+MARS
+independent | SD=1.0 m | limit=3 deg | original=5/5 | feasible=150/150 | changed=0/150
+independent | SD=1.0 m | limit=10 deg | original=5/5 | feasible=150/150 | changed=0/150
+independent | SD=3.0 m | limit=3 deg | original=5/5 | feasible=150/150 | changed=0/150
+independent | SD=3.0 m | limit=10 deg | original=5/5 | feasible=150/150 | changed=0/150
+correlated | SD=1.0 m | limit=3 deg | original=5/5 | feasible=150/150 | changed=0/150
+correlated | SD=1.0 m | limit=10 deg | original=5/5 | feasible=150/150 | changed=0/150
+correlated | SD=3.0 m | limit=3 deg | original=5/5 | feasible=150/150 | changed=0/150
+correlated | SD=3.0 m | limit=10 deg | original=5/5 | feasible=150/150 | changed=0/150
+
+PILOT_B
+independent | SD=1.0 m | limit=3 deg | original=5/5 | feasible=150/150 | changed=0/150
+independent | SD=1.0 m | limit=10 deg | original=5/5 | feasible=150/150 | changed=0/150
+independent | SD=3.0 m | limit=3 deg | original=5/5 | feasible=143/150 | changed=7/150
+independent | SD=3.0 m | limit=10 deg | original=5/5 | feasible=150/150 | changed=0/150
+correlated | SD=1.0 m | limit=3 deg | original=5/5 | feasible=150/150 | changed=0/150
+correlated | SD=1.0 m | limit=10 deg | original=5/5 | feasible=150/150 | changed=0/150
+correlated | SD=3.0 m | limit=3 deg | original=5/5 | feasible=150/150 | changed=0/150
+correlated | SD=3.0 m | limit=10 deg | original=5/5 | feasible=150/150 | changed=0/150
+
+ARADS
+independent | SD=1.0 m | limit=3 deg | original=3/5 | feasible=88/150 | changed=2/150
+independent | SD=1.0 m | limit=10 deg | original=5/5 | feasible=150/150 | changed=0/150
+independent | SD=3.0 m | limit=3 deg | original=3/5 | feasible=78/150 | changed=12/150
+independent | SD=3.0 m | limit=10 deg | original=5/5 | feasible=150/150 | changed=0/150
+correlated | SD=1.0 m | limit=3 deg | original=3/5 | feasible=90/150 | changed=0/150
+correlated | SD=1.0 m | limit=10 deg | original=5/5 | feasible=150/150 | changed=0/150
+correlated | SD=3.0 m | limit=3 deg | original=3/5 | feasible=84/150 | changed=6/150
+correlated | SD=3.0 m | limit=10 deg | original=5/5 | feasible=150/150 | changed=0/150
+
+LASCAR
+independent | SD=1.0 m | limit=3 deg | original=0/5 | feasible=0/150 | changed=0/150
+independent | SD=1.0 m | limit=10 deg | original=0/5 | feasible=6/150 | changed=6/150
+independent | SD=3.0 m | limit=3 deg | original=0/5 | feasible=0/150 | changed=0/150
+independent | SD=3.0 m | limit=10 deg | original=0/5 | feasible=16/150 | changed=16/150
+correlated | SD=1.0 m | limit=3 deg | original=0/5 | feasible=0/150 | changed=0/150
+correlated | SD=1.0 m | limit=10 deg | original=0/5 | feasible=0/150 | changed=0/150
+correlated | SD=3.0 m | limit=3 deg | original=0/5 | feasible=0/150 | changed=0/150
+correlated | SD=3.0 m | limit=10 deg | original=0/5 | feasible=4/150 | changed=4/150
+
+Route searches: 4840
+Results are not calibrated safety probabilities.
+FIELDTWIN_ROUTE_UNCERTAINTY_OK
+```
+
+### Interpretation
+- Mars feasibility did not change in the tested scenarios.
+- Pilot B changed in some independent-noise 3 m trials.
+- ARADS feasibility changes were concentrated at 3 degrees.
+- Láscar occasionally became feasible at 10 degrees.
+- Independent versus correlated noise produced different outcomes.
+- Results are conditional on these sites, paths, grids,
+  perturbation models, and experimental constraints.
+- No calibrated probability, physical rover safety claim,
+  or validated Earth-Mars transfer claim is supported.
+
+Reference:
+https://stac.astrogeology.usgs.gov/docs/data/mars/ctxdtms/

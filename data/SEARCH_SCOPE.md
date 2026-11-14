@@ -157,3 +157,32 @@ Search-scope validation requires:
 ---
 
 **Scientific principle:** FieldTwin can claim only what its documented geographical search and measurements support.
+
+## Phase 3 — Initial Geographic Scope
+### Mars reference candidate
+- USGS CTX DTM product:
+  T01_000893_1847_XN_04N191W__N09_065929_1853_XN_05N191W.
+- STAC bounding box:
+  168.06222 to 168.49260 degrees E;
+  4.43947 to 4.99562 degrees N.
+- Candidate only; scientific acceptance remains provisional.
+
+### Earth acquisition pilot
+- Region: Atacama Desert, Chile.
+- NASADEM tile: s25w070.
+- Nominal tile: 25 to 24 degrees S,
+  70 to 69 degrees W.
+- This is an acquisition pilot, not a completed
+  bounded analog search.
+
+### Unresolved study-design requirements
+- Define the precise rover mobility/navigation task.
+- Predefine the bounded Earth candidate universe.
+- Document inclusion and exclusion criteria.
+- Identify a literature-supported known analog.
+- Select a defensible negative control.
+- Verify actual locations used in prior rover tests.
+- Record searched and unsearched geographic areas.
+- Compare Earth and Mars at matched physical scales.
+- Assess uncertainties and rank stability.
+- Do not claim discovery before these requirements pass.

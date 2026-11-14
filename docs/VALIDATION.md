@@ -253,3 +253,46 @@ https://www.spaceappschallenge.org/2026/challenges/permanent-moon-base-locations
 ---
 
 **Validation principle:** No scientific result is accepted without traceable evidence, reproducible methods, and documented limitations.
+
+## Phase 3 — Initial Dataset Validation
+### NASA MOLA
+- Global raster: 5760 × 2880, signed 16-bit.
+- Resolution: approximately 3.704 km map-plane posting.
+- Elevation extrema: -8177 to 21171 m.
+- Observation-count raster spatially aligned.
+- Positive-count cells: 15,685,242.
+- Zero-count cells: 903,558.
+- Zero elevation must not automatically be treated as missing.
+- Intended use: regional Mars context only.
+
+### USGS CTX DTM
+- Product: T01_000893_1847_XN_04N191W__N09_065929_1853_XN_05N191W.
+- GeoTIFF: 1203 × 1568, float32, 20 m posting.
+- Valid coverage: 80.00%.
+- Central 50% coverage: 99.99%.
+- All valid cells form one eight-connected region.
+- Elevation range: -2976.107 to -2895.599 m.
+- CTX-MOLA QA mean difference: -0.423 m.
+- CTX-MOLA QA standard deviation: 6.564 m.
+- Hillshade aligned successfully.
+- Visual artifact inspection remains pending.
+- Orthorectified image URL returned HTTP 404.
+- Twenty-meter posting does not establish effective terrain resolution.
+- CTX-MOLA agreement is not independent validation.
+
+### NASADEM Earth
+- Granule: NASADEM_HGT_s25w070.
+- CMR ID: G2816781179-LPCLOUD.
+- Raster: 3601 × 3601, EPSG:4326.
+- Sampling: one arc-second.
+- Valid numerical coverage: 100%.
+- Elevation range: 902 to 4340 m.
+- Mean elevation: 2207.07 m.
+- HGT, NUM and SWB layers extracted successfully.
+
+### Scientific limitations
+- Earth and Mars vertical references differ.
+- Horizontal sampling differs from effective terrain resolution.
+- Numerical validity does not guarantee elevation accuracy.
+- No matched-scale terrain descriptors have been calculated.
+- No analog suitability or similarity score has been established.

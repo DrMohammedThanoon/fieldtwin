@@ -144,3 +144,86 @@ https://www.earthdata.nasa.gov/data/catalog/lpcloud-nasadem-hgt-001
 
 NASA — Mars environment:
 https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/mars/
+
+
+## 9. Phase 5 — Provisional Rover-Testing Recommendation
+
+Date: 2026-11-15
+Status: EXPLORATORY — NOT FIELD VALIDATED
+
+### Recommended next desktop evaluation case
+
+PILOT_B, Atacama Desert, Chile
+Latitude: -24.4
+Longitude: -69.9
+
+Recommendation:
+Prioritize PILOT_B for further DEM-informed rover
+route-planning algorithm evaluation.
+
+This is a recommendation for additional investigation,
+NOT a declaration of the best Earth analog or an
+approved physical rover-testing site.
+
+### Supporting Phase 4 evidence
+
+- PILOT_B belongs to Pareto Front 1 at both tested
+  terrain comparison scales (1000 m and 2000 m).
+- PILOT_A, PILOT_C and PILOT_D are also Front 1.
+- At 1000 m / 100 m processing grid, all five
+  PILOT_B route pairs were feasible under the
+  experimental 3-degree and 10-degree grade limits.
+- The feasible-only mean detour at 3 degrees
+  was 5.92%.
+- Under independent hypothetical 3 m elevation
+  perturbations at 3 degrees, feasibility changed
+  in 7 of 150 simulated route outcomes.
+- Under the corresponding correlated perturbation
+  scenario, feasibility changed in 0 of 150 outcomes.
+
+These are conditional numerical experiments,
+not calibrated uncertainty probabilities.
+
+### Comparison and control limitations
+
+- PILOT_A, PILOT_C and PILOT_D were not included
+  in the completed multi-route benchmark.
+- Therefore PILOT_B is not established as the
+  strongest rover-navigation candidate.
+- ARADS_PLAYA is a historical rover-testing reference,
+  not independent positive terrain ground truth.
+- LASCAR_CONTROL is a contrasting terrain case.
+  Its tested route infeasibility does not imply
+  that every location or path there is impassable.
+- The five endpoint pairs and slope limits are
+  exploratory engineering assumptions.
+- DEM grid-edge feasibility does not prove
+  physical rover traversability or safety.
+
+### Required evaluation before a stronger recommendation
+
+1. Compare routes at PILOT_A, B, C and D using
+   a common, explicitly specified protocol.
+2. Examine CTX artifacts and effective resolution.
+3. Evaluate alternative routes and terrain scales.
+4. Establish independent task-specific relevance.
+5. Assess Earth surface hazards, soil mechanics,
+   site access and field-operation safety.
+6. Document uncertainty and transfer limitations.
+
+### Decision
+
+PILOT_B: PRIORITIZE FOR ADDITIONAL DESKTOP TESTING.
+
+UNIQUE EARTH ANALOG WINNER: NOT ESTABLISHED.
+PHYSICAL ROVER TEST READINESS: NOT ESTABLISHED.
+MARS TRANSFER VALIDATION: NOT ESTABLISHED.
+ML SUPERIORITY: NOT VALIDATED.
+
+Continue using the interpretable Pareto baseline
+until the preregistered ML evidence gates are met.
+
+Evidence:
+docs/PHASE4_BASELINE_RESULTS.md
+docs/MODEL_BENCHMARK.md
+data/SEARCH_SCOPE.md

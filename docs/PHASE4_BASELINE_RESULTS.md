@@ -173,3 +173,84 @@ Develop the Analog Transfer Matrix to distinguish:
 
 Reference:
 https://stac.astrogeology.usgs.gov/docs/data/mars/ctxdtms/
+
+## DEM-Scale Multi-Route Benchmark
+
+Status: Exploratory experiment — 2026-11-14.
+
+### Experimental design
+
+- Four terrain locations: Mars CTX, FieldTwin Pilot B,
+  ARADS Playa, and Láscar volcano.
+- Analysis window: 1000 m square.
+- Processing grid: 100 m.
+- Five predefined start–destination pairs per location.
+- Routing: eight-connected Dijkstra shortest path.
+- Baseline: distance-only shortest path.
+- Experimental slope limits: 3° and 10°.
+- Total searches: 20 unconstrained and 40 constrained.
+
+### Reproducible results
+
+Command: `python -m science.multi_route_benchmark`
+
+```text
+FIELDTWIN REPRODUCIBLE MULTI-ROUTE BENCHMARK
+Window: 1000 m | Grid: 100 m
+Detour averages include feasible routes only.
+
+MARS
+  Limit 3 deg | feasible=5/5 | infeasible=0/5 | longer=1 | feasible_mean_detour=2.37%
+  Limit 10 deg | feasible=5/5 | infeasible=0/5 | longer=0 | feasible_mean_detour=0.00%
+
+PILOT_B
+  Limit 3 deg | feasible=5/5 | infeasible=0/5 | longer=3 | feasible_mean_detour=5.92%
+  Limit 10 deg | feasible=5/5 | infeasible=0/5 | longer=0 | feasible_mean_detour=0.00%
+
+ARADS
+  Limit 3 deg | feasible=3/5 | infeasible=2/5 | longer=3 | feasible_mean_detour=30.07%
+  Limit 10 deg | feasible=5/5 | infeasible=0/5 | longer=2 | feasible_mean_detour=8.08%
+
+LASCAR
+  Limit 3 deg | feasible=0/5 | infeasible=5/5 | longer=0
+  Limit 10 deg | feasible=0/5 | infeasible=5/5 | longer=0
+
+Route searches: 60
+FIELDTWIN_MULTI_ROUTE_BENCHMARK_OK
+```
+
+### Scientific interpretation
+
+- Mars and Pilot B: all five routes were feasible
+  under both experimental slope limits.
+- ARADS: three of five routes were feasible at 3°,
+  increasing to five of five at 10°.
+- Láscar: no constrained routes were feasible
+  under either tested slope limit.
+- Constrained routes can require additional distance
+  to satisfy the selected grade limit.
+- Reported mean detours include feasible routes only.
+- Infeasible routes must be reported separately.
+- These results demonstrate software behavior,
+  not validated physical rover performance.
+
+### Limitations
+
+- Only five predefined route pairs were evaluated.
+- Slope limits are hypothetical, not certified.
+- Eight-connected center-to-center routing is simplified.
+- Grid-edge slope cannot establish clearance or safety
+  across the physical area between cell centers.
+- No soil, slip, traction, rock or sensor data included.
+- Uncertainty in DEM-derived path constraints remains.
+- No field validation or operational superiority claimed.
+
+### Next scientific requirements
+
+- Test route sensitivity to DEM uncertainty.
+- Evaluate alternative start and destination locations.
+- Define task-specific engineering acceptance criteria.
+- Link routing outcomes to the Analog Transfer Matrix.
+
+Reference:
+https://robotics.jpl.nasa.gov/what-we-do/flight-projects/mars-science-laboratory/surface-system-software-and-rover-navigation/

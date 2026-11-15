@@ -230,9 +230,9 @@ export default function App() {
   const [view, setView] = useState<View>(initialView)
   const [selected, setSelected] = useState<SiteId>('PILOT_B')
   const [windowM, setWindowM] = useState<'1000' | '2000'>('1000')
-  const [theme, setTheme] = useState<'dark' | 'light'>(() => { try { return localStorage.getItem('sb-theme-v2') === 'dark' ? 'dark' : 'light' } catch { return 'light' } })
+  const [theme, setTheme] = useState<'dark' | 'light'>(() => { try { return localStorage.getItem('sb-theme-v3') === 'light' ? 'light' : 'dark' } catch { return 'dark' } })
   const evaluation = useMemo(() => evidence.evaluations[windowM], [windowM])
-  useEffect(() => { document.documentElement.dataset.theme = theme; try { localStorage.setItem('sb-theme-v2', theme) } catch { /* storage unavailable */ } }, [theme])
+  useEffect(() => { document.documentElement.dataset.theme = theme; try { localStorage.setItem('sb-theme-v3', theme) } catch { /* storage unavailable */ } }, [theme])
   useEffect(() => { const onHash = () => setView(initialView()); window.addEventListener('hashchange', onHash); return () => window.removeEventListener('hashchange', onHash) }, [])
   function go(next: View) { window.location.hash = next; setView(next); window.scrollTo({ top: 0 }) }
   return <div className="sb"><a className="sb-skip" href="#main-content">Skip to content</a><div className="sb-shell">

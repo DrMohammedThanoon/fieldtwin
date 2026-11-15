@@ -3,7 +3,7 @@
 
 **Version:** 1.0
 **Execution Plan:** FieldTwin v6.2
-**Status:** Search area and candidates not yet selected
+**Status:** Phase 4 exploratory search completed; confirmatory geographic validation pending. See Section 12.
 
 ## 1. Purpose
 
@@ -186,3 +186,79 @@ Search-scope validation requires:
 - Compare Earth and Mars at matched physical scales.
 - Assess uncertainties and rank stability.
 - Do not claim discovery before these requirements pass.
+
+## 12. Phase 5 — Verified Search-Scope Update
+
+Date: 2026-11-15
+Status: Exploratory analysis documented; independent
+geographic validation not established.
+
+This section supersedes earlier pending-status statements
+where Phase 3 or Phase 4 subsequently completed the work.
+
+### Mars reference
+
+- Provisional USGS CTX stereo-derived DTM.
+- Real elevation data processed in Phase 4.
+- Fine-scale DTM quality remains provisional.
+- No physical rover safety or traversability validation.
+
+### Earth exploratory search
+
+- Region: Atacama Desert, Chile.
+- NASADEM acquisition tile: s25w070.
+- Defined sampling grid: 9 x 9 = 81 locations.
+- Latitude: -24.9 through -24.1.
+- Longitude: -69.9 through -69.1.
+- Search window: 2000 m.
+- Processing grids: 100 m and 200 m.
+- Initial screening: slope and relief differences.
+- Defined sample count is not independently validated
+  candidate count or confirmed usable-location count.
+
+### Phase 4 comparison inventory
+
+- PILOT_A: -24.5, -69.6
+- PILOT_B: -24.4, -69.9
+- PILOT_C: -24.3, -69.9
+- PILOT_D: -24.2, -69.9
+- ARADS_PLAYA: -24.101642, -70.138175
+- LASCAR_CONTROL: -23.37, -67.73
+
+The later six-site baseline uses slope, relief, and
+roughness, with unweighted Pareto dominance.
+
+The four pilot candidates were non-dominated at both
+reported 1000 m and 2000 m comparison scales.
+No unique analog winner was established.
+
+ARADS is a historical rover-testing reference, not
+independently validated positive terrain ground truth.
+
+Lascar is the contrasting negative control.
+ARADS and Lascar required separate NASADEM tiles
+and must not be represented as part of the original
+81-location s25w070 sampling grid.
+
+### Geographic validation limitations
+
+- The exploratory pilot has already informed selection.
+- No independent geographic holdout set is established.
+- No independently rated terrain-relevance labels exist.
+- The pilot is not a global or exhaustive Earth survey.
+- Geographic separation and spatial-dependence buffers
+  must be justified before confirmatory ML evaluation.
+- Phase 5 ML evaluation remains NOT ACTIVATED.
+
+### Evidence and source of truth
+
+- science/earth_candidate_pilot.py
+- science/baseline.py
+- docs/BENCHMARK_PROTOCOL.md
+- docs/PHASE4_BASELINE_RESULTS.md
+- docs/MODEL_BENCHMARK.md
+- outputs/validated/terrain_baseline.json
+
+Earlier pending fields are historical planning records.
+The files above document the later implemented work.
+Unverified details must remain explicitly unresolved.

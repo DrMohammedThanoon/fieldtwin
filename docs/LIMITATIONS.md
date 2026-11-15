@@ -220,14 +220,14 @@ Available evidence is insufficient to determine whether the property transfers.
 
 | Property | Preliminary assessment |
 |---|---|
-| Slope | UNKNOWN — measurements pending |
-| Local relief | UNKNOWN — measurements pending |
-| Terrain roughness | UNKNOWN — measurements pending |
+| Slope | UNKNOWN for real-world transfer; DEM-derived measurements completed |
+| Local relief | UNKNOWN for real-world transfer; DEM-derived measurements completed |
+| Terrain roughness | UNKNOWN for real-world transfer; DEM-derived measurements completed |
 | Surface material behavior | UNKNOWN — field evidence pending |
 | Gravity | DOES NOT TRANSFER directly |
 | Atmospheric conditions | DOES NOT TRANSFER directly |
 | Radiation environment | DOES NOT TRANSFER directly |
-| Navigation-system performance | UNKNOWN — experiments pending |
+| Navigation-system performance | UNKNOWN for physical rover performance; DEM-grid route experiments completed |
 
 These classifications are preliminary.
 

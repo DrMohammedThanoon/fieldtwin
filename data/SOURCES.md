@@ -68,9 +68,9 @@ For each actual dataset, record:
 
 | Dataset | Status |
 |---|---|
-| Mars MOLA | Not yet acquired |
-| Mars regional DTM | Not yet selected |
-| NASADEM_HGT.001 | Not yet acquired |
+| Mars MOLA | Acquired; used for regional Mars context |
+| Mars regional DTM | USGS CTX stereo-derived DTM acquired; quality remains provisional |
+| NASADEM_HGT.001 | Acquired and analyzed for Earth terrain comparisons |
 | NASADEM_SC.001 | Optional; not yet acquired |
 
 ## 5. Scientific Requirements
@@ -112,7 +112,7 @@ Raw datasets remain excluded from Git.
 - Source: https://doi.org/10.5066/P9JKVWR3
 - Local file: `data/raw/mars/ctx/T01_000893_1847_XN_04N191W__N09_065929_1853_XN_05N191W-DEM-geoid-adj.tif`
 - SHA-256: `4888a180ba6e868cb4fc0f33478723587499cf40e780af15983b615ce62f3c51`
-- Limitation: 20 m posting; 80% valid coverage; visual artifact review pending
+- Limitation: 20 m posting; 80% valid coverage; initial visual review performed; independent artifact and accuracy validation unresolved
 
 ### NASADEM — Earth elevation pilot
 - Collection: NASADEM_HGT.001; NASA LP DAAC

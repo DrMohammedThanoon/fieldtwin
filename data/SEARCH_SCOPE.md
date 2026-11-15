@@ -11,29 +11,29 @@ This document defines and records the geographical scope, candidate-selection pr
 
 It ensures that all Earth analog recommendations are traceable to a documented and reproducible search.
 
-No candidate ranking or geographical discovery is currently claimed.
+A six-site exploratory Pareto comparison has been completed. No unique analog winner or novel geographic discovery is claimed.
 
 ## 2. Mars Reference
 
-- Mars reference region: To be selected
-- Mission or rover-testing objective: To be defined
-- Terrain dataset: To be verified
-- Spatial coverage: Pending
-- Effective analysis scale: Pending
-- Terrain characteristics: Pending
+- Mars reference region: Provisional CTX study area documented in Phase 3 source records
+- Mission or rover-testing objective: DEM-informed rover route selection
+- Terrain dataset: USGS CTX stereo-derived DTM; provisional quality
+- Spatial coverage: Selected valid reference windows; see Phase 4 benchmark
+- Effective analysis scale: 1000 m and 2000 m comparison windows on a 100 m computational grid; source effective resolution not established as identical
+- Terrain characteristics: Global slope, P95-P05 relief, and plane-detrended RMS roughness
 
 The Mars reference must be supported by actual verified observations.
 
 ## 3. Earth Search Region
 
-- Search region name: To be selected
-- Country or geographical area: Pending
-- Search boundary coordinates: Pending
-- Boundary GeoJSON or polygon: Pending
-- Search area: Pending
-- Elevation dataset: NASADEM_HGT.001 (planned)
-- Dataset coverage: Pending verification
-- Effective analysis scale: Pending
+- Search region name: Bounded Atacama exploratory sampling study
+- Country or geographical area: Northern Chile
+- Search boundary coordinates: Original 9 x 9 pilot sampling region documented in later sections; no continuous search-polygon claim
+- Boundary GeoJSON or polygon: Not independently verified as an exported artifact
+- Search area: 81 sampled pilot locations; not an exhaustive regional search
+- Elevation dataset: NASADEM_HGT.001, acquired and analyzed
+- Dataset coverage: Verified at the selected terrain-analysis locations; not a claim about all Atacama terrain
+- Effective analysis scale: 1000 m and 2000 m windows, 100 m computational grid
 
 Only areas actually analyzed may be reported as searched.
 
@@ -82,20 +82,20 @@ All actual exclusions must be recorded with their reasons.
 
 ### Known Analog
 
-- Site name: Not selected
-- Coordinates: Pending
-- Scientific reference: Pending
-- Selection justification: Pending
-- Dataset coverage: Pending
+- Site name: ARADS Playa (historical regional analog context)
+- Coordinates: -24.101642, -70.138175 (FieldTwin sample point)
+- Scientific reference: NASA ARADS field operations; exact campaign footprint correspondence not independently established
+- Selection justification: Established Atacama rover-testing precedent, not an independent positive terrain-suitability label
+- Dataset coverage: NASADEM terrain evaluated at this sample point
 
 The known analog must be independently documented.
 
 ### Negative Control
 
-- Site name: Not selected
-- Coordinates: Pending
-- Selection justification: Pending
-- Dataset coverage: Pending
+- Site name: Láscar control
+- Coordinates: -23.37, -67.73 (FieldTwin sample point)
+- Selection justification: Rugged volcanic comparison terrain documented by Smithsonian; dissimilarity evaluated only within the selected benchmark
+- Dataset coverage: NASADEM terrain evaluated at this sample point
 
 The negative control must provide a scientifically justified dissimilar comparison.
 
@@ -103,9 +103,14 @@ The negative control must provide a scientifically justified dissimilar comparis
 
 | Candidate ID | Location | Coordinates | Data status | Evaluation status |
 |---|---|---|---|---|
-| Pending | Not selected | Pending | Not acquired | Not evaluated |
+| PILOT_A | Atacama pilot | -24.5, -69.6 | NASADEM acquired | Exploratory Pareto Front 1 |
+| PILOT_B | Atacama pilot | -24.4, -69.9 | NASADEM acquired | Exploratory Pareto Front 1; numerical routing case |
+| PILOT_C | Atacama pilot | -24.3, -69.9 | NASADEM acquired | Exploratory Pareto Front 1 |
+| PILOT_D | Atacama pilot | -24.2, -69.9 | NASADEM acquired | Exploratory Pareto Front 1 |
+| ARADS_PLAYA | Historical analog context | -24.101642, -70.138175 | NASADEM acquired | Exploratory Pareto Front 2 |
+| LASCAR_CONTROL | Rugged volcanic comparison | -23.37, -67.73 | NASADEM acquired | Exploratory Pareto Front 3 |
 
-No candidate has been scientifically evaluated yet.
+Six selected locations have been numerically evaluated using physical terrain descriptors. Their real-world analog suitability remains unvalidated.
 
 ## 9. Search Limitations
 

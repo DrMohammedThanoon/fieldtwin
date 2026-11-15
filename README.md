@@ -7,7 +7,7 @@
 
 **Challenge:** [Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars](https://www.spaceappschallenge.org/2026/challenges/permanent-moon-base-locations-and-mars/?tab=details)
 
-**Status:** Initial repository setup. Scientific results and application implementation are pending.
+**Status:** Scientific baseline and ML experiments completed; evidence-limited Phase 5 closeout recorded; frontend not yet implemented.
 
 ## 1. Overview
 
@@ -188,7 +188,7 @@ Expected successful import message:
 FIELDTWIN_SCIENCE_OK
 ```
 
-These commands are future setup instructions. The scientific environment has not yet been created or verified.
+These commands are setup and reproducibility instructions. The scientific environment was created and verified during Phase 2; independent fresh-clone verification remains outstanding.
 
 ## 9. Scientific Tests
 

@@ -1,0 +1,46 @@
+{
+  "artifact_bytes": 100840,
+  "artifact_format": "joblib",
+  "artifact_path": "data/processed/ml_b_v2/v2_models.joblib",
+  "artifact_sha256": "175f31a414d9a8a32d1f44d258579fa4a035751bfdd67bda21a78d9807c92d94",
+  "calibration_locations": 18,
+  "created_date": "2026-11-15",
+  "methods": {
+    "logistic_regression": {
+      "calibration_scores_sha256": "a2c80410e3ea2ac924897cd85d0f26ac015cdcf210e7f7e50adfa9fd32f064b5",
+      "calibration_threshold": 0.03346995766349469,
+      "training_scores_sha256": "fdf782f25b48329d1abb2e69b80c37c19ac63da97d9a4e5a09834f5ce734c275"
+    },
+    "random_forest": {
+      "calibration_scores_sha256": "fba90677bf18151d322f3c5cc3d0ac9d8ea2188e2e0d708bb66f7c2fe698e8d0",
+      "calibration_threshold": 0.5060801982530524,
+      "training_scores_sha256": "667a67471f2578ec85d2cba14aed13fa6734a857a6855e10eba831142f4da36b"
+    },
+    "robust": {
+      "calibration_scores_sha256": "1bf47d239e0dd144df3048ce69a5c7b5f4785413b7aa6dcd233e839fa8bb5ce8",
+      "calibration_threshold": 12.465532711590185,
+      "training_scores_sha256": "c5adcd6b619742b14293fed9ec91e7e83908e398cefd55802de56fff747a7f5b"
+    }
+  },
+  "new_holdouts_scored": false,
+  "original_benchmarks_modified": false,
+  "phase_6": "FROZEN",
+  "physical_features": 5,
+  "reference_manifest": "docs/ML_B_V2_MODEL_REPRODUCIBILITY.json",
+  "reference_manifest_sha256": "7f8baa0454b9a3e014d1fe2d2d89cb9f5f761b19815867686a76b82a96e99bef",
+  "reload_verified": true,
+  "schema": "fieldtwin-mlb-v2-fitted-artifact-v1",
+  "security_note": "Only load this locally generated joblib artifact after verifying its SHA256. Never load untrusted serialized models.",
+  "software_versions": {
+    "joblib": "1.6.0",
+    "numpy": "2.5.4",
+    "python": "3.12.16",
+    "rasterio": "1.5.2",
+    "scikit_learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "source_git_commit": "cfdb510",
+  "training_examples": 819,
+  "training_locations": 63,
+  "within_environment_scores_identical": true
+}

@@ -1,13 +1,37 @@
+<div align="center">
+
+<img src="app/public/og.jpg" alt="SamaBeyond FieldTwin — Earth analogs for Mars" width="100%" />
 
 # FieldTwin
+### Earth terrain. Mars questions. Traceable evidence.
 
-### Find where Earth can test Mars — and prove where the analogy breaks.
+[**Explore the live experience ↗**](https://samabeyond.github.io/fieldtwin/) · [Scientific evidence](docs/PHASE4_BASELINE_RESULTS.md) · [Contribute](CONTRIBUTING.md)
+
+[![Frontend build](https://github.com/SamaBeyond/fieldtwin/actions/workflows/frontend.yml/badge.svg)](https://github.com/SamaBeyond/fieldtwin/actions/workflows/frontend.yml)
+[![GitHub Pages](https://github.com/SamaBeyond/fieldtwin/actions/workflows/pages.yml/badge.svg)](https://github.com/SamaBeyond/fieldtwin/actions/workflows/pages.yml)
+[![License: MIT](https://img.shields.io/badge/Code-MIT-2f8f86)](LICENSE)
+
+</div>
+
+> **Find where Earth can test Mars — and prove where the analogy breaks.**
+> An exploratory comparison of six Earth sites against a provisional Mars terrain reference. Four pilot candidates are nondominated; no unique validated analog winner or physical rover validation is claimed.
+
+| Start here | What you will find |
+|---|---|
+| [Mission](https://samabeyond.github.io/fieldtwin/#mission) | The Mars question, datasets and scientific limits |
+| [Earth search](https://samabeyond.github.io/fieldtwin/#search) | Six measured Atacama sites and geographic context |
+| [Comparison](https://samabeyond.github.io/fieldtwin/#comparison) | Three physical descriptors at 1 km and 2 km windows |
+| [Transfer / rover test](https://samabeyond.github.io/fieldtwin/#transfer) | Numerical route experiments and a proposed field protocol |
+
+**Follow the evidence:** [Sources](data/SOURCES.md) · [Methods](docs/METHODS.md) · [Validation](docs/VALIDATION.md) · [Limitations](docs/LIMITATIONS.md) · [Scientific closeout](docs/PHASE5_SCIENTIFIC_CLOSEOUT.md)
+
+---
 
 **NASA Space Apps Challenge 2026**
 
 **Challenge:** [Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars](https://www.spaceappschallenge.org/2026/challenges/permanent-moon-base-locations-and-mars/?tab=details)
 
-**Status:** Scientific baseline and ML experiments completed; evidence-limited Phase 5 closeout recorded; frontend not yet implemented.
+**Status:** Scientific baseline and ML experiments completed; evidence-limited Phase 5 closeout recorded; public frontend deployed; latest changes require a successful Pages build.
 
 ## 1. Overview
 
@@ -44,9 +68,9 @@ The project does not claim a completed discovery or validated result until the r
 
 ## 4. Application Experience
 
-> **Current app state:** the four views below are rendered in the SamaBeyond design system (Inter / JetBrains Mono, light default with dark toggle), using only FieldTwin's own validated data (`app/src/data/terrain_baseline.json`). The earlier handoff-based "Analog Atlas" UI was removed; its pipeline and docs remain in the repo but are not displayed.
+> **Current app state:** the four views below are rendered in the SamaBeyond design system (Inter / JetBrains Mono, dark default with light toggle), using only FieldTwin's own validated data (`app/src/data/terrain_baseline.json`). The earlier handoff-based "Analog Atlas" UI was removed; its pipeline and docs remain in the repo but are not displayed.
 
-The proposed public website contains four connected views.
+The public website contains four connected views.
 
 ### Mission
 
@@ -226,7 +250,7 @@ To verify production readiness:
 npm run build
 ```
 
-`package-lock.json` is committed for reproducible dependency installation. See `app/README.md` for the exact evidence inputs, map fallback, and scientific limits. A public deployment has not yet been verified.
+`package-lock.json` is committed for reproducible dependency installation. See `app/README.md` for the exact evidence inputs, map fallback, and scientific limits. The public demo is hosted on [GitHub Pages](https://samabeyond.github.io/fieldtwin/).
 
 ## 11. Scientific Data Sources
 
@@ -300,7 +324,16 @@ If ML does not satisfy the predeclared scientific evaluation criteria, retain th
 
 ## 14. Collaboration
 
-FieldTwin is developed by a six-person team.
+FieldTwin is developed by SamaBeyond.
+
+| Team member | Role |
+|---|---|
+| Dr. Mohammed Ibrahim Thanoon | Scientific & AI/ML Lead |
+| Abdulrahman Jaber Abdli | Team Lead · Geospatial Data Analysis & Remote Sensing Lead |
+| Abdulrahman Alazori | Frontend, Integration & Deployment Lead |
+| Abdullah Almutiri | Data Engineering, Automation & Testing Lead |
+| Nouf Alzahrani | Planetary Science & Scientific Interpretation Lead |
+| Hafsa Iqbal | Scientific Communication, Presentation & Project Coordination Lead |
 
 Each implementation task should have:
 
@@ -344,7 +377,7 @@ The final application must:
 7. Work on desktop and mobile.
 8. Provide a reasonable fallback if external map services fail.
 
-**Public demo URL:** Not deployed yet.
+**Public demo URL:** https://samabeyond.github.io/fieldtwin/
 
 **Submission version:** Not released yet.
 

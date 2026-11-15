@@ -250,7 +250,7 @@ A BLOCK decision prevents the affected result or feature from being presented as
 ## 8. Team Responsibilities
 
 ### Dr. Mohammed Ibrahim Thanoon
-Scientific and AI/ML lead.
+Scientific & AI/ML Lead.
 
 Responsibilities:
 - Scientific methodology.
@@ -258,17 +258,18 @@ Responsibilities:
 - Research validity.
 - Final scientific approval.
 
-### Abdulrahman Jaber Alabdali
-GIS and remote sensing.
+### Abdulrahman Jaber Abdli
+Team Lead · Geospatial Data Analysis & Remote Sensing Lead.
 
 Responsibilities:
+- Team coordination and implementation oversight.
 - NASA Earth and Mars data acquisition.
 - Geospatial metadata and CRS checks.
 - QGIS verification.
 - Terrain data quality.
 
 ### Abdulrahman Alazori
-Frontend, integration, and GitHub.
+Frontend, Integration & Deployment Lead.
 
 Responsibilities:
 - React application.
@@ -278,7 +279,7 @@ Responsibilities:
 - Public deployment.
 
 ### Abdullah Almutiri
-Data engineering and testing.
+Data Engineering, Automation & Testing Lead.
 
 Responsibilities:
 - Data preparation.
@@ -287,7 +288,7 @@ Responsibilities:
 - Reproducibility checks.
 
 ### Nouf Alzahrani
-Scientific interpretation.
+Planetary Science & Scientific Interpretation Lead.
 
 Responsibilities:
 - Physical plausibility.
@@ -295,16 +296,17 @@ Responsibilities:
 - Uncertainty.
 - Earth-to-Mars transfer evaluation.
 
-### Hafsa
-Research evidence and presentation.
+### Hafsa Iqbal
+Scientific Communication, Presentation & Project Coordination Lead.
 
 Responsibilities:
+- Project coordination and scientific communication.
 - Literature and novelty audit.
 - References.
 - Scientific storytelling.
 - Demonstration and submission preparation.
 
-Responsibilities are provisional and may be updated after confirming each member's skills.
+These are the confirmed team roles supplied by the project lead on 2026-11-15. Responsibilities may be revised through a documented team decision.
 
 ## 9. GitHub Collaboration Rules
 

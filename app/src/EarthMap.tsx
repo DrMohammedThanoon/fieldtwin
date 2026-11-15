@@ -48,7 +48,7 @@ export function EarthMap({ markers, selectedId, onSelect, zoom = 1.6, fit, follo
     }).catch(() => { if (!disposed) setStatus('unavailable') })
     return () => { disposed = true; pins.current.forEach((p) => p.remove()); pins.current = []; map.current?.remove(); map.current = null }
   }, [])
-  useEffect(() => { if (map.current && status === 'ready') addBase(map.current, basemap) }, [basemap, status])
+  useEffect(() => { if (map.current && status !== 'loading' && map.current.getLayer('base')) { addBase(map.current, basemap); setStatus('ready') } }, [basemap])
   useEffect(() => { // DOM markers: keyboard-focusable and independent of the GeoJSON web worker
     const m = map.current, gl = glRef.current
     if (!m || !gl || status === 'loading') return
@@ -70,7 +70,7 @@ export function EarthMap({ markers, selectedId, onSelect, zoom = 1.6, fit, follo
     if (s && follow) m.flyTo({ center: [s.lon, s.lat], zoom: Math.max(m.getZoom(), zoom), duration: 600 })
   }, [markers, selectedId, zoom, status, follow])
   return <>
-    <div className="sb-mapfill" ref={container} role="region" aria-label="Interactive Earth map of atlas context sites. The list beside the map offers the same selection." />
+    <div className="sb-mapfill" ref={container} role="region" aria-label="Interactive Earth map of measured Atacama sites. The list beside the map offers the same selection." />
     {status === 'loading' && <div className="sb-mapmsg" role="status">Loading Earth basemap…</div>}
     {status === 'unavailable' && <div className="sb-mapmsg" role="status">Earth map tiles or WebGL are unavailable. Every site and its coordinates remain in the list.</div>}
   </>

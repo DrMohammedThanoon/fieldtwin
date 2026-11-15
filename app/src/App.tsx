@@ -13,7 +13,7 @@ type Evaluation = { window_m: number; grid_m: number; mars_reference_features: F
 type Tone = 'earth' | 'mars' | 'warn' | 'neutral'
 
 const evidence = evidenceJson as typeof evidenceJson & { evaluations: Record<'1000' | '2000', Evaluation> }
-const repo = 'https://github.com/DrMohammedThanoon/fieldtwin'
+const repo = 'https://github.com/SamaBeyond/fieldtwin'
 const doc = (path: string) => `${repo}/blob/main/${path}`
 const views: { id: View; label: string; number: string }[] = [
   { id: 'mission', label: 'Mission', number: '01' },
@@ -54,6 +54,7 @@ const routeRows = [
   { place: 'ARADS Playa', at3: '3 / 5', at10: '5 / 5', detour: '30.07%' },
   { place: 'Láscar control', at3: '0 / 5', at10: '0 / 5', detour: '—' },
 ]
+const teamMembers = [{"name": "Dr. Mohammed Ibrahim Thanoon", "role": "Scientific & AI/ML Lead"}, {"name": "Abdulrahman Jaber Abdli", "role": "Team Lead · Geospatial Data Analysis & Remote Sensing Lead"}, {"name": "Abdulrahman Alazori", "role": "Frontend, Integration & Deployment Lead"}, {"name": "Abdullah Almutiri", "role": "Data Engineering, Automation & Testing Lead"}, {"name": "Nouf Alzahrani", "role": "Planetary Science & Scientific Interpretation Lead"}, {"name": "Hafsa Iqbal", "role": "Scientific Communication, Presentation & Project Coordination Lead"}]
 const protocol = [
   ['01', 'Verify the ground', 'Confirm access, permissions and safety; independently survey terrain, rocks and soil at Pilot B.'],
   ['02', 'Specify the rover', 'Define vehicle geometry, traction, sensors and certified operating limits before planning trial corridors.'],
@@ -112,6 +113,7 @@ function Mission({ go }: { go: (v: View) => void }) {
         <div className="sb-panel"><h3>Source integrity</h3><p>NASA PDS MOLA supplies regional Mars context only. The local terrain comparison uses a provisional USGS CTX DTM and real NASADEM elevation. A shared 100 m processing grid does not establish identical effective sensor resolution.</p></div>
         <div className="sb-panel"><h3>Every visible result has a trail</h3><ul className="sb-srcs" style={{ listStyle: 'none', paddingLeft: 0 }}>{citations.map((c) => <li key={c.title}><Ext href={c.href}>{c.title}</Ext></li>)}</ul></div>
       </div>
+      <section className="sb-team" aria-labelledby="team-title"><div className="sb-eyebrow">Six perspectives / one mission</div><h2 id="team-title">Meet SamaBeyond</h2><div className="sb-team-grid">{teamMembers.map(member => <article className="sb-panel" key={member.name}><h3>{member.name}</h3><p>{member.role}</p></article>)}</div></section>
     </div>
   </>
 }
@@ -135,7 +137,7 @@ function Search({ selected, setSelected, go, evaluation }: { selected: SiteId; s
         <dl className="sb-dl">
           <div><dt>Elevation source</dt><dd>{site.source_product} · {site.source_file}</dd></div>
           <div><dt>Analysis reference</dt><dd>{site.analysis_crs}</dd></div>
-          <div><dt>1 km Pareto front</dt><dd>{candidate?.pareto_front ?? 'Unavailable'}</dd></div>
+          <div><dt>{evaluation.window_m / 1000} km Pareto front</dt><dd>{candidate?.pareto_front ?? 'Unavailable'}</dd></div>
           <div><dt>Science status</dt><dd>Exploratory; field suitability unvalidated</dd></div>
         </dl>
         <button className="sb-btn" onClick={() => go('comparison')}>Inspect the comparison ↗</button>
@@ -181,7 +183,7 @@ function Comparison({ selected, setSelected, windowM, setWindowM, go }: { select
         {featureLabels.map((f, index) => <div key={f.key} style={{ marginTop: 18 }}>
           <div className="sb-fh"><b>{f.title}</b><span>Difference · {f.unit}</span></div>
           {evaluation.candidates.map((c) => { const id = c.site_id as SiteId; const v = c.absolute_differences[f.key]; return <button key={id} className={`sb-brow ${selected === id ? 'selected' : ''}`} onClick={() => setSelected(id)} aria-pressed={selected === id} aria-label={`${displayName[id]} ${f.title}: ${fmt(v)} ${f.unit}`}>
-            <span>{displayName[id]}</span><span className="sb-btrack"><i style={{ width: `${Math.max(2, 100 * v / maxes[index])}%`, background: roleColor(id) }} /></span><b>{fmt(v)}</b></button> })}
+            <span>{displayName[id]}</span><span className="sb-btrack"><i style={{ width: `${100 * v / maxes[index]}%`, background: roleColor(id) }} /></span><b>{fmt(v)}</b></button> })}
         </div>)}
         <p className="sb-tiny" style={{ marginTop: 14 }}>Bars use zero as the origin and the largest observed difference in this six-site set as the panel maximum. <Ext href={doc('docs/METHODS.md')}>Methods</Ext></p>
       </section>

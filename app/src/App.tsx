@@ -94,7 +94,7 @@ function Mission({ go }: { go: (v: View) => void }) {
       </div>
       <div className="sb-visual" aria-label="Abstract graphic separating Earth and Mars terrain evidence" role="img">
         <div className="sb-stars" /><div className="sb-ring" />
-        <div className="sb-globe big" style={{ backgroundImage: 'url(/planetary/mars_hi.jpg)' }} />
+        <div className="sb-globe big" style={{ backgroundImage: 'url(planetary/mars_hi.jpg)' }} />
         <div className="sb-orbit"><div className="sb-globe earth" /></div>
         <div className="sb-vlabel">MARS · REFERENCE (CTX DTM)<br />EARTH · SIX MEASURED SITES<br />GRAPHIC IS ILLUSTRATIVE, NOT DATA</div>
       </div>
@@ -237,7 +237,7 @@ export default function App() {
   function go(next: View) { window.location.hash = next; setView(next); window.scrollTo({ top: 0 }) }
   return <div className="sb"><a className="sb-skip" href="#main-content">Skip to content</a><div className="sb-shell">
     <header className="sb-nav">
-      <button className="sb-logo" onClick={() => go('mission')} aria-label="SamaBeyond FieldTwin, return to Mission"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="11" cy="15" r="8" fill="none" stroke="currentColor" strokeWidth="1.6" /><circle cx="19" cy="15" r="8" fill="none" stroke="#ff8b5d" strokeWidth="1.6" /></svg><span className="sb-wm">SAMA<span>BEYOND</span></span></button>
+      <button className="sb-logo" onClick={() => go('mission')} aria-label="SamaBeyond FieldTwin, return to Mission"><svg width="34" height="30" viewBox="0 0 34 30" aria-hidden="true"><ellipse cx="17" cy="15" rx="15" ry="8" transform="rotate(-18 17 15)" fill="none" stroke="#e8672b" strokeWidth="1.2" strokeDasharray="38 12" /><circle cx="26.5" cy="6.5" r="2.4" fill="#e8672b" /><circle cx="17" cy="15" r="6" fill="none" stroke="#e8672b" strokeWidth="1.4" /><path d="M12 14c2-2 3 2 5 0s3-2 5 0M12 17c2-2 3 2 5 0s3-2 5 0" fill="none" stroke="#e8672b" strokeWidth="1" /></svg><span className="sb-wm">Sama<span>Beyond</span></span></button>
       <nav className="sb-links" aria-label="Main navigation">{views.map((v) => <button key={v.id} onClick={() => go(v.id)} aria-current={view === v.id ? 'page' : undefined}>{v.number} / {v.label.toUpperCase()}</button>)}</nav>
       <div className="sb-navr"><div className="sb-indicator">EXPLORATORY · NOT FIELD-VALIDATED</div>
         <button className="sb-theme" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`} title="Toggle theme"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" strokeWidth="1.4" /><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor" /></svg></button></div>

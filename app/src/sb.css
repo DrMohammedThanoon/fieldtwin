@@ -241,3 +241,6 @@ html[data-theme=dark] .sb-pill.warn{color:#e3b955}
 .sb-layers-chk{display:flex;align-items:center;gap:8px;min-height:44px;padding:0 12px;border:1px solid #3b4b54;background:#0c141ae6;color:#dce2e2;font:10px var(--mono);letter-spacing:.08em;cursor:pointer}
 .sb-layers-chk input{width:18px;height:18px;accent-color:#ff8b5d}
 @media (max-width:900px){.sb-layers{left:12px;right:68px;top:64px;align-items:flex-start}.sb-layers-seg{flex-wrap:wrap}}
+/* logo wordmark: thin two-tone, matches brand artwork */
+.sb-logo,.sb-logo .sb-wm{font-weight:300;letter-spacing:.01em;font-size:22px}
+.sb-wm span{color:#e8672b}

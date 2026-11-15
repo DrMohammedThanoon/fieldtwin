@@ -244,3 +244,9 @@ html[data-theme=dark] .sb-pill.warn{color:#e3b955}
 /* logo wordmark: thin two-tone, matches brand artwork */
 .sb-logo,.sb-logo .sb-wm{font-weight:300;letter-spacing:.01em;font-size:22px}
 .sb-wm span{color:#e8672b}
+
+/* logo image: swap by theme */
+.sb-logo-img{height:38px;width:auto;display:block}
+.sb-logo-img.lt{display:none}
+html[data-theme=light] .sb-logo-img.lt{display:block}
+html[data-theme=light] .sb-logo-img.dk{display:none}

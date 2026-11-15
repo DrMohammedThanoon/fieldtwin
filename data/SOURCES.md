@@ -164,3 +164,14 @@ remains unresolved.
 See the recorded Phase 3 source evidence,
 `docs/PHASE4_BASELINE_RESULTS.md` and
 `docs/PHASE5_SCIENTIFIC_CLOSEOUT.md`.
+
+## Context dataset — Analog Atlas (not a FieldTwin measurement)
+
+**Status:** context, literature-coded, not validated. Not used by any FieldTwin measured result.
+
+- Files: `data/context/analog_atlas/analog_atlas_context.json`, `power.csv`, `sites.csv` (SameBeyond handoff).
+- NASA POWER Climatology API **v2.10.1**, climatology period **2001–2025**, retrieved **2026-11-13**, community AG, parameters T2M, T2M_MAX, T2M_MIN, PRECTOTCORR, RH2M, WS2M, ALLSKY_SFC_SW_DWN. Cell size ~0.5°.
+- `python -m science.analog_atlas` re-requests all 16 Earth sites (cache: `data/raw/`, git-ignored) and fails if any annual value differs from `power.csv` by more than 0.05.
+- Each Earth and Mars site carries its own source links in the JSON (`src`); the per-site NASA POWER request URL is stored as `power_url` in `app/src/data/analog_atlas.json`.
+- Imagery: Mars map — Solar System Scope, CC BY 4.0, from NASA data (`app/public/planetary/mars_hi.jpg`).
+- Scope decision: Earth ↔ Mars only; Moon entries in the handoff are not used.

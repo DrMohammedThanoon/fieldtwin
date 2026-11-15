@@ -172,9 +172,11 @@ Do not assume a submission requirement has been satisfied without verification.
 
 ## 9. Final Submission Record
 
+The current SamaBeyond team roster and roles are recorded in `README.md` and `AGENTS.md`. Include all six members in the final submission when that record is completed.
+
 - Submission date:
 - Official challenge:
-- Team:
+- Team: SamaBeyond (six members; see `README.md` for the current roster and roles)
 - Git commit:
 - Release tag:
 - Public website:

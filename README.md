@@ -7,7 +7,7 @@
 
 **Challenge:** [Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars](https://www.spaceappschallenge.org/2026/challenges/permanent-moon-base-locations-and-mars/?tab=details)
 
-**Status:** Scientific baseline and ML experiments completed; evidence-limited Phase 5 closeout recorded; frontend not yet implemented.
+**Status:** Scientific baseline and ML experiments completed; evidence-limited Phase 5 closeout recorded; Phase 6 frontend is implemented on a feature branch and awaiting independent review and public deployment.
 
 ## 1. Overview
 
@@ -299,6 +299,15 @@ If ML does not satisfy the predeclared scientific evaluation criteria, retain th
 ## 14. Collaboration
 
 FieldTwin is developed by a six-person team.
+
+| Team member | Role |
+|---|---|
+| Dr. Mohammed Ibrahim Thanoon | Scientific & AI/ML Lead |
+| Abdulrahman Jaber Abdli | Team Lead · Geospatial Data Analysis & Remote Sensing Lead |
+| Abdulrahman Alazori | Frontend, Integration & Deployment Lead |
+| Abdullah Almutiri | Data Engineering, Automation & Testing Lead |
+| Nouf Alzahrani | Planetary Science & Scientific Interpretation Lead |
+| Hafsa Iqbal | Scientific Communication, Presentation & Project Coordination Lead |
 
 Each implementation task should have:
 

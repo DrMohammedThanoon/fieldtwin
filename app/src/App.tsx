@@ -41,6 +41,14 @@ const citations = [
   { title: 'Data manifest and product identifiers', href: doc('data/SOURCES.md') },
   { title: 'Methods and measured results', href: doc('docs/PHASE4_BASELINE_RESULTS.md') },
 ]
+const teamMembers = [
+  { name: 'Dr. Mohammed Ibrahim Thanoon', role: 'Scientific & AI/ML Lead' },
+  { name: 'Abdulrahman Jaber Abdli', role: 'Team Lead · Geospatial Data Analysis & Remote Sensing Lead' },
+  { name: 'Abdulrahman Alazori', role: 'Frontend, Integration & Deployment Lead' },
+  { name: 'Abdullah Almutiri', role: 'Data Engineering, Automation & Testing Lead' },
+  { name: 'Nouf Alzahrani', role: 'Planetary Science & Scientific Interpretation Lead' },
+  { name: 'Hafsa Iqbal', role: 'Scientific Communication, Presentation & Project Coordination Lead' },
+]
 
 function format(n: number, digits = 2) { return n.toFixed(digits) }
 function isSiteId(value: string): value is SiteId { return Object.hasOwn(evidence.sites, value) }
@@ -133,6 +141,7 @@ function Mission({ go }: { go: (view: View) => void }) {
     </section>
     <section className="content-section compact"><div className="method-band"><div><Eyebrow>The evidence chain</Eyebrow><h2>From observation to a testable question</h2></div><ol><li>Mars CTX reference</li><li>NASADEM Earth samples</li><li>Scale-aware descriptors</li><li>Pareto trade-offs</li><li>Future rover test proposal</li></ol></div></section>
     <section className="content-section sources-preview"><div><Eyebrow>Source integrity</Eyebrow><h2>Every visible result has a trail.</h2><p>NASA PDS MOLA supplies regional Mars context only. The local terrain comparison uses a provisional USGS CTX DTM and real NASADEM elevation. A shared 100 m processing grid does not establish identical effective sensor resolution.</p></div><div className="source-list">{citations.map((c) => <EvidenceLink key={c.title} href={c.href}>{c.title}</EvidenceLink>)}</div></section>
+    <section className="content-section team-section" aria-labelledby="team-heading"><Eyebrow>The people behind FieldTwin</Eyebrow><h2 id="team-heading">SamaBeyond team</h2><div className="team-grid">{teamMembers.map((member, index) => <article className="team-card" key={member.name}><span>{String(index + 1).padStart(2, '0')}</span><h3>{member.name}</h3><p>{member.role}</p></article>)}</div></section>
   </>
 }
 

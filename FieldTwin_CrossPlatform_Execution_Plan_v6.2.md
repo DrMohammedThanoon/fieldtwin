@@ -282,14 +282,14 @@ Only if sponsorship **actually activates**, the agent compares concrete benefit 
 | Public delivery | No-login map, sources, results, fallback | Fix hosting; static snapshot before deadlines |
 | Judge clarity | Show mission → discovery → evidence → limitations → test | Simplify dashboard/story |
 
-## E. Working roles (adjust only when the team confirms skills)
+## E. Team roles (confirmed by the project lead on 2026-11-15)
 
-- **Dr. Mohammed Ibrahim Thanoon:** scientific/AI lead; method, model evaluation, final approval.
-- **Abdulrahman Jaber Alabdali:** GIS/remote sensing, Earth/Mars data and QGIS checks.
-- **Abdulrahman Alazori:** frontend/integration, GitHub workflow and public deployment.
-- **Abdullah Almutiri:** data engineering and automated tests (confirm specialty).
-- **Nouf Alzahrani:** physical plausibility, uncertainty and Mars–Earth limitations.
-- **Hafsa:** novelty/literature audit, references, demonstration and submission (confirm skills).
+- **Dr. Mohammed Ibrahim Thanoon — Scientific & AI/ML Lead:** methodology, model evaluation, final scientific approval.
+- **Abdulrahman Jaber Abdli — Team Lead · Geospatial Data Analysis & Remote Sensing Lead:** team coordination, Earth/Mars data, GIS analysis and QGIS checks.
+- **Abdulrahman Alazori — Frontend, Integration & Deployment Lead:** React application, scientific output integration, GitHub workflow and public deployment.
+- **Abdullah Almutiri — Data Engineering, Automation & Testing Lead:** data preparation, processing automation and automated tests.
+- **Nouf Alzahrani — Planetary Science & Scientific Interpretation Lead:** planetary context, physical plausibility, uncertainty and Mars–Earth limitations.
+- **Hafsa Iqbal — Scientific Communication, Presentation & Project Coordination Lead:** evidence communication, references, demonstration, presentation and project coordination.
 
 Each member should use a separate feature branch. Pull requests require **one independent reviewer**. Resolve scientific disputes through measurement and source evidence, not authority of an AI agent. A branch name and commit message should communicate its phase and verification.
 

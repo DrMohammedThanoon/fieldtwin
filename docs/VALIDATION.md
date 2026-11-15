@@ -3,7 +3,7 @@
 
 **Version:** 1.0
 **Execution Plan:** FieldTwin v6.2
-**Status:** Validation pending
+**Status:** Exploratory baseline tested; ML-B V1/V2 NO-GO; independent analog suitability unvalidated.
 
 ## 1. Purpose
 
@@ -28,23 +28,23 @@ FieldTwin must demonstrate that:
 
 ### Mars Dataset
 
-- Dataset: Pending
-- Product identifier: Pending
-- Spatial resolution: Pending
-- Coordinate reference system: Pending
-- Elevation units: Pending
-- Quality assessment: Not performed
+- Dataset: USGS CTX stereo-derived DTM, Mars
+- Product identifier: See data/SOURCES.md for the exact CTX DTM file and stereo pair
+- Spatial resolution: Approximately 20 m posting; effective terrain accuracy not independently established
+- Coordinate reference system: Mars planetary projected IAU49910
+- Elevation units: Meters relative to the documented Mars reference surface
+- Quality assessment: Numerical coverage and preliminary visual inspection completed; independent accuracy and artifact assessment unresolved
 
 ### Earth Dataset
 
-- Dataset: NASADEM_HGT.001 (planned)
-- Granule identifiers: Pending
-- Spatial resolution: Pending
-- Coordinate reference system: Pending
-- Elevation units: Pending
-- Quality assessment: Not performed
+- Dataset: NASADEM_HGT.001, acquired and processed
+- Granule identifiers: Recorded in data/SOURCES.md for the actual selected tiles
+- Spatial resolution: Approximately 1 arcsecond geographic posting
+- Coordinate reference system: Native geographic coordinates; local comparisons processed in UTM Zone 19S (EPSG:32719)
+- Elevation units: Meters
+- Quality assessment: Selected coverage and masks inspected; independent terrain elevation accuracy not established
 
-**Status:** No datasets have been validated.
+**Status:** Real Mars and Earth raster sources were acquired and checked for numerical use; independent Mars DTM accuracy and final analog suitability remain unvalidated.
 
 ## 4. Terrain Feature Validation
 
@@ -67,7 +67,7 @@ For each descriptor, document:
 
 Automated tests must include synthetic terrain cases with independently calculable expected results.
 
-**Status:** Feature tests not yet implemented.
+**Status:** Terrain-feature automated tests implemented and passing as part of the verified 153-test project suite.
 
 ## 5. Baseline Validation
 
@@ -84,25 +84,25 @@ Record:
 - Actual ranking results.
 - Scientific limitations.
 
-**Status:** Baseline not implemented.
+**Status:** Three-descriptor unweighted Pareto baseline implemented, evaluated and exported; results are exploratory.
 
 ## 6. Known Analog and Negative Control
 
 ### Known Analog
 
-- Site: Not selected
-- Independent supporting reference: Pending
-- Expected relevance: Pending
-- Measured features: Pending
-- Baseline ranking: Pending
+- Site: ARADS Playa
+- Independent supporting reference: NASA ARADS project and field-analog research
+- Expected relevance: Historical planetary field-testing context; not an independent positive terrain label
+- Measured features: Three DEM-derived terrain descriptors at two analysis windows
+- Baseline ranking: Pareto Front 2 at both tested windows
 
 ### Negative Control
 
-- Site: Not selected
-- Selection justification: Pending
-- Expected dissimilarity: Pending
-- Measured features: Pending
-- Baseline ranking: Pending
+- Site: Láscar control
+- Selection justification: Documented rugged volcanic comparison
+- Expected dissimilarity: Defined for the bounded numerical study, not global terrain-unsuitability proof
+- Measured features: Three DEM-derived terrain descriptors at two analysis windows
+- Baseline ranking: Pareto Front 3 at both tested windows
 
 The known analog and negative control must be chosen using documented evidence.
 
@@ -159,7 +159,7 @@ Implement the evaluation test:
 
 If ML does not demonstrate sufficient scientific or operational value, retain the interpretable baseline.
 
-**Status:** ML benchmark not performed.
+**Status:** Original expert-rated analog-ranking ML benchmark not activated; separate ML-A exploratory study and ML-B V1/V2 anomaly-detection benchmarks completed without validated superiority.
 
 ## 9. Scientific Uncertainty
 
@@ -203,26 +203,26 @@ Challenge:
 - REVISE — Correctable weaknesses.
 - BLOCK — Critical validation failure.
 
-**Current review outcome:** Pending.
+**Current review outcome:** REVISE — computational studies completed, but independently validated analog suitability and Mars DTM quality remain unresolved.
 
 ## 11. Validation Results
 
 | Validation area | Status |
 |---|---|
-| NASA source eligibility | Pending |
-| Mars data verification | Pending |
-| Earth data verification | Pending |
-| Spatial scale comparability | Pending |
-| Terrain feature tests | Pending |
-| Baseline evaluation | Pending |
-| Known analog comparison | Pending |
-| Negative control comparison | Pending |
-| Robustness analysis | Pending |
-| Optional ML benchmark | Not performed |
-| Scientific uncertainty | Pending |
-| Red Team review | Pending |
+| NASA source eligibility | NASADEM used from an official NASA resource; final competition eligibility requires submission-level verification |
+| Mars data verification | Provisional CTX DTM processed; independent accuracy validation outstanding |
+| Earth data verification | NASADEM acquired, processed and checked within selected study coverage |
+| Spatial scale comparability | Common 100 m computational grid used; effective source resolution equivalence not demonstrated |
+| Terrain feature tests | Automated tests implemented and passing |
+| Baseline evaluation | Six-site exploratory unweighted Pareto comparison completed |
+| Known analog comparison | ARADS evaluated; not independently validated for this navigation task |
+| Negative control comparison | Láscar evaluated as a rugged comparison/control |
+| Robustness analysis | Hypothetical numerical perturbation studies performed; not calibrated accuracy |
+| Optional ML benchmark | Analog site-ranking protocol not activated; ML-B V1/V2 anomaly-detection experiments NO-GO |
+| Scientific uncertainty | Numerical stress tests recorded; physical-data uncertainty remains unresolved |
+| Red Team review | Project Gate P1 conditional GO; unsupported site and ML claims excluded |
 
-No validation results are claimed.
+Exploratory numerical results and regression tests are recorded. No independently validated unique analog or operational rover-safety result is claimed.
 
 ## 12. Reproducibility Requirements
 
@@ -296,3 +296,27 @@ https://www.spaceappschallenge.org/2026/challenges/permanent-moon-base-locations
 - Numerical validity does not guarantee elevation accuracy.
 - No matched-scale terrain descriptors have been calculated.
 - No analog suitability or similarity score has been established.
+
+## Phase 5 final validation disposition
+Date: 2026-11-15
+
+The verified physical baseline is exploratory,
+not an independent analog suitability validation.
+
+ML-B V1 and ML-B V2 are scientifically NO-GO.
+The V2 prospective metrics were independently
+recomputed from saved site-level results.
+
+Synthetic missing-block integrity testing
+passed 12/12 examples in V2.
+
+No independently rated analog-relevance
+ground truth, validated unique analog, or
+physical rover field performance is claimed.
+
+See `docs/PHASE5_SCIENTIFIC_CLOSEOUT.md`,
+`docs/ML_B_V2_FINAL_RESULTS.md`, and
+`docs/PROJECT_GATE_P1.md`.
+
+Earlier planning placeholders in this document
+must not be interpreted as the latest status.

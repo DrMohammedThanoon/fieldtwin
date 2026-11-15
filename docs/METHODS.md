@@ -3,7 +3,7 @@
 
 **Version:** 1.0
 **Execution Plan:** FieldTwin v6.2
-**Status:** Proposed methodology — implementation pending
+**Status:** Physical baseline implemented and tested; ML experiments completed with NO-GO outcomes; field validation outstanding.
 
 ## 1. Research Objective
 
@@ -13,7 +13,7 @@ Evaluate the scientific strength and limitations of the Earth–Mars terrain ana
 
 ## 2. Scientific Workflow
 
-The planned methodology consists of:
+The implemented exploratory workflow and remaining proposed validation consist of:
 
 1. Define the Mars rover-testing task.
 2. Select a documented Martian terrain reference.

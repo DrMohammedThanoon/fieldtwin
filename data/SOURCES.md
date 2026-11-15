@@ -2,7 +2,7 @@
 # FieldTwin — Scientific Data Sources
 
 **Project:** NASA Space Apps Challenge 2026
-**Status:** Dataset acquisition pending
+**Status:** Phase 3 NASA data acquired and inspected; Mars CTX DTM quality remains provisional.
 **Execution Plan:** v6.2
 
 ## 1. Purpose
@@ -68,9 +68,9 @@ For each actual dataset, record:
 
 | Dataset | Status |
 |---|---|
-| Mars MOLA | Not yet acquired |
-| Mars regional DTM | Not yet selected |
-| NASADEM_HGT.001 | Not yet acquired |
+| Mars MOLA | Acquired; used for regional Mars context |
+| Mars regional DTM | USGS CTX stereo-derived DTM acquired; quality remains provisional |
+| NASADEM_HGT.001 | Acquired and analyzed for Earth terrain comparisons |
 | NASADEM_SC.001 | Optional; not yet acquired |
 
 ## 5. Scientific Requirements
@@ -112,7 +112,7 @@ Raw datasets remain excluded from Git.
 - Source: https://doi.org/10.5066/P9JKVWR3
 - Local file: `data/raw/mars/ctx/T01_000893_1847_XN_04N191W__N09_065929_1853_XN_05N191W-DEM-geoid-adj.tif`
 - SHA-256: `4888a180ba6e868cb4fc0f33478723587499cf40e780af15983b615ce62f3c51`
-- Limitation: 20 m posting; 80% valid coverage; visual artifact review pending
+- Limitation: 20 m posting; 80% valid coverage; initial visual review performed; independent artifact and accuracy validation unresolved
 
 ### NASADEM — Earth elevation pilot
 - Collection: NASADEM_HGT.001; NASA LP DAAC
@@ -148,3 +148,19 @@ Raw datasets remain excluded from Git.
 - SHA-256: `26a80a08f2ef8734454d8331b7ecb4bc0a4c51aef65105845363dde11bddff7a`
 - Extracted layers: `s24w068.hgt`, `s24w068.num`, `s24w068.swb`
 - Status: acquired and technically validated; scientific suitability is not established.
+
+## Phase 5 provenance status clarification
+Date: 2026-11-15
+
+Real Phase 3 NASADEM, MOLA, and provisional
+USGS CTX terrain sources were subsequently
+acquired and assessed.
+
+The earlier opening planning language does
+not reflect the completed source acquisition.
+Mars CTX independent accuracy verification
+remains unresolved.
+
+See the recorded Phase 3 source evidence,
+`docs/PHASE4_BASELINE_RESULTS.md` and
+`docs/PHASE5_SCIENTIFIC_CLOSEOUT.md`.

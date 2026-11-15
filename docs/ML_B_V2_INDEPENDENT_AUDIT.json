@@ -1,0 +1,101 @@
+{
+  "decision": "NO-GO",
+  "evaluation_attempt_sha256": "1fcc24aa79240ad9e1e5f3f395f3c9fd4f57f6438eafaecaa1fe1d136461b2f9",
+  "gates": {
+    "missing_integrity_12_of_12": true,
+    "per_tile_ap_no_regression": false,
+    "per_tile_fpr_excess_at_most_0_05": false,
+    "pooled_ap_advantage_at_least_0_05": false
+  },
+  "holdout_rasters_reopened": false,
+  "integrity_missing_detected": 12,
+  "model_rescored": false,
+  "pooled_average_precision": {
+    "logistic_regression": 0.9759837255282814,
+    "random_forest": 0.9745706554608389,
+    "robust": 0.6109424080255708
+  },
+  "population": {
+    "all": 161,
+    "clean_negative": 113,
+    "missing_positive": 12,
+    "physical_positive": 36,
+    "scored_physical_layer": 149
+  },
+  "prospective_results_sha256": "24d7ef7c78c5b1af7ebb6bd300e4b3752a0b805142379316dd974f281f93d2b4",
+  "recomputed_from_saved_site_scores": true,
+  "rf_ap_advantage_over_best_comparator": -0.0014130700674425123,
+  "rf_fpr_excess": {
+    "s21w069": {
+      "logistic_regression": -0.08771929824561403,
+      "robust": 0.017543859649122806
+    },
+    "s28w069": {
+      "logistic_regression": -0.05357142857142855,
+      "robust": 0.053571428571428575
+    }
+  },
+  "schema": "fieldtwin-mlb-v2-independent-audit-v1",
+  "scientific_scope": "Synthetic defect detection on independent geographic NASADEM patches; not validated against naturally occurring DEM error labels.",
+  "source_commit": "b4d51aa",
+  "tile_metrics": {
+    "s21w069": {
+      "logistic_regression": {
+        "average_precision": 1.0,
+        "clean_fpr": 0.21052631578947367,
+        "fn": 0,
+        "fp": 12,
+        "physical_tpr": 1.0,
+        "tn": 45,
+        "tp": 18
+      },
+      "random_forest": {
+        "average_precision": 1.0,
+        "clean_fpr": 0.12280701754385964,
+        "fn": 0,
+        "fp": 7,
+        "physical_tpr": 1.0,
+        "tn": 50,
+        "tp": 18
+      },
+      "robust": {
+        "average_precision": 0.6750199331828857,
+        "clean_fpr": 0.10526315789473684,
+        "fn": 9,
+        "fp": 6,
+        "physical_tpr": 0.5,
+        "tn": 51,
+        "tp": 9
+      }
+    },
+    "s28w069": {
+      "logistic_regression": {
+        "average_precision": 0.9586550367081059,
+        "clean_fpr": 0.2857142857142857,
+        "fn": 0,
+        "fp": 16,
+        "physical_tpr": 1.0,
+        "tn": 40,
+        "tp": 18
+      },
+      "random_forest": {
+        "average_precision": 0.9347519310754604,
+        "clean_fpr": 0.23214285714285715,
+        "fn": 0,
+        "fp": 13,
+        "physical_tpr": 1.0,
+        "tn": 43,
+        "tp": 18
+      },
+      "robust": {
+        "average_precision": 0.5793147555830166,
+        "clean_fpr": 0.17857142857142858,
+        "fn": 7,
+        "fp": 10,
+        "physical_tpr": 0.6111111111111112,
+        "tn": 46,
+        "tp": 11
+      }
+    }
+  }
+}

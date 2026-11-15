@@ -1,0 +1,59 @@
+{
+  "calibration_examples": 18,
+  "calibration_locations": 18,
+  "calibration_matrix_sha256": "60bd6dfaa192cdfa9316ee839875f6fda78ac43761bbd11e7c5089ace344ad2c",
+  "date": "2026-11-15",
+  "development_tile": "s25w070",
+  "fitted_models_saved": false,
+  "identical_within_current_environment": true,
+  "methods": {
+    "logistic_regression": {
+      "bitwise_repeatability": true,
+      "calibration_locations": 18,
+      "calibration_scores_sha256": "a2c80410e3ea2ac924897cd85d0f26ac015cdcf210e7f7e50adfa9fd32f064b5",
+      "calibration_threshold": 0.03346995766349469,
+      "clean_calibration_flags": 1,
+      "training_scores_sha256": "fdf782f25b48329d1abb2e69b80c37c19ac63da97d9a4e5a09834f5ce734c275"
+    },
+    "random_forest": {
+      "bitwise_repeatability": true,
+      "calibration_locations": 18,
+      "calibration_scores_sha256": "fba90677bf18151d322f3c5cc3d0ac9d8ea2188e2e0d708bb66f7c2fe698e8d0",
+      "calibration_threshold": 0.5060801982530524,
+      "clean_calibration_flags": 1,
+      "training_scores_sha256": "667a67471f2578ec85d2cba14aed13fa6734a857a6855e10eba831142f4da36b"
+    },
+    "robust": {
+      "bitwise_repeatability": true,
+      "calibration_locations": 18,
+      "calibration_scores_sha256": "1bf47d239e0dd144df3048ce69a5c7b5f4785413b7aa6dcd233e839fa8bb5ce8",
+      "calibration_threshold": 12.465532711590185,
+      "clean_calibration_flags": 1,
+      "training_scores_sha256": "c5adcd6b619742b14293fed9ec91e7e83908e398cefd55802de56fff747a7f5b"
+    }
+  },
+  "new_holdouts_scored": false,
+  "original_benchmarks_modified": false,
+  "phase_6": "FROZEN",
+  "physical_features": 5,
+  "reconstruction_runs": 2,
+  "schema": "fieldtwin-mlb-v2-reproducibility-v1",
+  "software_versions": {
+    "numpy": "2.5.4",
+    "python": "3.12.16",
+    "rasterio": "1.5.2",
+    "scikit_learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "source_file_sha256": {
+    "data/raw/earth/nasadem/s25w070.hgt": "23c81aeedf2bdb8e537a28a002722ddbe377da698bad1f372e61d1b12b81ff27",
+    "data/raw/earth/nasadem/s25w070.swb": "a5566df5920e147ae1f50a45ceca1f0b86333b4cc9c62dcfedd65b7a13a9036f",
+    "docs/ML_B_V2_DEVELOPMENT_FIT.md": "49fa3820a6e14c13227df2a43b03235bcec34b174e07c1e9737ac4aa779fa7b8",
+    "docs/ML_B_V2_HOLDOUT_INVENTORY.md": "5434bc8c69181f7d6c8d1efeafe05d66201a020a5749fad199d590ec0cda6623",
+    "docs/ML_B_V2_PROTOCOL.md": "c6390983fd073c6474ec8b1e1cd07c28f764f9f859b2291dcb4ed3cdf915150b"
+  },
+  "source_git_commit": "789d216",
+  "training_examples": 819,
+  "training_locations": 63,
+  "training_matrix_sha256": "fedd6e439e531f8d7a7a062d80a7dccd094c42d72cd9742817d143beeea49af1"
+}

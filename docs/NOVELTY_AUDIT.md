@@ -3,7 +3,7 @@
 
 **Version:** 1.0
 **Execution Plan:** FieldTwin v6.2
-**Status:** Literature review and novelty assessment pending
+**Status:** Bounded literature review recorded; individual pilot-site novelty remains insufficiently evidenced.
 
 ## 1. Purpose
 
@@ -403,3 +403,23 @@ evidence are required before strengthening novelty claims.
 
 This section records only verified preliminary findings.
 The original audit requirements remain applicable.
+
+## Phase 5 evidence-limited novelty conclusion
+Date: 2026-11-15
+
+The bounded source review and six-site
+classifications are documented in
+`docs/PHASE5_SCIENTIFIC_CLOSEOUT.md`.
+
+NASA and published rover projects establish that
+Atacama planetary analog and navigation work
+predates FieldTwin.
+
+The four pilot points have insufficient evidence
+for site-specific novelty or independently
+validated analog suitability.
+
+ARADS has documented regional analog precedent.
+Láscar is retained as a numerical rugged control.
+
+No first-ever or unique-winner claim is permitted.

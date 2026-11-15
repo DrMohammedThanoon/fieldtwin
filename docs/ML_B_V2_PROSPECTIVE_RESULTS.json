@@ -1,0 +1,3023 @@
+{
+  "attempt_file": "docs/ML_B_V2_EVALUATION_ATTEMPT.json",
+  "attempt_sha256": "1fcc24aa79240ad9e1e5f3f395f3c9fd4f57f6438eafaecaa1fe1d136461b2f9",
+  "evaluation": "First frozen prospective geographic benchmark",
+  "evaluation_module_sha256": "5361eb9df5008c5ed47c506b11e36e5b7a6f12119d3881c44983b17471b86c1e",
+  "evaluation_utc": "2026-11-15T04:52:51.404494+00:00",
+  "git_commit": "b4d51aa",
+  "manifest_sha256": "52386690fb8a87b01801308040b567c86f941cc1afbf683839237e50fc695ded",
+  "model_retrained": false,
+  "model_sha256": "175f31a414d9a8a32d1f44d258579fa4a035751bfdd67bda21a78d9807c92d94",
+  "phase_6": "FROZEN",
+  "schema": "fieldtwin-mlb-v2-prospective-results-v1",
+  "sites": {
+    "s21w069": [
+      {
+        "col": 0,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 0,
+        "scores": {
+          "logistic_regression": 0.0006674110875218289,
+          "random_forest": 0.6997244738544365,
+          "robust": 22.01654461953212
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 1,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 0,
+        "scores": {
+          "logistic_regression": 0.013506643175815345,
+          "random_forest": 0.0043920845421090505,
+          "robust": 2.755493129901787
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 2,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 0,
+        "scores": {
+          "logistic_regression": 0.28018957999297006,
+          "random_forest": 0.6514397907331605,
+          "robust": 7.040500424155904
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 3,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 0,
+        "scores": {
+          "logistic_regression": 0.03885288007447045,
+          "random_forest": 0.8711630060736053,
+          "robust": 15.410476794265763
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 4,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 0,
+        "scores": {
+          "logistic_regression": 0.02586526209842668,
+          "random_forest": 0.029876830153709334,
+          "robust": 3.5986609747459863
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 5,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 0,
+        "scores": {
+          "logistic_regression": 0.005565190931168132,
+          "random_forest": 0.0009007108039365453,
+          "robust": 3.2014892555948564
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 6,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 0,
+        "scores": {
+          "logistic_regression": 0.0016908034789449944,
+          "random_forest": 0.0,
+          "robust": 1.2035415556397944
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 7,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 0,
+        "scores": {
+          "logistic_regression": 0.015658570083581663,
+          "random_forest": 0.013342401757257477,
+          "robust": 6.6024029213821755
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 8,
+        "defect_type": "strip",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 0,
+        "scores": {
+          "logistic_regression": 0.8897481558717537,
+          "random_forest": 0.9758876123139779,
+          "robust": 5.094699283499841
+        },
+        "severity": "low",
+        "tile": "s21w069"
+      },
+      {
+        "col": 0,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 1,
+        "scores": {
+          "logistic_regression": 0.267646962917903,
+          "random_forest": 0.3571603608594903,
+          "robust": 6.316802859981643
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 1,
+        "defect_type": "missing",
+        "integrity_flag": true,
+        "label": 1,
+        "row": 1,
+        "severity": "low",
+        "tile": "s21w069"
+      },
+      {
+        "col": 2,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 1,
+        "scores": {
+          "logistic_regression": 0.01284559845567832,
+          "random_forest": 0.0043920845421090505,
+          "robust": 2.09873660141666
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 3,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 1,
+        "scores": {
+          "logistic_regression": 0.0019668838458069,
+          "random_forest": 0.0,
+          "robust": 0.6627284629085645
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 4,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 1,
+        "scores": {
+          "logistic_regression": 0.0039741251891175985,
+          "random_forest": 0.0,
+          "robust": 0.4511428654903756
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 5,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 1,
+        "scores": {
+          "logistic_regression": 0.0043243168058173095,
+          "random_forest": 0.01219952317146549,
+          "robust": 2.8199172612314896
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 6,
+        "defect_type": "depression",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 1,
+        "scores": {
+          "logistic_regression": 0.9999601398612991,
+          "random_forest": 1.0,
+          "robust": 13.385472309104491
+        },
+        "severity": "high",
+        "tile": "s21w069"
+      },
+      {
+        "col": 7,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 1,
+        "scores": {
+          "logistic_regression": 0.024541317857542003,
+          "random_forest": 0.029056322048145667,
+          "robust": 2.6340769222892004
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 8,
+        "defect_type": "strip",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 1,
+        "scores": {
+          "logistic_regression": 0.9999961904744809,
+          "random_forest": 1.0,
+          "robust": 12.157363301014447
+        },
+        "severity": "high",
+        "tile": "s21w069"
+      },
+      {
+        "col": 0,
+        "defect_type": "missing",
+        "integrity_flag": true,
+        "label": 1,
+        "row": 2,
+        "severity": "high",
+        "tile": "s21w069"
+      },
+      {
+        "col": 1,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 2,
+        "scores": {
+          "logistic_regression": 0.014038348108243087,
+          "random_forest": 0.007071053517921385,
+          "robust": 1.8185490038722643
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 2,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 2,
+        "scores": {
+          "logistic_regression": 0.0031976487915138744,
+          "random_forest": 0.0,
+          "robust": 0.5391810087380131
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 3,
+        "defect_type": "strip",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 2,
+        "scores": {
+          "logistic_regression": 0.9408941881262992,
+          "random_forest": 0.9975615212527964,
+          "robust": 5.419657847998819
+        },
+        "severity": "low",
+        "tile": "s21w069"
+      },
+      {
+        "col": 4,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 2,
+        "scores": {
+          "logistic_regression": 0.006497952691225244,
+          "random_forest": 0.008765874349948757,
+          "robust": 3.8529168880894504
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 5,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 2,
+        "scores": {
+          "logistic_regression": 0.14784682768178,
+          "random_forest": 0.4946354288640195,
+          "robust": 7.782485929786337
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 6,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 2,
+        "scores": {
+          "logistic_regression": 0.0248627398883687,
+          "random_forest": 0.021212267116997297,
+          "robust": 2.9571202156383793
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 7,
+        "defect_type": "depression",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 2,
+        "scores": {
+          "logistic_regression": 0.6351184943940387,
+          "random_forest": 0.9075136174193007,
+          "robust": 14.12566638293851
+        },
+        "severity": "low",
+        "tile": "s21w069"
+      },
+      {
+        "col": 8,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 2,
+        "scores": {
+          "logistic_regression": 0.34355074401308855,
+          "random_forest": 0.905139285314588,
+          "robust": 12.808918307039141
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 0,
+        "defect_type": "spike",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 3,
+        "scores": {
+          "logistic_regression": 0.9999999999617977,
+          "random_forest": 1.0,
+          "robust": 25.127591883694908
+        },
+        "severity": "high",
+        "tile": "s21w069"
+      },
+      {
+        "col": 1,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 3,
+        "scores": {
+          "logistic_regression": 0.002001341360209823,
+          "random_forest": 0.0033333333333333335,
+          "robust": 0.8221523555335807
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 2,
+        "defect_type": "spike",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 3,
+        "scores": {
+          "logistic_regression": 0.9998030549891107,
+          "random_forest": 1.0,
+          "robust": 11.618853629218762
+        },
+        "severity": "low",
+        "tile": "s21w069"
+      },
+      {
+        "col": 3,
+        "defect_type": "strip",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 3,
+        "scores": {
+          "logistic_regression": 0.9525135502548221,
+          "random_forest": 1.0,
+          "robust": 5.505496696041079
+        },
+        "severity": "low",
+        "tile": "s21w069"
+      },
+      {
+        "col": 4,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 3,
+        "scores": {
+          "logistic_regression": 0.25749985086145266,
+          "random_forest": 0.5152470235745107,
+          "robust": 10.732838850761476
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 5,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 3,
+        "scores": {
+          "logistic_regression": 0.022315556548168674,
+          "random_forest": 0.0004635263667521081,
+          "robust": 2.054284734562631
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 6,
+        "defect_type": "missing",
+        "integrity_flag": true,
+        "label": 1,
+        "row": 3,
+        "severity": "low",
+        "tile": "s21w069"
+      },
+      {
+        "col": 7,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 3,
+        "scores": {
+          "logistic_regression": 0.001819619064502246,
+          "random_forest": 0.0,
+          "robust": 1.1304047104255048
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 8,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 3,
+        "scores": {
+          "logistic_regression": 0.002579432849448357,
+          "random_forest": 0.0009007108039365453,
+          "robust": 4.955299497661851
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 0,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 4,
+        "scores": {
+          "logistic_regression": 0.002494329498346286,
+          "random_forest": 0.0,
+          "robust": 0.8003652742312473
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 1,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 4,
+        "scores": {
+          "logistic_regression": 0.003262019436455415,
+          "random_forest": 0.0,
+          "robust": 0.5172413953877577
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 2,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 4,
+        "scores": {
+          "logistic_regression": 0.014105424306025384,
+          "random_forest": 0.00390974262261391,
+          "robust": 3.3930384260017843
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 3,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 4,
+        "scores": {
+          "logistic_regression": 0.0040698359211782725,
+          "random_forest": 0.0,
+          "robust": 0.7791674522543852
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 4,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 4,
+        "scores": {
+          "logistic_regression": 0.0024134291584755893,
+          "random_forest": 0.0,
+          "robust": 0.7408406499662693
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 5,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 4,
+        "scores": {
+          "logistic_regression": 0.0282095195791824,
+          "random_forest": 0.3684952802791497,
+          "robust": 6.849428856392987
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 6,
+        "defect_type": "missing",
+        "integrity_flag": true,
+        "label": 1,
+        "row": 4,
+        "severity": "high",
+        "tile": "s21w069"
+      },
+      {
+        "col": 7,
+        "defect_type": "depression",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 4,
+        "scores": {
+          "logistic_regression": 0.9533201364285495,
+          "random_forest": 1.0,
+          "robust": 7.7063421661205505
+        },
+        "severity": "low",
+        "tile": "s21w069"
+      },
+      {
+        "col": 8,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 4,
+        "scores": {
+          "logistic_regression": 0.0025137507615110894,
+          "random_forest": 0.0,
+          "robust": 1.0876946179063307
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 0,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 5,
+        "scores": {
+          "logistic_regression": 0.002554171598720378,
+          "random_forest": 0.0,
+          "robust": 0.818126786453024
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 1,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 5,
+        "scores": {
+          "logistic_regression": 0.0023223673417249826,
+          "random_forest": 0.0,
+          "robust": 0.6833962146171989
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 2,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 5,
+        "scores": {
+          "logistic_regression": 0.0058072413488033155,
+          "random_forest": 0.008765874349948757,
+          "robust": 4.190852701666825
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 3,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 5,
+        "scores": {
+          "logistic_regression": 0.07029340560627634,
+          "random_forest": 0.6560309495692722,
+          "robust": 12.586945223712352
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 4,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 5,
+        "scores": {
+          "logistic_regression": 0.0019508317397131994,
+          "random_forest": 0.0,
+          "robust": 1.1758153986992537
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 5,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": true
+        },
+        "row": 5,
+        "scores": {
+          "logistic_regression": 0.026971851956548262,
+          "random_forest": 0.4945104334623147,
+          "robust": 15.405517275110526
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 6,
+        "defect_type": "spike",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 5,
+        "scores": {
+          "logistic_regression": 0.9999999970591271,
+          "random_forest": 0.997387669801463,
+          "robust": 21.86095282738757
+        },
+        "severity": "high",
+        "tile": "s21w069"
+      },
+      {
+        "col": 7,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 5,
+        "scores": {
+          "logistic_regression": 0.002315041848816516,
+          "random_forest": 0.0,
+          "robust": 1.1201598480947432
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 8,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 5,
+        "scores": {
+          "logistic_regression": 0.0022706054137384044,
+          "random_forest": 0.0,
+          "robust": 1.0609725214899295
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 0,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 6,
+        "scores": {
+          "logistic_regression": 0.02190705007643348,
+          "random_forest": 0.026280075832153197,
+          "robust": 3.6488270743738713
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 1,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 6,
+        "scores": {
+          "logistic_regression": 0.006486428397042474,
+          "random_forest": 0.0004550625711035268,
+          "robust": 0.9309530439179338
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 2,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 6,
+        "scores": {
+          "logistic_regression": 0.10148016094174096,
+          "random_forest": 0.7084439539816045,
+          "robust": 16.06989091913291
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 3,
+        "defect_type": "depression",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 6,
+        "scores": {
+          "logistic_regression": 0.9999814650011087,
+          "random_forest": 0.9914225434982393,
+          "robust": 13.970412093446027
+        },
+        "severity": "high",
+        "tile": "s21w069"
+      },
+      {
+        "col": 4,
+        "defect_type": "depression",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 6,
+        "scores": {
+          "logistic_regression": 0.9999963437712039,
+          "random_forest": 1.0,
+          "robust": 16.359961355705984
+        },
+        "severity": "high",
+        "tile": "s21w069"
+      },
+      {
+        "col": 5,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 6,
+        "scores": {
+          "logistic_regression": 0.015532497762803507,
+          "random_forest": 0.007562019847755465,
+          "robust": 1.4970534504337873
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 6,
+        "defect_type": "missing",
+        "integrity_flag": true,
+        "label": 1,
+        "row": 6,
+        "severity": "high",
+        "tile": "s21w069"
+      },
+      {
+        "col": 7,
+        "defect_type": "strip",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 6,
+        "scores": {
+          "logistic_regression": 0.9999964360095186,
+          "random_forest": 1.0,
+          "robust": 11.999858465368755
+        },
+        "severity": "high",
+        "tile": "s21w069"
+      },
+      {
+        "col": 8,
+        "defect_type": "spike",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 6,
+        "scores": {
+          "logistic_regression": 0.9999999999514899,
+          "random_forest": 1.0,
+          "robust": 25.058187322935062
+        },
+        "severity": "high",
+        "tile": "s21w069"
+      },
+      {
+        "col": 0,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 7,
+        "scores": {
+          "logistic_regression": 0.1316400409716984,
+          "random_forest": 0.31810596538047664,
+          "robust": 4.593590010529668
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 1,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 7,
+        "scores": {
+          "logistic_regression": 0.0019467462449579394,
+          "random_forest": 0.0,
+          "robust": 0.8038379048677311
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 2,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 7,
+        "scores": {
+          "logistic_regression": 0.04064050560058742,
+          "random_forest": 0.14063361426065193,
+          "robust": 7.004844466486635
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 3,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 7,
+        "scores": {
+          "logistic_regression": 0.003653156862243395,
+          "random_forest": 0.020498872174779463,
+          "robust": 9.077748709266867
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 4,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 7,
+        "scores": {
+          "logistic_regression": 0.0070314702333495495,
+          "random_forest": 0.06518227427189213,
+          "robust": 7.694083173717018
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 5,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 7,
+        "scores": {
+          "logistic_regression": 0.09429328477283908,
+          "random_forest": 0.0033333333333333335,
+          "robust": 2.5461929043139575
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 6,
+        "defect_type": "spike",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 7,
+        "scores": {
+          "logistic_regression": 0.9998683509233477,
+          "random_forest": 1.0,
+          "robust": 11.812697645567706
+        },
+        "severity": "low",
+        "tile": "s21w069"
+      },
+      {
+        "col": 7,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 7,
+        "scores": {
+          "logistic_regression": 0.004098514057239355,
+          "random_forest": 0.0,
+          "robust": 0.863645038532379
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 8,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 7,
+        "scores": {
+          "logistic_regression": 0.0022407496715888117,
+          "random_forest": 0.0,
+          "robust": 0.9279019520507226
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 0,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 8,
+        "scores": {
+          "logistic_regression": 0.002420926972741302,
+          "random_forest": 0.0,
+          "robust": 0.5961069924749889
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 1,
+        "defect_type": "spike",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 8,
+        "scores": {
+          "logistic_regression": 0.9958093426825263,
+          "random_forest": 0.9968968421052633,
+          "robust": 13.083053736152218
+        },
+        "severity": "low",
+        "tile": "s21w069"
+      },
+      {
+        "col": 2,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 8,
+        "scores": {
+          "logistic_regression": 0.02924578992797493,
+          "random_forest": 0.00014880952380952382,
+          "robust": 1.4946116574787502
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 3,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 8,
+        "scores": {
+          "logistic_regression": 0.03367214329977273,
+          "random_forest": 0.008765874349948757,
+          "robust": 4.226263360382786
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 4,
+        "defect_type": "strip",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 8,
+        "scores": {
+          "logistic_regression": 0.999983726878678,
+          "random_forest": 1.0,
+          "robust": 14.485970606699707
+        },
+        "severity": "high",
+        "tile": "s21w069"
+      },
+      {
+        "col": 5,
+        "defect_type": "missing",
+        "integrity_flag": true,
+        "label": 1,
+        "row": 8,
+        "severity": "low",
+        "tile": "s21w069"
+      },
+      {
+        "col": 6,
+        "defect_type": "depression",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 8,
+        "scores": {
+          "logistic_regression": 0.9033668682127262,
+          "random_forest": 0.9678091464709279,
+          "robust": 7.764300286119945
+        },
+        "severity": "low",
+        "tile": "s21w069"
+      },
+      {
+        "col": 7,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 8,
+        "scores": {
+          "logistic_regression": 0.03107847943183941,
+          "random_forest": 0.0,
+          "robust": 1.3174438466130103
+        },
+        "severity": null,
+        "tile": "s21w069"
+      },
+      {
+        "col": 8,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 8,
+        "scores": {
+          "logistic_regression": 0.002357771468249148,
+          "random_forest": 0.0,
+          "robust": 0.990856084573613
+        },
+        "severity": null,
+        "tile": "s21w069"
+      }
+    ],
+    "s28w069": [
+      {
+        "col": 0,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 0,
+        "scores": {
+          "logistic_regression": 0.13174111207849976,
+          "random_forest": 0.729302238876797,
+          "robust": 13.849980626797272
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 1,
+        "defect_type": "spike",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 0,
+        "scores": {
+          "logistic_regression": 0.9872521216327441,
+          "random_forest": 0.9493793993746201,
+          "robust": 16.98304258295357
+        },
+        "severity": "low",
+        "tile": "s28w069"
+      },
+      {
+        "col": 2,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 0,
+        "scores": {
+          "logistic_regression": 0.12577662564187572,
+          "random_forest": 0.7008130741967625,
+          "robust": 7.955426649696252
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 3,
+        "defect_type": "depression",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 0,
+        "scores": {
+          "logistic_regression": 0.9804771874746546,
+          "random_forest": 1.0,
+          "robust": 8.134977206048195
+        },
+        "severity": "low",
+        "tile": "s28w069"
+      },
+      {
+        "col": 4,
+        "defect_type": "spike",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 0,
+        "scores": {
+          "logistic_regression": 0.9993743464603193,
+          "random_forest": 1.0,
+          "robust": 12.064685101160045
+        },
+        "severity": "low",
+        "tile": "s28w069"
+      },
+      {
+        "col": 5,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 0,
+        "scores": {
+          "logistic_regression": 0.02810583459543524,
+          "random_forest": 0.2880261501766873,
+          "robust": 6.581664107562962
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 6,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 0,
+        "scores": {
+          "logistic_regression": 0.0021493559658392098,
+          "random_forest": 0.6298504717926917,
+          "robust": 20.962263484842985
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 7,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 0,
+        "scores": {
+          "logistic_regression": 0.00676301884891358,
+          "random_forest": 0.020498872174779463,
+          "robust": 8.450879233120238
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 8,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 0,
+        "scores": {
+          "logistic_regression": 0.0035470647448883185,
+          "random_forest": 0.0,
+          "robust": 0.5575826641134892
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 0,
+        "defect_type": "spike",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 1,
+        "scores": {
+          "logistic_regression": 0.9999999999791731,
+          "random_forest": 1.0,
+          "robust": 25.022015543949944
+        },
+        "severity": "high",
+        "tile": "s28w069"
+      },
+      {
+        "col": 1,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 1,
+        "scores": {
+          "logistic_regression": 0.01560081324473173,
+          "random_forest": 0.029370765677157944,
+          "robust": 4.97728712085057
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 2,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 1,
+        "scores": {
+          "logistic_regression": 0.012021744037237797,
+          "random_forest": 0.13113221842240402,
+          "robust": 7.869737634643829
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 3,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 1,
+        "scores": {
+          "logistic_regression": 0.02887993865862355,
+          "random_forest": 0.5407632905322103,
+          "robust": 9.818605920312205
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 4,
+        "defect_type": "spike",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 1,
+        "scores": {
+          "logistic_regression": 0.999997533490233,
+          "random_forest": 1.0,
+          "robust": 14.491160823096571
+        },
+        "severity": "low",
+        "tile": "s28w069"
+      },
+      {
+        "col": 5,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 1,
+        "scores": {
+          "logistic_regression": 0.017531263055933437,
+          "random_forest": 0.0038217338217338215,
+          "robust": 4.28543070961864
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 6,
+        "defect_type": "depression",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 1,
+        "scores": {
+          "logistic_regression": 0.9832845504368989,
+          "random_forest": 0.8699743650337456,
+          "robust": 9.801369844202663
+        },
+        "severity": "low",
+        "tile": "s28w069"
+      },
+      {
+        "col": 7,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": true
+        },
+        "row": 1,
+        "scores": {
+          "logistic_regression": 0.008078624622427527,
+          "random_forest": 0.4945104334623147,
+          "robust": 16.45403886861875
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 8,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 1,
+        "scores": {
+          "logistic_regression": 0.002841445396482424,
+          "random_forest": 0.0,
+          "robust": 0.8096266931675433
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 0,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 2,
+        "scores": {
+          "logistic_regression": 0.013024354232408544,
+          "random_forest": 0.004032105491812222,
+          "robust": 2.8144373380911194
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 1,
+        "defect_type": "missing",
+        "integrity_flag": true,
+        "label": 1,
+        "row": 2,
+        "severity": "low",
+        "tile": "s28w069"
+      },
+      {
+        "col": 2,
+        "defect_type": "missing",
+        "integrity_flag": true,
+        "label": 1,
+        "row": 2,
+        "severity": "high",
+        "tile": "s28w069"
+      },
+      {
+        "col": 3,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 2,
+        "scores": {
+          "logistic_regression": 0.007410575434606744,
+          "random_forest": 0.0,
+          "robust": 1.7592741253746553
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 4,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 2,
+        "scores": {
+          "logistic_regression": 0.0027982123268804064,
+          "random_forest": 0.029056322048145667,
+          "robust": 2.083085047903863
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 5,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 2,
+        "scores": {
+          "logistic_regression": 0.006203511700159165,
+          "random_forest": 0.015497102593262924,
+          "robust": 6.97606394858581
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 6,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": true
+        },
+        "row": 2,
+        "scores": {
+          "logistic_regression": 0.0004303352067746626,
+          "random_forest": 0.49424995320183446,
+          "robust": 17.343427808921653
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 7,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 2,
+        "scores": {
+          "logistic_regression": 0.004236127865380324,
+          "random_forest": 0.0,
+          "robust": 0.8627379912117168
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 8,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 2,
+        "scores": {
+          "logistic_regression": 0.01751069646896063,
+          "random_forest": 0.6848294327707731,
+          "robust": 14.42934948949334
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 0,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 3,
+        "scores": {
+          "logistic_regression": 0.0061426914218646695,
+          "random_forest": 0.00460251832082818,
+          "robust": 3.885431649598866
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 1,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 3,
+        "scores": {
+          "logistic_regression": 0.010419363195452438,
+          "random_forest": 0.008576705849965827,
+          "robust": 6.348718435408072
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 2,
+        "defect_type": "depression",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 3,
+        "scores": {
+          "logistic_regression": 0.19146407963809028,
+          "random_forest": 0.8397862433739076,
+          "robust": 12.978326456442355
+        },
+        "severity": "low",
+        "tile": "s28w069"
+      },
+      {
+        "col": 3,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 3,
+        "scores": {
+          "logistic_regression": 0.004652328520745408,
+          "random_forest": 0.019804883278357267,
+          "robust": 2.7080419215260467
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 4,
+        "defect_type": "missing",
+        "integrity_flag": true,
+        "label": 1,
+        "row": 3,
+        "severity": "low",
+        "tile": "s28w069"
+      },
+      {
+        "col": 5,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 3,
+        "scores": {
+          "logistic_regression": 0.0038698480427877655,
+          "random_forest": 0.007372471372471372,
+          "robust": 4.893350434979211
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 6,
+        "defect_type": "strip",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 3,
+        "scores": {
+          "logistic_regression": 0.9999852049548922,
+          "random_forest": 1.0,
+          "robust": 13.573428030287202
+        },
+        "severity": "high",
+        "tile": "s28w069"
+      },
+      {
+        "col": 7,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 3,
+        "scores": {
+          "logistic_regression": 0.033259440587951744,
+          "random_forest": 0.051659555788646346,
+          "robust": 3.1211256902260063
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 8,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 3,
+        "scores": {
+          "logistic_regression": 0.020999971605685386,
+          "random_forest": 0.0043920845421090505,
+          "robust": 3.6459908445160942
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 0,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 4,
+        "scores": {
+          "logistic_regression": 0.03086595472237795,
+          "random_forest": 0.021967915547913587,
+          "robust": 4.629440201536308
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 1,
+        "defect_type": "strip",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 4,
+        "scores": {
+          "logistic_regression": 0.9999892619790326,
+          "random_forest": 1.0,
+          "robust": 12.20034651963921
+        },
+        "severity": "high",
+        "tile": "s28w069"
+      },
+      {
+        "col": 2,
+        "defect_type": "missing",
+        "integrity_flag": true,
+        "label": 1,
+        "row": 4,
+        "severity": "low",
+        "tile": "s28w069"
+      },
+      {
+        "col": 3,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 4,
+        "scores": {
+          "logistic_regression": 0.1428982171097286,
+          "random_forest": 0.5237126044347656,
+          "robust": 18.263678550535047
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 4,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 4,
+        "scores": {
+          "logistic_regression": 0.021005531778493434,
+          "random_forest": 0.01294500940467068,
+          "robust": 5.163350516309024
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 5,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 4,
+        "scores": {
+          "logistic_regression": 0.005054247786895561,
+          "random_forest": 0.011401497265715769,
+          "robust": 4.197404400126859
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 6,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 4,
+        "scores": {
+          "logistic_regression": 0.003770274747450308,
+          "random_forest": 0.0,
+          "robust": 0.8546120638135385
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 7,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 4,
+        "scores": {
+          "logistic_regression": 0.05467029633624008,
+          "random_forest": 0.8845829428666353,
+          "robust": 19.367238998895335
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 8,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 4,
+        "scores": {
+          "logistic_regression": 0.0118153994640846,
+          "random_forest": 0.0038217338217338215,
+          "robust": 4.573523471299076
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 0,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 5,
+        "scores": {
+          "logistic_regression": 0.011742878389152634,
+          "random_forest": 0.15829512386229355,
+          "robust": 6.520564560573976
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 1,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 5,
+        "scores": {
+          "logistic_regression": 0.6015361562678211,
+          "random_forest": 0.9047243537268815,
+          "robust": 13.488115815952467
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 3,
+        "defect_type": "spike",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 5,
+        "scores": {
+          "logistic_regression": 0.9999999998201312,
+          "random_forest": 0.9626246922641489,
+          "robust": 24.962454056182864
+        },
+        "severity": "high",
+        "tile": "s28w069"
+      },
+      {
+        "col": 4,
+        "defect_type": "strip",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 5,
+        "scores": {
+          "logistic_regression": 0.9999962195811479,
+          "random_forest": 1.0,
+          "robust": 12.256441376207887
+        },
+        "severity": "high",
+        "tile": "s28w069"
+      },
+      {
+        "col": 5,
+        "defect_type": "missing",
+        "integrity_flag": true,
+        "label": 1,
+        "row": 5,
+        "severity": "high",
+        "tile": "s28w069"
+      },
+      {
+        "col": 6,
+        "defect_type": "depression",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 5,
+        "scores": {
+          "logistic_regression": 0.9999982465087797,
+          "random_forest": 0.9894439361160344,
+          "robust": 18.156403055994534
+        },
+        "severity": "high",
+        "tile": "s28w069"
+      },
+      {
+        "col": 7,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 5,
+        "scores": {
+          "logistic_regression": 0.003976832824312271,
+          "random_forest": 0.018724027472718518,
+          "robust": 1.512413310910401
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 8,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 5,
+        "scores": {
+          "logistic_regression": 0.04680156229405653,
+          "random_forest": 0.15149643854845307,
+          "robust": 5.717569795445056
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 0,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 6,
+        "scores": {
+          "logistic_regression": 0.037652932926338895,
+          "random_forest": 0.24265425741161503,
+          "robust": 9.942945422625833
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 1,
+        "defect_type": "strip",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 6,
+        "scores": {
+          "logistic_regression": 0.9881674424313313,
+          "random_forest": 0.9865608298504206,
+          "robust": 15.841461844322351
+        },
+        "severity": "low",
+        "tile": "s28w069"
+      },
+      {
+        "col": 2,
+        "defect_type": "strip",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 6,
+        "scores": {
+          "logistic_regression": 0.9533446347799843,
+          "random_forest": 0.9969556369556369,
+          "robust": 6.325850354930956
+        },
+        "severity": "low",
+        "tile": "s28w069"
+      },
+      {
+        "col": 3,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 6,
+        "scores": {
+          "logistic_regression": 0.08379158511944076,
+          "random_forest": 0.2688556618750125,
+          "robust": 4.6165833261920115
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 4,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 6,
+        "scores": {
+          "logistic_regression": 0.0031108455935612927,
+          "random_forest": 0.3796220379489091,
+          "robust": 11.489600133464107
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 5,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 6,
+        "scores": {
+          "logistic_regression": 0.9062723314483632,
+          "random_forest": 0.984951847647736,
+          "robust": 11.139249045332908
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 6,
+        "defect_type": "depression",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 6,
+        "scores": {
+          "logistic_regression": 0.9999336683373503,
+          "random_forest": 0.9849195331571488,
+          "robust": 13.72536737027806
+        },
+        "severity": "high",
+        "tile": "s28w069"
+      },
+      {
+        "col": 7,
+        "defect_type": "spike",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 6,
+        "scores": {
+          "logistic_regression": 0.9999999825685061,
+          "random_forest": 0.9709047660116293,
+          "robust": 24.709293304452782
+        },
+        "severity": "high",
+        "tile": "s28w069"
+      },
+      {
+        "col": 8,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 6,
+        "scores": {
+          "logistic_regression": 0.07514129348695452,
+          "random_forest": 0.6795758901258391,
+          "robust": 11.050306028016088
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 0,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 7,
+        "scores": {
+          "logistic_regression": 0.9494740810515329,
+          "random_forest": 0.8174805089732586,
+          "robust": 10.375680475590457
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 1,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 7,
+        "scores": {
+          "logistic_regression": 0.002316446182752712,
+          "random_forest": 0.11046301782969561,
+          "robust": 6.285744858284862
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 2,
+        "defect_type": "strip",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": false
+        },
+        "row": 7,
+        "scores": {
+          "logistic_regression": 0.530674645798428,
+          "random_forest": 0.8685673096653606,
+          "robust": 4.757969691904707
+        },
+        "severity": "low",
+        "tile": "s28w069"
+      },
+      {
+        "col": 3,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 7,
+        "scores": {
+          "logistic_regression": 0.006610381852137881,
+          "random_forest": 0.016209760063161636,
+          "robust": 8.804808521872781
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 4,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 7,
+        "scores": {
+          "logistic_regression": 0.018823959903239935,
+          "random_forest": 0.014240701309210572,
+          "robust": 3.9844921959747985
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 5,
+        "defect_type": "missing",
+        "integrity_flag": true,
+        "label": 1,
+        "row": 7,
+        "severity": "high",
+        "tile": "s28w069"
+      },
+      {
+        "col": 6,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 7,
+        "scores": {
+          "logistic_regression": 0.003543015053949901,
+          "random_forest": 0.3635048649073378,
+          "robust": 9.606781458314416
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 7,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 7,
+        "scores": {
+          "logistic_regression": 0.004644765745851361,
+          "random_forest": 0.006666666666666667,
+          "robust": 1.0046978261278408
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 8,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 7,
+        "scores": {
+          "logistic_regression": 0.004163623889251076,
+          "random_forest": 0.0,
+          "robust": 0.6970404979346727
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 0,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 8,
+        "scores": {
+          "logistic_regression": 0.001698486556051751,
+          "random_forest": 0.025204474837798956,
+          "robust": 6.4912484453812125
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 1,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 8,
+        "scores": {
+          "logistic_regression": 0.9919229761670554,
+          "random_forest": 0.9876393073426436,
+          "robust": 15.235580454890904
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 2,
+        "defect_type": "depression",
+        "integrity_flag": false,
+        "label": 1,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 8,
+        "scores": {
+          "logistic_regression": 0.9999683411214412,
+          "random_forest": 0.9925903796306788,
+          "robust": 14.434547933747524
+        },
+        "severity": "high",
+        "tile": "s28w069"
+      },
+      {
+        "col": 3,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 8,
+        "scores": {
+          "logistic_regression": 0.0818132558334953,
+          "random_forest": 0.3975534694357421,
+          "robust": 7.4385623268929
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 4,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 8,
+        "scores": {
+          "logistic_regression": 0.1315626069141246,
+          "random_forest": 0.3270883842140534,
+          "robust": 5.0721826261458185
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 5,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": true,
+          "robust": true
+        },
+        "row": 8,
+        "scores": {
+          "logistic_regression": 0.0004055321793185437,
+          "random_forest": 0.6203674193160491,
+          "robust": 18.54507387307672
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 6,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 8,
+        "scores": {
+          "logistic_regression": 0.039203192214163116,
+          "random_forest": 0.2760100794061194,
+          "robust": 6.470649527487081
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 7,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": false,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 8,
+        "scores": {
+          "logistic_regression": 0.008391262511940691,
+          "random_forest": 0.004127146840018127,
+          "robust": 3.804163216842252
+        },
+        "severity": null,
+        "tile": "s28w069"
+      },
+      {
+        "col": 8,
+        "defect_type": null,
+        "integrity_flag": false,
+        "label": 0,
+        "physical_flags": {
+          "logistic_regression": true,
+          "random_forest": false,
+          "robust": false
+        },
+        "row": 8,
+        "scores": {
+          "logistic_regression": 0.24187898103363104,
+          "random_forest": 0.3164628637821222,
+          "robust": 8.116244108616817
+        },
+        "severity": null,
+        "tile": "s28w069"
+      }
+    ]
+  },
+  "summary": {
+    "decision": "NO-GO",
+    "gates": {
+      "missing_integrity_12_of_12": true,
+      "per_tile_ap_no_regression": false,
+      "per_tile_fpr_excess_at_most_0_05": false,
+      "pooled_ap_advantage_at_least_0_05": false
+    },
+    "missing_detected": 12,
+    "pooled": {
+      "logistic_regression": {
+        "average_precision": 0.9759837255282814
+      },
+      "random_forest": {
+        "average_precision": 0.9745706554608389
+      },
+      "robust": {
+        "average_precision": 0.6109424080255708
+      }
+    },
+    "population": {
+      "all": 161,
+      "clean_negative": 113,
+      "missing_positive": 12,
+      "physical_positive": 36,
+      "scored_physical_layer": 149
+    },
+    "tiles": {
+      "s21w069": {
+        "logistic_regression": {
+          "average_precision": 1.0,
+          "clean_fpr": 0.21052631578947367,
+          "physical_tpr": 1.0
+        },
+        "random_forest": {
+          "average_precision": 1.0,
+          "clean_fpr": 0.12280701754385964,
+          "physical_tpr": 1.0
+        },
+        "robust": {
+          "average_precision": 0.6750199331828857,
+          "clean_fpr": 0.10526315789473684,
+          "physical_tpr": 0.5
+        }
+      },
+      "s28w069": {
+        "logistic_regression": {
+          "average_precision": 0.9586550367081059,
+          "clean_fpr": 0.2857142857142857,
+          "physical_tpr": 1.0
+        },
+        "random_forest": {
+          "average_precision": 0.9347519310754604,
+          "clean_fpr": 0.23214285714285715,
+          "physical_tpr": 1.0
+        },
+        "robust": {
+          "average_precision": 0.5793147555830166,
+          "clean_fpr": 0.17857142857142858,
+          "physical_tpr": 0.6111111111111112
+        }
+      }
+    }
+  },
+  "thresholds_modified": false
+}

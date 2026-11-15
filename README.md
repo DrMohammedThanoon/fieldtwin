@@ -44,6 +44,8 @@ The project does not claim a completed discovery or validated result until the r
 
 ## 4. Application Experience
 
+> **Current app state:** the four views below are rendered in the SamaBeyond design system (Inter / JetBrains Mono, light default with dark toggle), using only FieldTwin's own validated data (`app/src/data/terrain_baseline.json`). The earlier handoff-based "Analog Atlas" UI was removed; its pipeline and docs remain in the repo but are not displayed.
+
 The proposed public website contains four connected views.
 
 ### Mission

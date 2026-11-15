@@ -300,6 +300,10 @@ Clearly distinguish:
 
 Do not present a proposed rover test as completed field validation.
 
+## 7b. Visual system update
+
+The four views are implemented in the SamaBeyond design system (Inter / JetBrains Mono, light default with dark toggle, orange `#ff8b5d` accent, flat square panels). This supersedes the palette in §8. All displayed numbers come from FieldTwin's validated baseline export.
+
 ## 8. Visual Design System
 
 ### General direction

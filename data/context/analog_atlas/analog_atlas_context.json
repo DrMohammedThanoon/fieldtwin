@@ -1,0 +1,2230 @@
+{
+ "dims": [
+  "arid",
+  "dry_air",
+  "cold",
+  "swing",
+  "basalt",
+  "impact",
+  "cave",
+  "ice",
+  "evap",
+  "aqueous",
+  "aeolian",
+  "bio",
+  "barren"
+ ],
+ "sites": [
+  {
+   "id": "khaybar",
+   "lat": 25.58,
+   "lon": 39.87,
+   "name": "Harrat Khaybar — Umm Jirsan",
+   "country": "Saudi Arabia",
+   "saudi": true,
+   "vec": [
+    0.525,
+    0.738,
+    0.034,
+    0.619,
+    1,
+    0,
+    1,
+    0,
+    0.1,
+    0.1,
+    0.5,
+    0.2,
+    0.9
+   ],
+   "fact": "Arabia's longest surveyed lava tube: 1,481 m in three sections, inside a vast basaltic lava field.",
+   "strong": "A real basaltic lava tube, like the cave skylights seen in lunar and Martian lava fields, set in a hyper-arid climate.",
+   "weak": "Far too warm compared with the Moon or Mars, and the cave holds modern animal and human deposits.",
+   "use": "Testing cave-exploring robots, GPS-free navigation, and measuring a cave's thermal shielding for sub-surface habitats.",
+   "src": [
+    [
+     "Harrat Khaybar — Wikipedia",
+     "https://en.wikipedia.org/wiki/Harrat_Khaybar"
+    ],
+    [
+     "Pint, Umm Jirsan: Arabia's longest lava-tube system",
+     "https://www.vulcanospeleology.org/articles/jirsan.pdf"
+    ]
+   ],
+   "power": {
+    "T": 22.95,
+    "Tmax": 43.76,
+    "Tmin": -5.75,
+    "P": 26,
+    "RH": 26.16,
+    "WS": 3.84,
+    "SW": 22.34,
+    "elev": 1304
+   },
+   "kind": "Lava tube in a basalt field"
+  },
+  {
+   "id": "rahat",
+   "lat": 23.08,
+   "lon": 39.78,
+   "name": "Harrat Rahat — 1256 CE flow",
+   "country": "Saudi Arabia",
+   "saudi": true,
+   "vec": [
+    0.507,
+    0.673,
+    0,
+    0.541,
+    1,
+    0,
+    0.4,
+    0,
+    0.1,
+    0.1,
+    0.5,
+    0.1,
+    0.9
+   ],
+   "fact": "Saudi Arabia's largest lava field (20,000 km²). The 1256 CE flow travelled 23 km, stopping 4 km from Madinah.",
+   "strong": "Very young, barely eroded basalt flows and scoria cones, like lunar maria and the Tharsis plains on Mars.",
+   "weak": "No impact craters; temperature and humidity are much higher.",
+   "use": "Calibrating satellite views of basalt flows and testing rover mobility over rough lava.",
+   "src": [
+    [
+     "Smithsonian GVP — Harrat Rahat",
+     "https://volcano.si.edu/volcano.cfm?vn=231070"
+    ]
+   ],
+   "power": {
+    "T": 25.03,
+    "Tmax": 44.74,
+    "Tmin": 1.46,
+    "P": 29,
+    "RH": 32.72,
+    "WS": 3.62,
+    "SW": 22.29,
+    "elev": 1093
+   },
+   "kind": "Young basalt lava field"
+  },
+  {
+   "id": "wahbah",
+   "lat": 22.9,
+   "lon": 41.14,
+   "name": "Al Wahbah Crater — Harrat Kishb",
+   "country": "Saudi Arabia",
+   "saudi": true,
+   "vec": [
+    0.507,
+    0.737,
+    0,
+    0.559,
+    0.8,
+    0.4,
+    0.1,
+    0,
+    0.8,
+    0.5,
+    0.5,
+    0.4,
+    0.9
+   ],
+   "fact": "A volcanic maar about 2.2–2.3 km wide and ~250 m deep, its floor covered by white salts.",
+   "strong": "A deep crater with a salt floor combines volcanism and evaporation — a mix that echoes salt and sulfate deposits in Martian craters.",
+   "weak": "Not an impact crater, and its salts come from modern groundwater.",
+   "use": "Rehearsing sampling on a steep crater floor and studying how salts preserve biosignatures.",
+   "src": [
+    [
+     "Moufti et al. 2013 — Geoheritage of Al Wahbah",
+     "https://ui.adsabs.harvard.edu/abs/2013CEJG....5..254M/abstract"
+    ],
+    [
+     "IUGS Geoheritage — Al Wahbah",
+     "https://iugs-geoheritage.org/geoheritage_sites/the-pleistocene-al-wahbah-dry-maar-crater/"
+    ]
+   ],
+   "power": {
+    "T": 25.91,
+    "Tmax": 45.29,
+    "Tmin": 0.59,
+    "P": 29,
+    "RH": 26.31,
+    "WS": 3.74,
+    "SW": 22.78,
+    "elev": 1062
+   },
+   "kind": "Maar crater with salt floor"
+  },
+  {
+   "id": "wabar",
+   "lat": 21.5,
+   "lon": 50.47,
+   "name": "Wabar Craters — Rub' al Khali",
+   "country": "Saudi Arabia",
+   "saudi": true,
+   "vec": [
+    0.525,
+    0.746,
+    0,
+    0.595,
+    0,
+    1,
+    0,
+    0,
+    0.2,
+    0.1,
+    1,
+    0.1,
+    1
+   ],
+   "fact": "A cluster of small, very young impact craters, about 64–116 m across, in the Empty Quarter's sand sea.",
+   "strong": "Real impact craters with impact glass, being buried by active dunes much like dune-filled Martian craters.",
+   "weak": "Tiny compared with lunar craters, and formed in sand rather than rock.",
+   "use": "Studying dune–crater interaction and testing ground-penetrating radar beneath sand.",
+   "src": [
+    [
+     "Wabar craters — Wikipedia",
+     "https://en.wikipedia.org/wiki/Wabar_craters"
+    ],
+    [
+     "Hanafy et al. 2021 — Geophysical study at Wabar",
+     "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020EA001432"
+    ]
+   ],
+   "power": {
+    "T": 29.17,
+    "Tmax": 49.71,
+    "Tmin": 2.08,
+    "P": 26,
+    "RH": 25.44,
+    "WS": 2.79,
+    "SW": 22.9,
+    "elev": 180
+   },
+   "kind": "Impact craters in a sand sea"
+  },
+  {
+   "id": "lonar",
+   "lat": 19.98,
+   "lon": 76.51,
+   "name": "Lonar Crater",
+   "country": "India",
+   "saudi": false,
+   "vec": [
+    0.025,
+    0.468,
+    0,
+    0.493,
+    1,
+    1,
+    0,
+    0,
+    0.6,
+    0.8,
+    0.1,
+    0.7,
+    0.2
+   ],
+   "fact": "An impact crater about 1.8 km across, cut into Deccan basalt and holding a saline, alkaline lake.",
+   "strong": "One of the rare impact craters in basalt — the rock of the lunar maria and most of Mars.",
+   "weak": "Humid and vegetated because of the monsoon.",
+   "use": "Understanding shocked basalt and identifying shocked minerals in lunar samples.",
+   "src": [
+    [
+     "Lonar crater — Wikipedia",
+     "https://en.wikipedia.org/wiki/Lonar_crater"
+    ]
+   ],
+   "power": {
+    "T": 25.96,
+    "Tmax": 45.55,
+    "Tmin": 6.08,
+    "P": 844,
+    "RH": 53.19,
+    "WS": 2.55,
+    "SW": 19.21,
+    "elev": 530
+   },
+   "kind": "Impact crater in basalt"
+  },
+  {
+   "id": "lut",
+   "lat": 30.35,
+   "lon": 58.0,
+   "name": "Dasht-e Lut — Kaluts",
+   "country": "Iran",
+   "saudi": false,
+   "vec": [
+    0.357,
+    0.785,
+    0,
+    0.715,
+    0.2,
+    0,
+    0,
+    0,
+    0.6,
+    0.4,
+    1,
+    0.2,
+    1
+   ],
+   "fact": "Among the hottest land surfaces measured by satellite, with vast fields of wind-carved yardangs.",
+   "strong": "Yardangs are among the clearest wind landforms on Mars, as in the Medusae Fossae Formation.",
+   "weak": "Extremely hot, while Mars is cold.",
+   "use": "Linking wind speed to erosion rates and testing surface-age models.",
+   "src": [
+    [
+     "Lut Desert — UNESCO",
+     "https://whc.unesco.org/en/list/1505/"
+    ]
+   ],
+   "power": {
+    "T": 26.48,
+    "Tmax": 51.76,
+    "Tmin": -5.45,
+    "P": 84,
+    "RH": 21.47,
+    "WS": 2.76,
+    "SW": 21.37,
+    "elev": 321
+   },
+   "kind": "Wind-carved yardangs"
+  },
+  {
+   "id": "dallol",
+   "lat": 14.24,
+   "lon": 40.3,
+   "name": "Dallol — Danakil Depression",
+   "country": "Ethiopia",
+   "saudi": false,
+   "vec": [
+    0.116,
+    0.532,
+    0,
+    0.363,
+    0.6,
+    0,
+    0,
+    0,
+    1,
+    0.8,
+    0.3,
+    1,
+    1
+   ],
+   "fact": "A hyper-acidic, hyper-saline hydrothermal system studied as a limit for life.",
+   "strong": "Acidic brines with sulfate and iron deposits, like ancient water environments on Mars.",
+   "weak": "Active volcanism; MERRA-2 data at ~0.5° also blends in wetter highlands nearby.",
+   "use": "Testing life-detection instruments in extreme conditions.",
+   "src": [
+    [
+     "Dallol (hydrothermal system) — Wikipedia",
+     "https://en.wikipedia.org/wiki/Dallol_(hydrothermal_system)"
+    ]
+   ],
+   "power": {
+    "T": 25.96,
+    "Tmax": 40.27,
+    "Tmin": 11.26,
+    "P": 449,
+    "RH": 46.84,
+    "WS": 2.59,
+    "SW": 21.45,
+    "elev": 1063
+   },
+   "kind": "Acidic hydrothermal field"
+  },
+  {
+   "id": "riotinto",
+   "lat": 37.7,
+   "lon": -6.58,
+   "name": "Río Tinto",
+   "country": "Spain",
+   "saudi": false,
+   "vec": [
+    0.114,
+    0.361,
+    0.118,
+    0.62,
+    0,
+    0,
+    0.4,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0.5
+   ],
+   "fact": "An acidic, iron-rich river with jarosite — the same mineral Opportunity found at Meridiani Planum.",
+   "strong": "The strongest known analog for the acidic water chemistry of Meridiani on Mars.",
+   "weak": "Abundant liquid water and a Mediterranean climate.",
+   "use": "NASA's MARTE drilling project for subsurface life, and calibrating sulfate spectra.",
+   "src": [
+    [
+     "Río Tinto — Wikipedia",
+     "https://en.wikipedia.org/wiki/R%C3%ADo_Tinto_(river)"
+    ]
+   ],
+   "power": {
+    "T": 17.91,
+    "Tmax": 45.03,
+    "Tmin": -4.53,
+    "P": 453,
+    "RH": 63.87,
+    "WS": 2.62,
+    "SW": 18.07,
+    "elev": 162
+   },
+   "kind": "Acidic, iron-rich river"
+  },
+  {
+   "id": "pilbara",
+   "lat": -21.15,
+   "lon": 119.43,
+   "name": "Pilbara — Dresser Formation",
+   "country": "Australia",
+   "saudi": false,
+   "vec": [
+    0.13,
+    0.607,
+    0,
+    0.531,
+    0.7,
+    0.2,
+    0,
+    0,
+    0.4,
+    0.9,
+    0.3,
+    1,
+    0.7
+   ],
+   "fact": "Holds some of Earth's oldest evidence of life — stromatolites about 3.48 billion years old.",
+   "strong": "Rocks as old as Mars's wet era, with preserved biosignatures.",
+   "weak": "A long tectonic and geological history has altered the rocks.",
+   "use": "Training to recognise ancient biosignatures, as in Perseverance's samples.",
+   "src": [
+    [
+     "Dresser Formation — Wikipedia",
+     "https://en.wikipedia.org/wiki/Dresser_Formation"
+    ]
+   ],
+   "power": {
+    "T": 27.5,
+    "Tmax": 48.95,
+    "Tmin": 6.49,
+    "P": 405,
+    "RH": 39.26,
+    "WS": 3.27,
+    "SW": 23.06,
+    "elev": 175
+   },
+   "kind": "Earliest fossil life"
+  },
+  {
+   "id": "qaidam",
+   "lat": 38.5,
+   "lon": 91.6,
+   "name": "Qaidam Basin — Dalangtan",
+   "country": "China",
+   "saudi": false,
+   "vec": [
+    0.462,
+    0.668,
+    0.357,
+    0.752,
+    0,
+    0,
+    0,
+    0.3,
+    1,
+    0.8,
+    1,
+    0.6,
+    1
+   ],
+   "fact": "A high, cold, very dry basin with dry lakes, salt deposits and yardangs.",
+   "strong": "Combines cold, altitude, aridity, salts and wind — a rare, Mars-like mix.",
+   "weak": "No basalt or impact craters.",
+   "use": "Studying the salt sequence as lakes dry out, as happened in Gale Crater.",
+   "src": [
+    [
+     "Qaidam Basin — Wikipedia",
+     "https://en.wikipedia.org/wiki/Qaidam_Basin"
+    ]
+   ],
+   "power": {
+    "T": 3.58,
+    "Tmax": 33.17,
+    "Tmin": -26.99,
+    "P": 40,
+    "RH": 33.18,
+    "WS": 2.59,
+    "SW": 18.67,
+    "elev": 2913
+   },
+   "kind": "Cold, high salt playa"
+  },
+  {
+   "id": "cotm",
+   "lat": 43.42,
+   "lon": -113.52,
+   "name": "Craters of the Moon",
+   "country": "USA",
+   "saudi": false,
+   "vec": [
+    0.127,
+    0.402,
+    0.322,
+    0.869,
+    1,
+    0,
+    1,
+    0.4,
+    0,
+    0.1,
+    0.2,
+    0.2,
+    0.7
+   ],
+   "fact": "A basaltic lava field with tubes and caves where Apollo astronauts trained.",
+   "strong": "Accessible lava tubes and fresh basalt flows.",
+   "weak": "Winter snow and high humidity; not dry.",
+   "use": "NASA cave-exploration programmes and lunar cave modelling.",
+   "src": [
+    [
+     "Craters of the Moon — NPS",
+     "https://www.nps.gov/crmo/"
+    ]
+   ],
+   "power": {
+    "T": 5.69,
+    "Tmax": 36.91,
+    "Tmin": -32.62,
+    "P": 416,
+    "RH": 59.83,
+    "WS": 2.21,
+    "SW": 16.38,
+    "elev": 1892
+   },
+   "kind": "Basalt lava tubes"
+  },
+  {
+   "id": "atacama",
+   "lat": -24.08,
+   "lon": -70.0,
+   "name": "Atacama — Yungay",
+   "country": "Chile",
+   "saudi": false,
+   "vec": [
+    0.694,
+    0.559,
+    0.132,
+    0.42,
+    0.1,
+    0,
+    0,
+    0,
+    1,
+    0.5,
+    0.7,
+    0.9,
+    1
+   ],
+   "fact": "One of the driest places on Earth, with perchlorates in the soil as on Mars. (Well-known reference analog)",
+   "strong": "Aridity, salts and almost no life.",
+   "weak": "Mild temperatures.",
+   "use": "Testing drills and life-detection instruments.",
+   "src": [
+    [
+     "Atacama Desert — Wikipedia",
+     "https://en.wikipedia.org/wiki/Atacama_Desert"
+    ]
+   ],
+   "power": {
+    "T": 17.07,
+    "Tmax": 32.93,
+    "Tmin": -0.64,
+    "P": 7,
+    "RH": 44.09,
+    "WS": 2.34,
+    "SW": 25.94,
+    "elev": 1261
+   },
+   "kind": "Hyper-arid desert (reference)"
+  },
+  {
+   "id": "haughton",
+   "lat": 75.38,
+   "lon": -89.68,
+   "name": "Haughton Crater",
+   "country": "Canada",
+   "saudi": false,
+   "vec": [
+    0.169,
+    0.056,
+    0.657,
+    0.817,
+    0,
+    1,
+    0,
+    1,
+    0.3,
+    0.5,
+    0.3,
+    0.6,
+    0.9
+   ],
+   "fact": "A ~23 km impact crater in the Arctic, home of NASA's Haughton-Mars Project. (Well-known reference analog)",
+   "strong": "Impact crater + permafrost + cold.",
+   "weak": "High humidity and snow.",
+   "use": "Rehearsing long-duration human operations.",
+   "src": [
+    [
+     "Haughton impact crater — Wikipedia",
+     "https://en.wikipedia.org/wiki/Haughton_impact_crater"
+    ]
+   ],
+   "power": {
+    "T": -14.42,
+    "Tmax": 16.81,
+    "Tmin": -48.55,
+    "P": 310,
+    "RH": 94.36,
+    "WS": 3.08,
+    "SW": 8.34,
+    "elev": 173
+   },
+   "kind": "Polar impact crater (reference)"
+  },
+  {
+   "id": "dryvalleys",
+   "lat": -77.5,
+   "lon": 162.0,
+   "name": "McMurdo Dry Valleys",
+   "country": "Antarctica",
+   "saudi": false,
+   "vec": [
+    0.363,
+    0.21,
+    0.871,
+    0.603,
+    0.3,
+    0,
+    0,
+    1,
+    0.6,
+    0.5,
+    0.8,
+    0.8,
+    1
+   ],
+   "fact": "The coldest, driest ice-free place on Earth. (Well-known reference analog)",
+   "strong": "Cold, dry and ground ice — the closest climate match to Mars.",
+   "weak": "Extremely hard to reach.",
+   "use": "Studying ground ice and microbes living inside rocks.",
+   "src": [
+    [
+     "McMurdo Dry Valleys — Wikipedia",
+     "https://en.wikipedia.org/wiki/McMurdo_Dry_Valleys"
+    ]
+   ],
+   "power": {
+    "T": -27.23,
+    "Tmax": -3.79,
+    "Tmin": -52.01,
+    "P": 80,
+    "RH": 79.0,
+    "WS": 5.37,
+    "SW": 10.8,
+    "elev": 1139
+   },
+   "kind": "Polar desert (reference)"
+  },
+  {
+   "id": "holuhraun",
+   "lat": 64.87,
+   "lon": -16.83,
+   "name": "Holuhraun",
+   "country": "Iceland",
+   "saudi": false,
+   "vec": [
+    0.021,
+    0.059,
+    0.464,
+    0.427,
+    1,
+    0,
+    0.3,
+    0.8,
+    0.1,
+    0.6,
+    0.6,
+    0.3,
+    1
+   ],
+   "fact": "A basalt lava field formed in 2014–2015 next to a glacier. (Well-known reference analog)",
+   "strong": "Fresh basalt + ice + black sand.",
+   "weak": "Rain and high humidity.",
+   "use": "Testing rovers on basalt.",
+   "src": [
+    [
+     "Holuhraun — Wikipedia",
+     "https://en.wikipedia.org/wiki/Holuhraun"
+    ]
+   ],
+   "power": {
+    "T": -2.84,
+    "Tmax": 10.31,
+    "Tmin": -23.83,
+    "P": 862,
+    "RH": 94.09,
+    "WS": 4.82,
+    "SW": 10.73,
+    "elev": 802
+   },
+   "kind": "Fresh basalt near glaciers (reference)"
+  },
+  {
+   "id": "deathvalley",
+   "lat": 36.5,
+   "lon": -116.9,
+   "name": "Death Valley",
+   "country": "USA",
+   "saudi": false,
+   "vec": [
+    0.301,
+    0.707,
+    0.098,
+    0.655,
+    0.3,
+    0,
+    0,
+    0,
+    1,
+    0.7,
+    0.8,
+    0.5,
+    0.9
+   ],
+   "fact": "Salt flats, dunes and the Ubehebe volcanic crater. (Well-known reference analog)",
+   "strong": "Salts, dry ancient lakes and wind.",
+   "weak": "Very hot.",
+   "use": "Testing spectrometers.",
+   "src": [
+    [
+     "Death Valley — NPS",
+     "https://www.nps.gov/deva/"
+    ]
+   ],
+   "power": {
+    "T": 19.1,
+    "Tmax": 46.22,
+    "Tmin": -6.16,
+    "P": 124,
+    "RH": 29.33,
+    "WS": 2.09,
+    "SW": 20.53,
+    "elev": 846
+   },
+   "kind": "Salt flats and dunes (reference)"
+  }
+ ],
+ "targets": [
+  {
+   "id": "moon_sp",
+   "body": "moon",
+   "name": "Shackleton Crater — South Pole",
+   "lat": -89.67,
+   "lon": 129.78,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "Its floor lies in permanent shadow while its rim gets near-constant sunlight. The best-known proposed site for a permanent lunar base.",
+   "src": [
+    [
+     "Shackleton (crater)",
+     "https://en.wikipedia.org/wiki/Shackleton_(crater)"
+    ],
+    [
+     "NASA LRO Diviner",
+     "https://pds-geosciences.wustl.edu/missions/lro/diviner.htm"
+    ]
+   ],
+   "cat": "Polar base",
+   "featured": true
+  },
+  {
+   "id": "moon_cabeus",
+   "body": "moon",
+   "name": "Peak near Cabeus B",
+   "lat": -84.9,
+   "lon": -35.5,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "In Cabeus crater, NASA's LCROSS impactor confirmed water ice in 2009. Coordinates are Cabeus's centre (approximate).",
+   "src": [
+    [
+     "NASA — Artemis III candidate regions (2024)",
+     "https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/"
+    ],
+    [
+     "Cabeus (crater)",
+     "https://en.wikipedia.org/wiki/Cabeus_(crater)"
+    ]
+   ],
+   "cat": "Artemis III",
+   "featured": false
+  },
+  {
+   "id": "moon_haworth",
+   "body": "moon",
+   "name": "Haworth",
+   "lat": -86.9,
+   "lon": -4.0,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "An old crater with extensive permanent shadow; an Artemis III candidate region.",
+   "src": [
+    [
+     "NASA — Artemis III candidate regions (2024)",
+     "https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/"
+    ],
+    [
+     "Haworth (crater)",
+     "https://en.wikipedia.org/wiki/Haworth_(crater)"
+    ]
+   ],
+   "cat": "Artemis III",
+   "featured": false
+  },
+  {
+   "id": "moon_malapert",
+   "body": "moon",
+   "name": "Malapert Massif",
+   "lat": -84.9,
+   "lon": 12.9,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.1,
+    0.7,
+    0,
+    0.6,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "High ground with long illumination and direct line-of-sight to Earth. Coordinates are Malapert crater's centre.",
+   "src": [
+    [
+     "NASA — Artemis III candidate regions (2024)",
+     "https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/"
+    ],
+    [
+     "Malapert (crater)",
+     "https://en.wikipedia.org/wiki/Malapert_(crater)"
+    ]
+   ],
+   "cat": "Artemis III",
+   "featured": false
+  },
+  {
+   "id": "moon_mouton",
+   "body": "moon",
+   "name": "Mons Mouton & Plateau",
+   "lat": -84.6,
+   "lon": 31.0,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.1,
+    0.7,
+    0,
+    0.6,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "A relatively flat high plateau near the pole — two of the nine Artemis III regions.",
+   "src": [
+    [
+     "NASA — Artemis III candidate regions (2024)",
+     "https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/"
+    ],
+    [
+     "Mons Mouton",
+     "https://en.wikipedia.org/wiki/Mons_Mouton"
+    ]
+   ],
+   "cat": "Artemis III",
+   "featured": false
+  },
+  {
+   "id": "moon_nobile",
+   "body": "moon",
+   "name": "Nobile Rim",
+   "lat": -85.28,
+   "lon": 53.27,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.1,
+    1,
+    0,
+    0.9,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "The rim of Nobile crater, also the planned target of the VIPER ice-prospecting rover.",
+   "src": [
+    [
+     "NASA — Artemis III candidate regions (2024)",
+     "https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/"
+    ],
+    [
+     "Nobile (crater)",
+     "https://en.wikipedia.org/wiki/Nobile_(crater)"
+    ]
+   ],
+   "cat": "Artemis III",
+   "featured": false
+  },
+  {
+   "id": "moon_gerlache",
+   "body": "moon",
+   "name": "de Gerlache Rim",
+   "lat": -88.5,
+   "lon": -87.1,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "A deep crater near the pole with a very cold floor and a sunlit rim.",
+   "src": [
+    [
+     "NASA — Artemis III candidate regions (2024)",
+     "https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/"
+    ],
+    [
+     "De Gerlache (crater)",
+     "https://en.wikipedia.org/wiki/De_Gerlache_(crater)"
+    ]
+   ],
+   "cat": "Artemis III",
+   "featured": false
+  },
+  {
+   "id": "moon_slater",
+   "body": "moon",
+   "name": "Slater Plain",
+   "lat": -88.08,
+   "lon": 111.29,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.1,
+    0.9,
+    0,
+    0.9,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "Added to the Artemis III list in 2024. Coordinates are Slater crater's centre.",
+   "src": [
+    [
+     "NASA — Artemis III candidate regions (2024)",
+     "https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/"
+    ],
+    [
+     "Slater (crater)",
+     "https://en.wikipedia.org/wiki/Slater_(crater)"
+    ]
+   ],
+   "cat": "Artemis III",
+   "featured": false
+  },
+  {
+   "id": "moon_marius",
+   "body": "moon",
+   "name": "Marius Hills skylight",
+   "lat": 14.09,
+   "lon": -56.78,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0.3,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "An opening in the roof of a basaltic lava tube; a candidate natural shelter from radiation and temperature swings.",
+   "src": [
+    [
+     "LROC Pits Atlas",
+     "https://lroc.im-ldi.com/atlases/pits/list"
+    ]
+   ],
+   "cat": "Cave skylight",
+   "featured": true
+  },
+  {
+   "id": "moon_mtp",
+   "body": "moon",
+   "name": "Mare Tranquillitatis pit",
+   "lat": 8.3355,
+   "lon": 33.222,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0.3,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "A vertical-walled pit leading to a sub-surface void, confirmed by radar in 2024.",
+   "src": [
+    [
+     "LROC Pits Atlas",
+     "https://lroc.im-ldi.com/atlases/pits/list"
+    ],
+    [
+     "Mare Tranquillitatis pit",
+     "https://en.wikipedia.org/wiki/Mare_Tranquillitatis_pit"
+    ]
+   ],
+   "cat": "Cave skylight",
+   "featured": false
+  },
+  {
+   "id": "moon_ingenii",
+   "body": "moon",
+   "name": "Mare Ingenii pit",
+   "lat": -35.95,
+   "lon": 166.06,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0.4,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "A cave skylight in a basaltic mare on the lunar far side.",
+   "src": [
+    [
+     "LROC Pits Atlas",
+     "https://lroc.im-ldi.com/atlases/pits/list"
+    ]
+   ],
+   "cat": "Cave skylight",
+   "featured": false
+  },
+  {
+   "id": "moon_aristarchus",
+   "body": "moon",
+   "name": "Aristarchus pits",
+   "lat": 23.889,
+   "lon": -47.649,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.5,
+    1,
+    0.7,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "Pits in impact melt inside Aristarchus crater, next to a plateau rich in volcanic deposits.",
+   "src": [
+    [
+     "LROC Pits Atlas",
+     "https://lroc.im-ldi.com/atlases/pits/list"
+    ]
+   ],
+   "cat": "Cave skylight",
+   "featured": false
+  },
+  {
+   "id": "moon_a11",
+   "body": "moon",
+   "name": "Apollo 11 — Sea of Tranquility",
+   "lat": 0.674,
+   "lon": 23.473,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0.5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "First human landing (1969) on a flat basaltic plain.",
+   "src": [
+    [
+     "Apollo 11",
+     "https://en.wikipedia.org/wiki/Apollo_11"
+    ]
+   ],
+   "cat": "Landing site",
+   "featured": false
+  },
+  {
+   "id": "moon_a12",
+   "body": "moon",
+   "name": "Apollo 12 — Ocean of Storms",
+   "lat": -3.012,
+   "lon": -23.422,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0.6,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "Pinpoint landing near Surveyor 3 on mare basalt.",
+   "src": [
+    [
+     "Apollo 12",
+     "https://en.wikipedia.org/wiki/Apollo_12"
+    ]
+   ],
+   "cat": "Landing site",
+   "featured": false
+  },
+  {
+   "id": "moon_a14",
+   "body": "moon",
+   "name": "Apollo 14 — Fra Mauro",
+   "lat": -3.645,
+   "lon": -17.471,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.3,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "Ejecta from the Imbrium impact basin; breccia rocks.",
+   "src": [
+    [
+     "Apollo 14",
+     "https://en.wikipedia.org/wiki/Apollo_14"
+    ]
+   ],
+   "cat": "Landing site",
+   "featured": false
+  },
+  {
+   "id": "moon_a15",
+   "body": "moon",
+   "name": "Apollo 15 — Hadley Rille",
+   "lat": 26.132,
+   "lon": 3.634,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0.4,
+    0.5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "A sinuous rille — a collapsed lava channel or tube — beside the Apennine mountains.",
+   "src": [
+    [
+     "Apollo 15",
+     "https://en.wikipedia.org/wiki/Apollo_15"
+    ]
+   ],
+   "cat": "Landing site",
+   "featured": false
+  },
+  {
+   "id": "moon_a16",
+   "body": "moon",
+   "name": "Apollo 16 — Descartes Highlands",
+   "lat": -8.973,
+   "lon": 15.5,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.1,
+    0.9,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "The only landing in the bright lunar highlands (anorthosite).",
+   "src": [
+    [
+     "Apollo 16",
+     "https://en.wikipedia.org/wiki/Apollo_16"
+    ]
+   ],
+   "cat": "Landing site",
+   "featured": false
+  },
+  {
+   "id": "moon_a17",
+   "body": "moon",
+   "name": "Apollo 17 — Taurus-Littrow",
+   "lat": 20.191,
+   "lon": 30.772,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.8,
+    0.6,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "A mountain valley with basalt and explosive volcanic deposits (the orange soil).",
+   "src": [
+    [
+     "Apollo 17",
+     "https://en.wikipedia.org/wiki/Apollo_17"
+    ]
+   ],
+   "cat": "Landing site",
+   "featured": false
+  },
+  {
+   "id": "moon_ce4",
+   "body": "moon",
+   "name": "Chang'e 4 — Von Kármán",
+   "lat": -45.444,
+   "lon": 177.588,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.6,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "First far-side landing, inside the giant South Pole–Aitken impact basin.",
+   "src": [
+    [
+     "Chang'e 4",
+     "https://en.wikipedia.org/wiki/Chang%27e_4"
+    ]
+   ],
+   "cat": "Landing site",
+   "featured": false
+  },
+  {
+   "id": "moon_ce5",
+   "body": "moon",
+   "name": "Chang'e 5 — Mons Rümker",
+   "lat": 43.06,
+   "lon": -51.92,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0.3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "Returned samples of the youngest lunar basalt (~2 billion years).",
+   "src": [
+    [
+     "Chang'e 5",
+     "https://en.wikipedia.org/wiki/Chang%27e_5"
+    ]
+   ],
+   "cat": "Landing site",
+   "featured": false
+  },
+  {
+   "id": "moon_ce6",
+   "body": "moon",
+   "name": "Chang'e 6 — Apollo Basin",
+   "lat": -41.63,
+   "lon": -153.99,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.7,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "First far-side samples (2024), from inside an impact basin.",
+   "src": [
+    [
+     "Chang'e 6",
+     "https://en.wikipedia.org/wiki/Chang%27e_6"
+    ]
+   ],
+   "cat": "Landing site",
+   "featured": false
+  },
+  {
+   "id": "moon_ch3",
+   "body": "moon",
+   "name": "Chandrayaan-3",
+   "lat": -69.373,
+   "lon": 32.319,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.1,
+    0.9,
+    0,
+    0.3,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "desc": "The closest successful landing to the south pole (2023), on ancient highlands.",
+   "src": [
+    [
+     "Chandrayaan-3",
+     "https://en.wikipedia.org/wiki/Chandrayaan-3"
+    ]
+   ],
+   "cat": "Landing site",
+   "featured": false
+  },
+  {
+   "id": "mars_jezero",
+   "body": "mars",
+   "name": "Jezero Crater — Perseverance",
+   "lat": 18.4447,
+   "lon": 77.4508,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.6,
+    0.8,
+    0.1,
+    0.1,
+    0.5,
+    1,
+    0.7,
+    1,
+    1
+   ],
+   "desc": "An ancient lake with a river delta and carbonates, where Perseverance collects samples to search for signs of life.",
+   "src": [
+    [
+     "Mars 2020",
+     "https://science.nasa.gov/mission/mars-2020-perseverance/"
+    ]
+   ],
+   "cat": "Ancient water",
+   "featured": true
+  },
+  {
+   "id": "mars_gale",
+   "body": "mars",
+   "name": "Gale Crater — Curiosity",
+   "lat": -4.5895,
+   "lon": 137.4417,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.4,
+    0.7,
+    0.1,
+    0.1,
+    0.8,
+    1,
+    0.9,
+    0.8,
+    1
+   ],
+   "desc": "Layers of clay and sulfate recording a lake drying out, with the active Bagnold dunes.",
+   "src": [
+    [
+     "Curiosity",
+     "https://science.nasa.gov/mission/msl-curiosity/"
+    ]
+   ],
+   "cat": "Ancient water",
+   "featured": true
+  },
+  {
+   "id": "mars_meridiani",
+   "body": "mars",
+   "name": "Meridiani Planum — Opportunity",
+   "lat": -1.9462,
+   "lon": -5.5272,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.3,
+    0.5,
+    0,
+    0,
+    1,
+    1,
+    0.6,
+    0.7,
+    1
+   ],
+   "desc": "Jarosite and hematite spherules pointing to ancient acidic water.",
+   "src": [
+    [
+     "Opportunity",
+     "https://science.nasa.gov/mission/mer-opportunity/"
+    ]
+   ],
+   "cat": "Ancient water",
+   "featured": true
+  },
+  {
+   "id": "mars_gusev",
+   "body": "mars",
+   "name": "Gusev Crater — Spirit",
+   "lat": -14.5684,
+   "lon": 175.4726,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.9,
+    0.8,
+    0,
+    0,
+    0.6,
+    0.8,
+    0.4,
+    0.9,
+    1
+   ],
+   "desc": "Basalt plains, with silica deposits in the Columbia Hills resembling hot-spring deposits.",
+   "src": [
+    [
+     "Spirit",
+     "https://en.wikipedia.org/wiki/Spirit_(rover)"
+    ]
+   ],
+   "cat": "Ancient water",
+   "featured": false
+  },
+  {
+   "id": "mars_nili",
+   "body": "mars",
+   "name": "Nili Fossae",
+   "lat": 22.57,
+   "lon": 76.8,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.9,
+    0.4,
+    0,
+    0.1,
+    0.6,
+    0.9,
+    0.4,
+    0.9,
+    1
+   ],
+   "desc": "Olivine, carbonates and clays — evidence of water reacting with igneous rock. A former Perseverance candidate.",
+   "src": [
+    [
+     "Nili Fossae",
+     "https://en.wikipedia.org/wiki/Nili_Fossae"
+    ]
+   ],
+   "cat": "Ancient water",
+   "featured": false
+  },
+  {
+   "id": "mars_mawrth",
+   "body": "mars",
+   "name": "Mawrth Vallis",
+   "lat": 22.6,
+   "lon": -16.5,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.2,
+    0.4,
+    0,
+    0,
+    0.4,
+    1,
+    0.5,
+    0.9,
+    1
+   ],
+   "desc": "One of the richest regions on Mars for water-formed clay minerals.",
+   "src": [
+    [
+     "Mawrth Vallis",
+     "https://en.wikipedia.org/wiki/Mawrth_Vallis"
+    ]
+   ],
+   "cat": "Ancient water",
+   "featured": false
+  },
+  {
+   "id": "mars_oxia",
+   "body": "mars",
+   "name": "Oxia Planum — Rosalind Franklin",
+   "lat": 18.275,
+   "lon": -24.632,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.3,
+    0.4,
+    0,
+    0,
+    0.3,
+    1,
+    0.6,
+    0.9,
+    1
+   ],
+   "desc": "Landing site of ESA's Rosalind Franklin rover: ancient clays with a sedimentary fan.",
+   "src": [
+    [
+     "Oxia Planum",
+     "https://en.wikipedia.org/wiki/Oxia_Planum"
+    ]
+   ],
+   "cat": "Ancient water",
+   "featured": false
+  },
+  {
+   "id": "mars_eberswalde",
+   "body": "mars",
+   "name": "Eberswalde Crater",
+   "lat": -24.0,
+   "lon": -33.0,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.3,
+    0.8,
+    0,
+    0,
+    0.3,
+    1,
+    0.4,
+    0.9,
+    1
+   ],
+   "desc": "A well-preserved meandering delta — among the strongest evidence of flowing water.",
+   "src": [
+    [
+     "Eberswalde (crater)",
+     "https://en.wikipedia.org/wiki/Eberswalde_(crater)"
+    ]
+   ],
+   "cat": "Ancient water",
+   "featured": false
+  },
+  {
+   "id": "mars_columbus",
+   "body": "mars",
+   "name": "Columbus Crater",
+   "lat": -29.8,
+   "lon": -166.1,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.3,
+    0.9,
+    0,
+    0,
+    1,
+    0.9,
+    0.4,
+    0.7,
+    1
+   ],
+   "desc": "Rings of sulfates and clays inside a crater — remains of a groundwater-fed lake.",
+   "src": [
+    [
+     "Columbus (crater)",
+     "https://en.wikipedia.org/wiki/Columbus_(crater)"
+    ]
+   ],
+   "cat": "Salts",
+   "featured": false
+  },
+  {
+   "id": "mars_melas",
+   "body": "mars",
+   "name": "Melas Chasma — Valles Marineris",
+   "lat": -10.5,
+   "lon": -73.0,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.4,
+    0.2,
+    0.2,
+    0,
+    0.9,
+    0.9,
+    0.6,
+    0.6,
+    1
+   ],
+   "desc": "Part of the largest canyon in the Solar System, with thick sulfate layers. Coordinates approximate.",
+   "src": [
+    [
+     "Melas Chasma",
+     "https://en.wikipedia.org/wiki/Melas_Chasma"
+    ]
+   ],
+   "cat": "Salts",
+   "featured": false
+  },
+  {
+   "id": "mars_arsia",
+   "body": "mars",
+   "name": "Arsia Mons — cave skylights",
+   "lat": -8.35,
+   "lon": -120.09,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0.3,
+    1,
+    0.2,
+    0,
+    0.1,
+    0.6,
+    0.4,
+    1
+   ],
+   "desc": "Cave skylights and lava tubes on the flanks of a shield volcano; a candidate underground shelter.",
+   "src": [
+    [
+     "Arsia Mons",
+     "https://en.wikipedia.org/wiki/Arsia_Mons"
+    ]
+   ],
+   "cat": "Caves",
+   "featured": true
+  },
+  {
+   "id": "mars_hebrus",
+   "body": "mars",
+   "name": "Hebrus Valles",
+   "lat": 20.2,
+   "lon": 126.6,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.7,
+    0.3,
+    1,
+    0.3,
+    0.1,
+    0.5,
+    0.4,
+    0.6,
+    1
+   ],
+   "desc": "Flood channels with cave openings; proposed as a human exploration zone.",
+   "src": [
+    [
+     "Hebrus Valles",
+     "https://en.wikipedia.org/wiki/Hebrus_Valles"
+    ]
+   ],
+   "cat": "Caves",
+   "featured": false
+  },
+  {
+   "id": "mars_olympus",
+   "body": "mars",
+   "name": "Olympus Mons",
+   "lat": 18.65,
+   "lon": -133.8,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0.2,
+    0.6,
+    0.1,
+    0,
+    0,
+    0.4,
+    0.1,
+    1
+   ],
+   "desc": "The tallest volcano in the Solar System; its basalt flows carry lava channels and tubes.",
+   "src": [
+    [
+     "Olympus Mons",
+     "https://en.wikipedia.org/wiki/Olympus_Mons"
+    ]
+   ],
+   "cat": "Caves",
+   "featured": false
+  },
+  {
+   "id": "mars_arcadia",
+   "body": "mars",
+   "name": "Arcadia Planitia",
+   "lat": 42.0,
+   "lon": -160.0,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.5,
+    0.4,
+    0.1,
+    1,
+    0.2,
+    0.3,
+    0.5,
+    0.5,
+    1
+   ],
+   "desc": "Near-surface ice at mid-latitudes; a candidate human landing site. Coordinates approximate.",
+   "src": [
+    [
+     "NASA SWIM",
+     "https://swim.psi.edu/"
+    ]
+   ],
+   "cat": "Ice",
+   "featured": true
+  },
+  {
+   "id": "mars_deuteronilus",
+   "body": "mars",
+   "name": "Deuteronilus Mensae",
+   "lat": 43.9,
+   "lon": 22.6,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.4,
+    0.4,
+    0,
+    1,
+    0.2,
+    0.5,
+    0.4,
+    0.5,
+    1
+   ],
+   "desc": "Debris-covered glaciers — a large water source for crewed missions.",
+   "src": [
+    [
+     "Deuteronilus Mensae",
+     "https://en.wikipedia.org/wiki/Deuteronilus_Mensae"
+    ]
+   ],
+   "cat": "Ice",
+   "featured": false
+  },
+  {
+   "id": "mars_korolev",
+   "body": "mars",
+   "name": "Korolev Crater",
+   "lat": 72.77,
+   "lon": 164.58,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.2,
+    1,
+    0,
+    1,
+    0,
+    0.2,
+    0.3,
+    0.3,
+    1
+   ],
+   "desc": "An impact crater filled with a permanent water-ice mound about 1.8 km thick.",
+   "src": [
+    [
+     "Korolev (Martian crater)",
+     "https://en.wikipedia.org/wiki/Korolev_(Martian_crater)"
+    ]
+   ],
+   "cat": "Ice",
+   "featured": false
+  },
+  {
+   "id": "mars_phoenix",
+   "body": "mars",
+   "name": "Vastitas Borealis — Phoenix",
+   "lat": 68.22,
+   "lon": -125.75,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.4,
+    0.3,
+    0,
+    1,
+    0.6,
+    0.4,
+    0.4,
+    0.6,
+    1
+   ],
+   "desc": "Phoenix scraped water ice just below the soil and found perchlorate.",
+   "src": [
+    [
+     "Phoenix",
+     "https://en.wikipedia.org/wiki/Phoenix_(spacecraft)"
+    ]
+   ],
+   "cat": "Ice",
+   "featured": false
+  },
+  {
+   "id": "mars_utopia",
+   "body": "mars",
+   "name": "Utopia — Viking 2",
+   "lat": 47.64,
+   "lon": -134.29,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.6,
+    0.5,
+    0,
+    0.8,
+    0.3,
+    0.4,
+    0.4,
+    0.3,
+    1
+   ],
+   "desc": "Northern plains with winter frost and terrain pointing to subsurface ice.",
+   "src": [
+    [
+     "Viking 2",
+     "https://en.wikipedia.org/wiki/Viking_2"
+    ]
+   ],
+   "cat": "Ice",
+   "featured": false
+  },
+  {
+   "id": "mars_zhurong",
+   "body": "mars",
+   "name": "Southern Utopia — Zhurong",
+   "lat": 25.066,
+   "lon": 109.925,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.6,
+    0.4,
+    0,
+    0.5,
+    0.4,
+    0.6,
+    0.6,
+    0.4,
+    1
+   ],
+   "desc": "China's rover site, near the edge of a possible ancient northern ocean.",
+   "src": [
+    [
+     "Zhurong",
+     "https://en.wikipedia.org/wiki/Zhurong_(rover)"
+    ]
+   ],
+   "cat": "Landing site",
+   "featured": false
+  },
+  {
+   "id": "mars_chryse",
+   "body": "mars",
+   "name": "Chryse Planitia — Viking 1",
+   "lat": 22.27,
+   "lon": -47.95,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.6,
+    0.6,
+    0,
+    0.1,
+    0.3,
+    0.6,
+    0.6,
+    0.3,
+    1
+   ],
+   "desc": "Mouth of huge outflow channels; first successful Mars landing (1976).",
+   "src": [
+    [
+     "Viking 1",
+     "https://en.wikipedia.org/wiki/Viking_1"
+    ]
+   ],
+   "cat": "Landing site",
+   "featured": false
+  },
+  {
+   "id": "mars_ares",
+   "body": "mars",
+   "name": "Ares Vallis — Pathfinder",
+   "lat": 19.13,
+   "lon": -33.22,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.5,
+    0.5,
+    0,
+    0,
+    0.2,
+    0.8,
+    0.5,
+    0.3,
+    1
+   ],
+   "desc": "A rocky plain left by ancient catastrophic floods.",
+   "src": [
+    [
+     "Mars Pathfinder",
+     "https://en.wikipedia.org/wiki/Mars_Pathfinder"
+    ]
+   ],
+   "cat": "Landing site",
+   "featured": false
+  },
+  {
+   "id": "mars_elysium",
+   "body": "mars",
+   "name": "Elysium — InSight",
+   "lat": 4.502,
+   "lon": 135.623,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.9,
+    0.4,
+    0,
+    0.1,
+    0.1,
+    0.1,
+    0.6,
+    0.1,
+    1
+   ],
+   "desc": "A flat basalt plain chosen for landing safety, where marsquakes were recorded.",
+   "src": [
+    [
+     "InSight",
+     "https://en.wikipedia.org/wiki/InSight"
+    ]
+   ],
+   "cat": "Landing site",
+   "featured": false
+  },
+  {
+   "id": "mars_medusae",
+   "body": "mars",
+   "name": "Medusae Fossae Formation",
+   "lat": -3.2,
+   "lon": -163.0,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.3,
+    0.2,
+    0,
+    0.2,
+    0.2,
+    0.1,
+    1,
+    0.1,
+    1
+   ],
+   "desc": "The largest yardang field on Mars, carved by wind in friable deposits, and a major dust source.",
+   "src": [
+    [
+     "Medusae Fossae Formation",
+     "https://en.wikipedia.org/wiki/Medusae_Fossae_Formation"
+    ]
+   ],
+   "cat": "Wind",
+   "featured": false
+  },
+  {
+   "id": "mars_hellas",
+   "body": "mars",
+   "name": "Hellas Basin",
+   "lat": -42.4,
+   "lon": 70.5,
+   "vec": [
+    1,
+    1,
+    1,
+    1,
+    0.4,
+    1,
+    0,
+    0.6,
+    0.4,
+    0.6,
+    0.7,
+    0.4,
+    1
+   ],
+   "desc": "The deepest impact basin on Mars, with higher air pressure and frequent dust storms.",
+   "src": [
+    [
+     "Hellas Planitia",
+     "https://en.wikipedia.org/wiki/Hellas_Planitia"
+    ]
+   ],
+   "cat": "Wind",
+   "featured": false
+  }
+ ],
+ "_meta": {
+  "name": "SameBeyond analog atlas dataset",
+  "status": "context_literature_coded_not_validated",
+  "dims_measured_from_nasa_power": [
+   "arid",
+   "dry_air",
+   "cold",
+   "swing"
+  ],
+  "dims_literature_coded": [
+   "basalt",
+   "impact",
+   "cave",
+   "ice",
+   "evap",
+   "aqueous",
+   "aeolian",
+   "bio",
+   "barren"
+  ],
+  "climate_formulas": {
+   "arid": "1 - min(log10(P_mm_yr+1)/log10(1001),1), P_mm_yr = PRECTOTCORR_ANN*365.25",
+   "dry_air": "1 - RH2M_ANN/100",
+   "cold": "clamp((25 - T2M_ANN)/60,0,1)",
+   "swing": "clamp((T2M_MAX_ANN - T2M_MIN_ANN)/80,0,1)",
+   "moon_mars_climate": "fixed at 1.0 (extreme) for all off-world sites"
+  },
+  "power_api": "https://power.larc.nasa.gov/api/temporal/climatology/point?parameters=T2M,T2M_MAX,T2M_MIN,PRECTOTCORR,RH2M,WS2M,ALLSKY_SFC_SW_DWN&community=AG&longitude={lon}&latitude={lat}&format=JSON (climatology 2001-2025, retrieved 2026-11-13)",
+  "score": "weighted mean of (1-|site-ref|) over 13 dims; weight x2 where reference value >= 0.8",
+  "coordinates_note": "Off-world lat/lon are planetocentric, east-positive, -180..180. Artemis III regions use the centre of the eponymous named feature (approximate)."
+ }
+}

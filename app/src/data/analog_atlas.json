@@ -83,7 +83,7 @@
  ],
  "index_formula": "weighted mean of (1 - |earth - offworld|) over 13 criteria; weight x2 where off-world value >= 0.8; UI computes it from vectors and user weights",
  "provenance": {
-  "source": "SameBeyond handoff; NASA POWER Climatology API v2.10.1, 2001-2025, retrieved 2026-11-13",
+  "source": "SamaBeyond handoff; NASA POWER Climatology API v2.10.1, 2001-2025, retrieved 2026-11-13",
   "power_api": "https://power.larc.nasa.gov/api/temporal/climatology/point?parameters=T2M,T2M_MAX,T2M_MIN,PRECTOTCORR,RH2M,WS2M,ALLSKY_SFC_SW_DWN&community=AG&longitude={lon}&latitude={lat}&format=JSON (climatology 2001-2025, retrieved 2026-11-13)",
   "coordinates_note": "Off-world lat/lon are planetocentric, east-positive, -180..180. Artemis III regions use the centre of the eponymous named feature (approximate).",
   "units": {
@@ -1579,7 +1579,7 @@
  ],
  "limitations": [
   "Context only: not a FieldTwin search result and not validated. FieldTwin's measured search is the bounded Atacama study (data/SEARCH_SCOPE.md).",
-  "Only 4 of 13 criteria are measured (NASA POWER climatology, ~0.5 degree cells); 9 are literature-coded by the SameBeyond team.",
+  "Only 4 of 13 criteria are measured (NASA POWER climatology, ~0.5 degree cells); 9 are literature-coded by the SamaBeyond team.",
   "Mars climate criteria are fixed at 1.0 (extreme) for every Mars site.",
   "The context index is a weighted mean of coded trait closeness, not a terrain similarity, traversability or probability.",
   "Earth cannot reproduce Mars gravity (0.38 g), the thin CO2 atmosphere, or radiation.",

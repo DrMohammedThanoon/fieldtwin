@@ -1,6 +1,6 @@
 """Analog Atlas context data builder (NOT a FieldTwin measured result).
 
-Loads the SameBeyond handoff, re-requests NASA POWER climatology for the Earth
+Loads the SamaBeyond handoff, re-requests NASA POWER climatology for the Earth
 sites, verifies it against power.csv, recomputes the four climate criteria and
 writes app/src/data/analog_atlas.json. No similarity ranking is precomputed.
 Usage: python -m science.analog_atlas [--offline]
@@ -47,7 +47,7 @@ CRITERIA = [  # key, label, kind, unit/formula
 
 LIMITATIONS = [
     "Context only: not a FieldTwin search result and not validated. FieldTwin's measured search is the bounded Atacama study (data/SEARCH_SCOPE.md).",
-    "Only 4 of 13 criteria are measured (NASA POWER climatology, ~0.5 degree cells); 9 are literature-coded by the SameBeyond team.",
+    "Only 4 of 13 criteria are measured (NASA POWER climatology, ~0.5 degree cells); 9 are literature-coded by the SamaBeyond team.",
     "Mars climate criteria are fixed at 1.0 (extreme) for every Mars site.",
     "The context index is a weighted mean of coded trait closeness, not a terrain similarity, traversability or probability.",
     "Earth cannot reproduce Mars gravity (0.38 g), the thin CO2 atmosphere, or radiation.",
@@ -125,7 +125,7 @@ def build(offline: bool = False) -> dict:
         "status": STATUS,
         "criteria": [{"key": k, "label": l, "kind": kind, "basis": b} for k, l, kind, b in CRITERIA],
         "index_formula": "weighted mean of (1 - |earth - offworld|) over 13 criteria; weight x2 where off-world value >= 0.8; UI computes it from vectors and user weights",
-        "provenance": {"source": "SameBeyond handoff; NASA POWER Climatology API v2.10.1, 2001-2025, retrieved 2026-11-13",
+        "provenance": {"source": "SamaBeyond handoff; NASA POWER Climatology API v2.10.1, 2001-2025, retrieved 2026-11-13",
                        "power_api": template, "coordinates_note": ctx["_meta"]["coordinates_note"],
                        "units": {"T": "°C", "Tmax": "°C", "Tmin": "°C", "P": "mm/yr", "RH": "%", "WS": "m/s", "SW": "MJ/m²/day", "elev": "m"}},
         "sites": sites,

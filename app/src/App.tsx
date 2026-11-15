@@ -141,7 +141,7 @@ function Search({ selected, setSelected, go, evaluation }: { selected: SiteId; s
         <button className="sb-btn" onClick={() => go('comparison')}>Inspect the comparison ↗</button>
       </aside>
       <div className="sb-view">
-        <EarthMap basemap={basemap} markers={showPoints ? markers : []} selectedId={selected} onSelect={(id) => { if (isSiteId(id)) setSelected(id) }} zoom={11} />
+        <EarthMap basemap={basemap} markers={showPoints ? markers : []} selectedId={selected} onSelect={(id) => { if (isSiteId(id)) setSelected(id) }} zoom={10} />
         <div className="sb-shade" />
         <div className="sb-layers" role="group" aria-label="Map layers">
           <div className="sb-layers-seg">{BASEMAPS.map((b) => <button key={b.id} aria-pressed={basemap === b.id} onClick={() => setBasemap(b.id)}>{b.label.toUpperCase()}</button>)}</div>

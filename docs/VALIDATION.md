@@ -3,7 +3,7 @@
 
 **Version:** 1.0
 **Execution Plan:** FieldTwin v6.2
-**Status:** Validation pending
+**Status:** Exploratory baseline tested; ML-B V1/V2 NO-GO; independent analog suitability unvalidated.
 
 ## 1. Purpose
 
@@ -296,3 +296,27 @@ https://www.spaceappschallenge.org/2026/challenges/permanent-moon-base-locations
 - Numerical validity does not guarantee elevation accuracy.
 - No matched-scale terrain descriptors have been calculated.
 - No analog suitability or similarity score has been established.
+
+## Phase 5 final validation disposition
+Date: 2026-11-15
+
+The verified physical baseline is exploratory,
+not an independent analog suitability validation.
+
+ML-B V1 and ML-B V2 are scientifically NO-GO.
+The V2 prospective metrics were independently
+recomputed from saved site-level results.
+
+Synthetic missing-block integrity testing
+passed 12/12 examples in V2.
+
+No independently rated analog-relevance
+ground truth, validated unique analog, or
+physical rover field performance is claimed.
+
+See `docs/PHASE5_SCIENTIFIC_CLOSEOUT.md`,
+`docs/ML_B_V2_FINAL_RESULTS.md`, and
+`docs/PROJECT_GATE_P1.md`.
+
+Earlier planning placeholders in this document
+must not be interpreted as the latest status.

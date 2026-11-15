@@ -5,7 +5,7 @@
 **Project:** NASA Space Apps Challenge 2026  
 **Challenge:** Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars  
 **Execution Plan:** FieldTwin v6.2  
-**Status:** Requirements defined; implementation and scientific results not yet verified.
+**Status:** Scientific baseline and ML experiments evaluated; no validated unique analog; frontend pending.
 
 ## 1. Product Vision
 
@@ -319,3 +319,23 @@ https://github.com/nasa/spaceapps/discussions/1849
 ---
 
 **Document status:** Initial requirements baseline. Scientific results and implementation completion must be verified through the project's evidence, testing, and review process.
+
+## Phase 5 verified scope clarification
+Date: 2026-11-15
+
+Scientific implementation and validation
+progress supersede the initial requirements
+planning status.
+
+The four exploratory pilot locations are
+nondominated; no unique analog winner
+or verified first-ever site is established.
+
+ML-B V1/V2 produced NO-GO results.
+The validated physical baseline is retained.
+
+Phase 6 development is conditionally
+approved in `docs/PROJECT_GATE_P1.md`.
+
+See `docs/PHASE5_SCIENTIFIC_CLOSEOUT.md`
+for the final evidence-limited conclusion.

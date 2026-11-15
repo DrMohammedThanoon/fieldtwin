@@ -2,7 +2,7 @@
 # FieldTwin — Scientific Data Sources
 
 **Project:** NASA Space Apps Challenge 2026
-**Status:** Dataset acquisition pending
+**Status:** Phase 3 NASA data acquired and inspected; Mars CTX DTM quality remains provisional.
 **Execution Plan:** v6.2
 
 ## 1. Purpose
@@ -148,3 +148,19 @@ Raw datasets remain excluded from Git.
 - SHA-256: `26a80a08f2ef8734454d8331b7ecb4bc0a4c51aef65105845363dde11bddff7a`
 - Extracted layers: `s24w068.hgt`, `s24w068.num`, `s24w068.swb`
 - Status: acquired and technically validated; scientific suitability is not established.
+
+## Phase 5 provenance status clarification
+Date: 2026-11-15
+
+Real Phase 3 NASADEM, MOLA, and provisional
+USGS CTX terrain sources were subsequently
+acquired and assessed.
+
+The earlier opening planning language does
+not reflect the completed source acquisition.
+Mars CTX independent accuracy verification
+remains unresolved.
+
+See the recorded Phase 3 source evidence,
+`docs/PHASE4_BASELINE_RESULTS.md` and
+`docs/PHASE5_SCIENTIFIC_CLOSEOUT.md`.

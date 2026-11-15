@@ -1,0 +1,21 @@
+{
+  "attempt": 1,
+  "branch": "feat/ml-terrain-discovery",
+  "evaluation_module_sha256": "5361eb9df5008c5ed47c506b11e36e5b7a6f12119d3881c44983b17471b86c1e",
+  "git_commit": "b4d51aa",
+  "manifest_sha256": "52386690fb8a87b01801308040b567c86f941cc1afbf683839237e50fc695ded",
+  "model_sha256": "175f31a414d9a8a32d1f44d258579fa4a035751bfdd67bda21a78d9807c92d94",
+  "phase_6": "FROZEN",
+  "purpose": "First frozen prospective geographic evaluation",
+  "repeat_scoring_permitted": false,
+  "retraining_permitted": false,
+  "schema": "fieldtwin-mlb-v2-evaluation-attempt-v1",
+  "source_file_sha256": {
+    "data/raw/earth/nasadem/s21w069.hgt": "6d5c7378642f12f68f48d9ab74508fe541cde4f7a918cf7f80f8b29638a75bab",
+    "data/raw/earth/nasadem/s21w069.swb": "6bd45ed48b67f8ba425e3f1015b6f24ac820a203529b21e4d991ffd517287a24",
+    "data/raw/earth/nasadem/s28w069.hgt": "b4387a55fe274082654c992bdd11a06ed5ae0ea550fd7d950f5ee9bc65441fa9",
+    "data/raw/earth/nasadem/s28w069.swb": "e96202001dc412dd5f6e176b4d213cef86b8d3b830fd512b63b64fe1ec5230da"
+  },
+  "started_utc": "2026-11-15T04:52:50.646309+00:00",
+  "threshold_changes_permitted": false
+}

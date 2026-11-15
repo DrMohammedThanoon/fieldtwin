@@ -477,3 +477,346 @@ representativeness must be disclosed in final results.
 
 No scientific or ML superiority claim is established
 by this correction.
+
+
+## 12. Frozen ML-B Experimental Design
+
+Frozen before any ML-B model fitting or evaluation.
+
+### 12.1 Scope and data
+
+Objective: Detect synthetic local DEM irregularities
+that warrant independent scientific quality review.
+
+Source: NASADEM elevation tiles and accompanying
+NASADEM SWB land/water masks.
+
+Patch: 1000 m x 1000 m, 100 m grid, EPSG:32719.
+
+Each screened patch contains 10 x 10 elevation cells.
+
+Development:
+- s25w070: 81 fully land-eligible clean patches.
+
+Geographic evaluation:
+- s25w071: 44 fully land-eligible patches.
+- s24w068: 78 fully land-eligible patches.
+
+Total evaluation: 122 patches.
+
+The eligible sample inventories derive from the
+previously audited SWB screening procedure.
+
+Development and evaluation are geographically
+separated, but independent terrain populations
+are not established merely by this separation.
+
+No evaluation data may fit preprocessing,
+Isolation Forest, baseline parameters, or cutoffs.
+
+### 12.2 Synthetic injection assignment
+
+Seed: 20261115.
+
+Each evaluation patch appears exactly once.
+
+s25w071:
+- 11 synthetically modified patches.
+- 33 untouched patches.
+- Injection prevalence: 11/44 = 25.00%.
+
+s24w068:
+- 20 synthetically modified patches.
+- 58 untouched patches.
+- Injection prevalence: 20/78 = 25.64%.
+
+Combined:
+- 31 modified patches.
+- 91 untouched patches.
+- Injection prevalence: 31/122 = 25.41%.
+
+Assignments must be deterministic and recorded
+by tile, row, column, defect type and severity.
+
+Use an independent reproducible random generator
+per tile. Do not use Python's salted hash().
+
+Artifact labels cannot depend on model scores
+or observed evaluation performance.
+
+### 12.3 Synthetic artifact definitions
+
+Inject exactly one artifact in each modified patch.
+
+Type A: elevation spike.
+- Modify one interior pixel.
+- Severity levels: +60 m and +120 m.
+
+Type B: localized depression.
+- Modify one interior 2 x 2 block.
+- Severity levels: -40 m and -80 m.
+
+Type C: strip elevation offset.
+- Modify one interior full-height column.
+- Severity levels: +30 m and +60 m.
+
+Type D: missing-data block.
+- Invalidate a central-interior 2 x 2 block
+  at lower severity, or a 3 x 3 block
+  at higher severity.
+
+The generator must preserve original source DEMs.
+
+For each modified patch, select injection
+locations reproducibly from permitted interior
+positions, except the full-height strip.
+
+Balance types and severities as evenly as
+integer sample counts permit on each tile.
+
+Record actual counts for all eight
+type-severity combinations.
+
+Synthetic modifications are experimental labels,
+not verified sensor, stereo, or mapping errors.
+
+### 12.4 Descriptor and modeling safeguards
+
+Use the same numerical patch-descriptor
+definitions for ML and robust baseline.
+
+The descriptor implementation must explicitly
+handle invalid values and missing-data fraction.
+
+Candidate descriptors:
+- Missing-data fraction.
+- Median absolute adjacent elevation difference.
+- 95th-percentile adjacent elevation difference.
+- Maximum adjacent elevation difference.
+- Plane-detrended elevation roughness.
+- Maximum absolute local residual deviation.
+
+Exact computational definitions and any required
+numerical edge-case handling must be specified
+and tested before the first ML-B model fit.
+
+Training:
+- IsolationForest on 81 clean development patches.
+- Model seed: 20261115.
+- No synthetic evaluation data during fitting.
+- No evaluation-driven hyperparameter tuning.
+- A larger anomaly score means more anomalous.
+
+Baseline:
+- Development-fitted robust median/MAD
+  deviation scoring on the same descriptors.
+- Explicit handling for zero-MAD descriptors.
+- Local-gradient information included.
+
+Cutoffs:
+- Each method uses its own development-clean
+  anomaly-score 95th percentile.
+- No holdout-derived decision thresholds.
+
+### 12.5 Metrics and predeclared gates
+
+Primary metric:
+- Patch-level average precision (AP) using
+  known synthetic labels.
+- Report AP pooled and separately per tile.
+- Report injection prevalence and raw counts.
+
+Original protocol requirement:
+- ML-B pooled AP must exceed robust-baseline
+  pooled AP by at least 0.05 absolute.
+
+Additional prospective safeguards:
+- No evaluation tile may have ML-B AP below
+  robust-baseline AP.
+- Evaluation false-positive rate on untouched
+  patches must not exceed the robust baseline
+  by more than 0.05 absolute on either tile.
+
+Report precision-recall behavior, clean-patch
+false alarms, defect-type recall, and model
+settings without tuning on evaluation scores.
+
+All requirements must pass for a numerical GO.
+
+Even a numerical GO validates only the
+specified synthetic-defect experiment.
+
+### 12.6 Scientific limitations and integrity
+
+Untouched comparison patches are not independently
+proven free of real DEM artifacts.
+
+Synthetic injection does not establish that the
+model recognizes genuine NASADEM or CTX defects.
+
+Do not use CTX hillshade as independent DEM truth.
+
+Do not claim physical rover safety, Mars-to-Earth
+transfer, or validated real-world artifact detection.
+
+Keep the original NASADEM values and masks intact.
+
+Preserve the physical Pareto baseline.
+
+Do not change the design or gates after inspecting
+ML-B holdout performance.
+
+Phase 6 remains frozen.
+
+
+## 13. ML-B Descriptor Definitions
+
+These definitions specify section 12.4 before
+any ML-B model fitting or real holdout evaluation.
+
+Input: 10 x 10 grid, 100 m pixel spacing,
+elevation in meters, projected EPSG:32719.
+
+NoData is represented internally as NaN.
+Infinite values are invalid.
+Require at least 75 finite cells and at least
+60 valid horizontal/vertical adjacent pairs.
+
+Six descriptors, in fixed order:
+
+1. missing_fraction:
+   Missing (NaN) cells divided by 100.
+
+2. adjacent_abs_diff_p50_m:
+   Median absolute elevation difference between
+   all valid horizontal and vertical adjacent pairs.
+
+3. adjacent_abs_diff_p95_m:
+   95th percentile of the same absolute differences,
+   using NumPy linear percentile interpolation.
+
+4. adjacent_abs_diff_max_m:
+   Maximum of the same absolute differences.
+
+5. plane_residual_rms_m:
+   Root mean square residual after least-squares
+   fitting z = a + bx + cy to valid cells,
+   with projected local 100 m coordinate spacing.
+
+6. local_median_residual_max_m:
+   Maximum absolute difference between each valid
+   interior elevation and median of its eight
+   neighboring cells, excluding its center.
+   Require at least four finite neighbors.
+
+Reject patches that cannot produce finite
+results for all six descriptors.
+
+Do not replace missing cells with zero elevation.
+Do not modify original DEM files or source arrays.
+
+Identical descriptors must be used for ML-B
+and its robust-statistical comparator.
+
+Synthetic tests must confirm behavior under:
+- Clean planar terrain.
+- Isolated positive elevation spike.
+- Localized negative depression.
+- Strip elevation offset.
+- Missing-data block.
+- Vertical elevation translation.
+- Invalid input and non-mutation checks.
+
+These descriptors are not proof of actual
+DEM processing errors or physical rover hazards.
+
+
+## 14. Frozen ML-B Model Specifications
+
+These algorithm settings are established before
+the first ML-B model fit and holdout evaluation.
+
+### 14.1 Development training
+
+Use exactly 81 clean patches from s25w070.
+
+All nine-by-nine development locations must exist
+and satisfy the frozen land/coverage requirements.
+
+Use all six descriptors defined in section 13.
+
+No geographic evaluation patch, injected artifact,
+or synthetic evaluation label enters fitting.
+
+### 14.2 Isolation Forest
+
+Development-only StandardScaler.
+
+IsolationForest configuration:
+- n_estimators: 300
+- max_samples: 64
+- max_features: 1.0
+- bootstrap: False
+- contamination: auto
+- random_state: 20261115
+- n_jobs: 1
+
+Anomaly score is negative sklearn score_samples:
+larger values indicate greater anomaly.
+
+The model's built-in contamination decision
+threshold is not used for this experiment.
+
+### 14.3 Robust statistical comparator
+
+Use the identical six-feature matrix.
+
+Fit per-feature medians using development only.
+
+Scale positive MAD by 1.4826.
+
+For MAD <= 1e-9, use the larger of:
+- Development IQR divided by 1.349.
+- A fixed feature-specific minimum scale.
+
+Minimum scales in feature order:
+- Missing fraction: 0.01.
+- Five elevation descriptors: 1.0 meter each.
+
+The robust anomaly score is the maximum
+absolute median-centered, scale-normalized
+deviation across all six descriptors.
+
+Both methods include the same local
+elevation-gradient information.
+
+### 14.4 Thresholds and comparison
+
+For each method independently, set the cutoff
+to the 95th percentile of development-clean
+anomaly scores using linear interpolation.
+
+Classify a patch as flagged only if its
+anomaly score is strictly greater than
+its method's development cutoff.
+
+Scores and thresholds are never recalibrated
+using held-out evaluation observations.
+
+Patch-level AP uses continuous anomaly scores,
+not binary cutoff predictions.
+
+False-positive rate is the fraction of untouched
+evaluation patches flagged by each method.
+
+Preserve section 12.5 acceptance criteria:
+- Pooled ML-B AP advantage >= 0.05 absolute.
+- ML-B AP no lower on either evaluation tile.
+- ML-B clean false-positive rate no more than
+  0.05 absolute higher on either evaluation tile.
+
+Record actual AP, prevalence, counts and FPR
+whether the numerical outcome passes or fails.
+
+These specifications assess synthetic anomalies
+only, not verified real DEM processing errors.

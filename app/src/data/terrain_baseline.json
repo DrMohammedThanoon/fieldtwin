@@ -1,0 +1,306 @@
+{
+  "schema_version": "1.0",
+  "scientific_status": "exploratory_not_field_validated",
+  "method": "unweighted_absolute_difference_pareto",
+  "no_unique_winner_inferred": true,
+  "analysis_grid_m": 100,
+  "analysis_windows_m": [
+    1000,
+    2000
+  ],
+  "matched_analysis_grid_is_not_equal_effective_resolution": true,
+  "feature_keys": [
+    "slope_deg",
+    "relief_p95_p05_m",
+    "roughness_rms_m"
+  ],
+  "source_manifest": "data/SOURCES.md",
+  "search_scope_document": "data/SEARCH_SCOPE.md",
+  "mars_reference": {
+    "source_file": "T01_000893_1847_XN_04N191W__N09_065929_1853_XN_05N191W-DEM-geoid-adj.tif",
+    "target_crs": "PROJCS[\"Mars (2015) - Sphere / Ocentric / Equirectangular, clon = 0\",GEOGCS[\"Mars (2015) - Sphere / Ocentric\",DATUM[\"Mars (2015) - Sphere\",SPHEROID[\"Mars (2015) - Sphere\",3396190,0,AUTHORITY[\"IAU\",\"49900\"]],AUTHORITY[\"IAU\",\"49900\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"49900\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"49900\"]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"49910\"]]",
+    "center_projected_xy_m": [
+      9974700.0,
+      279670.0
+    ],
+    "role": "provisional_CTX_DTM_reference"
+  },
+  "sites": {
+    "PILOT_A": {
+      "longitude_deg": -69.6,
+      "latitude_deg": -24.5,
+      "role": "pilot",
+      "source_product": "NASADEM_HGT.001",
+      "source_file": "s25w070.hgt",
+      "analysis_crs": "EPSG:32719"
+    },
+    "PILOT_B": {
+      "longitude_deg": -69.9,
+      "latitude_deg": -24.4,
+      "role": "pilot",
+      "source_product": "NASADEM_HGT.001",
+      "source_file": "s25w070.hgt",
+      "analysis_crs": "EPSG:32719"
+    },
+    "PILOT_C": {
+      "longitude_deg": -69.9,
+      "latitude_deg": -24.3,
+      "role": "pilot",
+      "source_product": "NASADEM_HGT.001",
+      "source_file": "s25w070.hgt",
+      "analysis_crs": "EPSG:32719"
+    },
+    "PILOT_D": {
+      "longitude_deg": -69.9,
+      "latitude_deg": -24.2,
+      "role": "pilot",
+      "source_product": "NASADEM_HGT.001",
+      "source_file": "s25w070.hgt",
+      "analysis_crs": "EPSG:32719"
+    },
+    "ARADS_PLAYA": {
+      "longitude_deg": -70.138175,
+      "latitude_deg": -24.101642,
+      "role": "historical_rover_test_reference",
+      "source_product": "NASADEM_HGT.001",
+      "source_file": "s25w071.hgt",
+      "analysis_crs": "EPSG:32719"
+    },
+    "LASCAR_CONTROL": {
+      "longitude_deg": -67.73,
+      "latitude_deg": -23.37,
+      "role": "negative_control",
+      "source_product": "NASADEM_HGT.001",
+      "source_file": "s24w068.hgt",
+      "analysis_crs": "EPSG:32719"
+    }
+  },
+  "evaluations": {
+    "1000": {
+      "window_m": 1000,
+      "grid_m": 100,
+      "mars_reference_features": {
+        "slope_deg": 0.11216630788962619,
+        "relief_p95_p05_m": 8.779553222656432,
+        "roughness_rms_m": 2.6894358521105866
+      },
+      "pareto_fronts": [
+        [
+          "PILOT_A",
+          "PILOT_B",
+          "PILOT_C",
+          "PILOT_D"
+        ],
+        [
+          "ARADS_PLAYA"
+        ],
+        [
+          "LASCAR_CONTROL"
+        ]
+      ],
+      "candidates": [
+        {
+          "site_id": "PILOT_A",
+          "features": {
+            "slope_deg": 0.4587808232632583,
+            "relief_p95_p05_m": 10.07843017578125,
+            "roughness_rms_m": 1.8130913222365361
+          },
+          "absolute_differences": {
+            "slope_deg": 0.34661451537363214,
+            "relief_p95_p05_m": 1.298876953124818,
+            "roughness_rms_m": 0.8763445298740504
+          },
+          "pareto_front": 1
+        },
+        {
+          "site_id": "PILOT_B",
+          "features": {
+            "slope_deg": 0.5290966408719002,
+            "relief_p95_p05_m": 13.046087646484239,
+            "roughness_rms_m": 2.8310315384956835
+          },
+          "absolute_differences": {
+            "slope_deg": 0.41693033298227405,
+            "relief_p95_p05_m": 4.266534423827807,
+            "roughness_rms_m": 0.1415956863850969
+          },
+          "pareto_front": 1
+        },
+        {
+          "site_id": "PILOT_C",
+          "features": {
+            "slope_deg": 0.6427440649737376,
+            "relief_p95_p05_m": 14.057836914062591,
+            "roughness_rms_m": 2.7401017785560247
+          },
+          "absolute_differences": {
+            "slope_deg": 0.5305777570841114,
+            "relief_p95_p05_m": 5.278283691406159,
+            "roughness_rms_m": 0.0506659264454381
+          },
+          "pareto_front": 1
+        },
+        {
+          "site_id": "PILOT_D",
+          "features": {
+            "slope_deg": 0.41239749431928757,
+            "relief_p95_p05_m": 24.079644775390534,
+            "roughness_rms_m": 7.333284386676691
+          },
+          "absolute_differences": {
+            "slope_deg": 0.3002311864296614,
+            "relief_p95_p05_m": 15.300091552734102,
+            "roughness_rms_m": 4.643848534566104
+          },
+          "pareto_front": 1
+        },
+        {
+          "site_id": "ARADS_PLAYA",
+          "features": {
+            "slope_deg": 1.2190430706062354,
+            "relief_p95_p05_m": 34.41831665039058,
+            "roughness_rms_m": 13.654284267878733
+          },
+          "absolute_differences": {
+            "slope_deg": 1.1068767627166092,
+            "relief_p95_p05_m": 25.638763427734148,
+            "roughness_rms_m": 10.964848415768147
+          },
+          "pareto_front": 2
+        },
+        {
+          "site_id": "LASCAR_CONTROL",
+          "features": {
+            "slope_deg": 15.681292732160951,
+            "relief_p95_p05_m": 320.27133789062555,
+            "roughness_rms_m": 53.068434438969675
+          },
+          "absolute_differences": {
+            "slope_deg": 15.569126424271325,
+            "relief_p95_p05_m": 311.4917846679691,
+            "roughness_rms_m": 50.37899858685909
+          },
+          "pareto_front": 3
+        }
+      ]
+    },
+    "2000": {
+      "window_m": 2000,
+      "grid_m": 100,
+      "mars_reference_features": {
+        "slope_deg": 0.042228474107190314,
+        "relief_p95_p05_m": 8.4984130859375,
+        "roughness_rms_m": 2.521925859936682
+      },
+      "pareto_fronts": [
+        [
+          "PILOT_A",
+          "PILOT_B",
+          "PILOT_C",
+          "PILOT_D"
+        ],
+        [
+          "ARADS_PLAYA"
+        ],
+        [
+          "LASCAR_CONTROL"
+        ]
+      ],
+      "candidates": [
+        {
+          "site_id": "PILOT_A",
+          "features": {
+            "slope_deg": 0.39749462473968367,
+            "relief_p95_p05_m": 22.139617919921875,
+            "roughness_rms_m": 5.099918598204836
+          },
+          "absolute_differences": {
+            "slope_deg": 0.35526615063249334,
+            "relief_p95_p05_m": 13.641204833984375,
+            "roughness_rms_m": 2.577992738268154
+          },
+          "pareto_front": 1
+        },
+        {
+          "site_id": "PILOT_B",
+          "features": {
+            "slope_deg": 0.4385727430762856,
+            "relief_p95_p05_m": 16.952160644531205,
+            "roughness_rms_m": 2.82515122431964
+          },
+          "absolute_differences": {
+            "slope_deg": 0.39634426896909525,
+            "relief_p95_p05_m": 8.453747558593705,
+            "roughness_rms_m": 0.30322536438295833
+          },
+          "pareto_front": 1
+        },
+        {
+          "site_id": "PILOT_C",
+          "features": {
+            "slope_deg": 0.1815387315397903,
+            "relief_p95_p05_m": 34.73651123046875,
+            "roughness_rms_m": 12.230827594882701
+          },
+          "absolute_differences": {
+            "slope_deg": 0.1393102574326,
+            "relief_p95_p05_m": 26.23809814453125,
+            "roughness_rms_m": 9.70890173494602
+          },
+          "pareto_front": 1
+        },
+        {
+          "site_id": "PILOT_D",
+          "features": {
+            "slope_deg": 0.19575511436027165,
+            "relief_p95_p05_m": 32.727935791015625,
+            "roughness_rms_m": 9.305173321630821
+          },
+          "absolute_differences": {
+            "slope_deg": 0.15352664025308133,
+            "relief_p95_p05_m": 24.229522705078125,
+            "roughness_rms_m": 6.78324746169414
+          },
+          "pareto_front": 1
+        },
+        {
+          "site_id": "ARADS_PLAYA",
+          "features": {
+            "slope_deg": 1.2120060444627747,
+            "relief_p95_p05_m": 100.4540679931639,
+            "roughness_rms_m": 30.82661913123554
+          },
+          "absolute_differences": {
+            "slope_deg": 1.1697775703555844,
+            "relief_p95_p05_m": 91.9556549072264,
+            "roughness_rms_m": 28.304693271298856
+          },
+          "pareto_front": 2
+        },
+        {
+          "site_id": "LASCAR_CONTROL",
+          "features": {
+            "slope_deg": 10.550285938332578,
+            "relief_p95_p05_m": 520.0384277343755,
+            "roughness_rms_m": 114.89853431652148
+          },
+          "absolute_differences": {
+            "slope_deg": 10.508057464225388,
+            "relief_p95_p05_m": 511.54001464843805,
+            "roughness_rms_m": 112.37660845658479
+          },
+          "pareto_front": 3
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "The Mars CTX DTM remains a provisional reference.",
+    "Common grid spacing does not prove matched effective resolution.",
+    "ARADS field-test history is not independent terrain-match validation.",
+    "The negative control is not an exhaustive exclusion test.",
+    "Pareto fronts represent feature trade-offs, not suitability scores.",
+    "No rock, soil, traction, accessibility or rover-safety validation."
+  ]
+}

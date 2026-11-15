@@ -1,0 +1,29 @@
+name: Frontend build
+
+on:
+  pull_request:
+    paths:
+      - 'app/**'
+      - 'outputs/validated/terrain_baseline.json'
+      - '.github/workflows/frontend.yml'
+  push:
+    branches: [feat/frontend]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - run: npm ci --prefix app
+      - run: cmp outputs/validated/terrain_baseline.json app/src/data/terrain_baseline.json
+      - run: npm run build --prefix app

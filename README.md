@@ -208,7 +208,7 @@ Do not report tests as passed until they have actually executed successfully.
 
 ## 10. Frontend Development
 
-After the React application has been created in `app/`:
+The Phase 6 scientific frontend is in `app/`:
 
 ```bash
 cd app
@@ -224,9 +224,7 @@ To verify production readiness:
 npm run build
 ```
 
-`npm ci` requires an existing valid `package-lock.json`. During initial scaffolding, dependencies will first be installed using npm as specified in the execution plan.
-
-The frontend is not implemented yet.
+`package-lock.json` is committed for reproducible dependency installation. See `app/README.md` for the exact evidence inputs, map fallback, and scientific limits. A public deployment has not yet been verified.
 
 ## 11. Scientific Data Sources
 

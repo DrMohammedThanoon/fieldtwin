@@ -4,7 +4,7 @@
 **Version:** 1.0
 **Project:** NASA Space Apps Challenge 2026
 **Execution Plan:** FieldTwin v6.2
-**Status:** Demonstration plan — application not yet deployed
+**Status:** Demonstration plan — public GitHub Pages application available
 
 ## 1. Demonstration Objective
 
@@ -22,8 +22,8 @@ All scientific findings must be supported by verified evidence.
 
 ## 2. Demonstration Links
 
-- Public application: Not deployed
-- GitHub repository: Local repository only
+- Public application: https://samabeyond.github.io/fieldtwin/
+- GitHub repository: https://github.com/SamaBeyond/fieldtwin
 - Submission URL: Not available
 - Demonstration video: Not recorded
 - Release version: Not created

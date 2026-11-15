@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-For a production build, run `npm run build`, then `npm run preview` to serve it locally. Vite's relative base setting permits static hosting under a repository path. A public deployment has not yet been verified.
+For a production build, run `npm run build`, then `npm run preview` to serve it locally. Vite's relative base setting permits static hosting under a repository path. The public application is hosted at https://samabeyond.github.io/fieldtwin/.
 
 ## Evidence used
 

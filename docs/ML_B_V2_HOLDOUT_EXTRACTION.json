@@ -1,0 +1,57 @@
+{
+  "acceptance_gates": {
+    "missing_blocks_excluded_from_physical_AP": true,
+    "missing_integrity_detected": "12/12",
+    "per_tile_AP_must_not_be_lower_than_either_comparator": true,
+    "per_tile_clean_FPR_max_excess_vs_either_comparator": 0.05,
+    "physical_AP_population": "36 physical positives + 113 clean negatives",
+    "pooled_random_forest_AP_advantage_over_best_comparator": 0.05
+  },
+  "combined_extraction_sha256": "b9e61d4f00c85219529f374d9627d56e705ed8d4072129ffac1682b1f0d30975",
+  "eligible_total": 161,
+  "evaluation_module_sha256": "5361eb9df5008c5ed47c506b11e36e5b7a6f12119d3881c44983b17471b86c1e",
+  "evaluation_tests_sha256": "6a86484608bf9152075038202f646b06f0fde22da363a11af269fc547e3a116b",
+  "evidence": "Verified Terminal output from STEP 5-ML.B.54",
+  "excluded": {
+    "s21w069": [],
+    "s28w069": [
+      [
+        5,
+        2
+      ]
+    ]
+  },
+  "extraction_repeated_in_this_step": false,
+  "fitted_artifact_sha256": "175f31a414d9a8a32d1f44d258579fa4a035751bfdd67bda21a78d9807c92d94",
+  "frozen_protocol_sha256": "c6390983fd073c6474ec8b1e1cd07c28f764f9f859b2291dcb4ed3cdf915150b",
+  "missing_positives": 12,
+  "new_holdout_anomaly_scoring": false,
+  "original_results_modified": false,
+  "phase_6": "FROZEN",
+  "physical_positives": 36,
+  "recorded_date": "2026-11-15",
+  "schema": "fieldtwin-mlb-v2-holdout-extraction-v1",
+  "source_commit": "5888bfe",
+  "source_file_sha256": {
+    "data/raw/earth/nasadem/s21w069.hgt": "6d5c7378642f12f68f48d9ab74508fe541cde4f7a918cf7f80f8b29638a75bab",
+    "data/raw/earth/nasadem/s21w069.swb": "6bd45ed48b67f8ba425e3f1015b6f24ac820a203529b21e4d991ffd517287a24",
+    "data/raw/earth/nasadem/s28w069.hgt": "b4387a55fe274082654c992bdd11a06ed5ae0ea550fd7d950f5ee9bc65441fa9",
+    "data/raw/earth/nasadem/s28w069.swb": "e96202001dc412dd5f6e176b4d213cef86b8d3b830fd512b63b64fe1ec5230da"
+  },
+  "thresholds": {
+    "logistic_regression": 0.03346996,
+    "random_forest": 0.5060802,
+    "robust": 12.46553271
+  },
+  "tiles": {
+    "s21w069": {
+      "eligible": 81,
+      "extraction_sha256": "99e1cbb7e04e9c2be53cd918c00f8bd707a7eb1c0ef819881ac4afefc1d41359"
+    },
+    "s28w069": {
+      "eligible": 80,
+      "extraction_sha256": "73c923ca3bb21de8499099d5f875c9e22c203ea82b25fa540f3830ee2feefc51"
+    }
+  },
+  "untouched_negatives": 113
+}
